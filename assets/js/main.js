@@ -1,11 +1,11 @@
 //SECTION ---------------------
 Vue.component('component-section', {
 	data: function () {
-	  return {
-		
-	  }
+		return {
+
+		}
 	},
-	props: ['section', 'title', 'id'],
+	props: ['title'],
 	template: `
 		<section id="" class="">
 			<div class="container">
@@ -16,11 +16,28 @@ Vue.component('component-section', {
 	`
 })
 
+Vue.component('component-section-without-title', {
+	data: function () {
+		return {
+
+		}
+	},
+	props: ['title', 'id'],
+	template: `
+		<section id="" class="">
+			<div class="container">
+				<slot></slot>
+			</div>
+		</section>
+	`
+})
+
+//CONTAINER ---------------------
 Vue.component('component-container', {
 	data: function () {
-	  return {
-		
-	  }
+		return {
+
+		}
 	},
 	template: `
 		<div class="container">
@@ -32,35 +49,36 @@ Vue.component('component-container', {
 //NAVBAR ---------------------
 Vue.component('component-navbar', {
 	data: function () {
-	  return {
-		
-	  }
+		return {
+
+		}
 	},
 	template: `
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="#"><i class="las la-meteor display-4"></i></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container">
+				<a class="navbar-brand" href="#"><i class="lab la-connectdevelop display-4"></i></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-		<div class="collapse navbar-collapse" id="navbarColor02">
-			<ul class="navbar-nav mr-auto">
-				<slot></slot>
-			</ul>
-			<form class="form-inline my-2 my-lg-0">
-			<input class="form-control mr-sm-2" type="text" placeholder="Search">
-			<button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-			</form>
-		</div>
-	</nav>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarColor02">
+					<ul class="navbar-nav">
+						<slot></slot>
+					</ul>
+				</div>
+			</div>
+			</nav>
+		</header>
 	`
 })
+
 //NAVBAR ITEMS ---------------------
 Vue.component('component-navbar-item', {
 	data: function () {
-	  return {
-		
-	  }
+		return {
+
+		}
 	},
 	props: ['navitem'],
 	template: `
@@ -72,54 +90,16 @@ Vue.component('component-navbar-item', {
 	`
 })
 
-//FOOTER ---------------------
-Vue.component('component-footer', {
-	data: function () {
-	  return {
-		
-	  }
-	},
-	template: `
-	<footer class="navbar navbar-light bg-light">
-		<a class="navbar-brand">Footer</a>
-		<form class="form-inline">
-			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-		</form>
-	</footer>
-	`
-})
-
-//CARD ---------------------
-Vue.component('component-card', {
+//FEATURE ---------------------
+Vue.component('component-feature', {
 	data: function () {
 		return {
-			
-		}
-	},
-	props: ['card'],
-	template: `
-	<div class="card bg-primary">
-		<img :src="card.img" class="card-img-top" alt="...">
-		<div class="card-body">
-			<h5 class="card-title">{{ card.title }}</h5>
-			<p class="card-text">{{ card.content }}</p>
-			<a :href="card.url" class="btn btn-primary">{{ card.link }}</a>
-		</div>
-	</div>
-	`
-})
 
-//HEADER ---------------------
-Vue.component('component-header', {
-	data: function () {
-		return {
-			
 		}
 	},
-	props: ['header'],
+	props: ['feature'],
 	template: `
-		<header class="">
+		<div class="">
 			<div class="row">
 				<div class="col-sm">
 					<div class="">
@@ -130,16 +110,16 @@ Vue.component('component-header', {
 							Nunc convallis dolor vel massa maximus, 
 							et varius magna sodales.
 						</p>
-						<button type="button" class="btn btn-primary btn-lg my-4">Mes réalisations</button>
+						<button type="button" class="btn btn-light btn-lg my-4">Mes réalisations</button>
 					</div>
 				</div>
 				<div class="col-sm">
-					<div class="mx-auto">
-						<img src="assets/img/lionel-ensfelder.jpg" class="rounded mx-auto d-block" alt="lionel-ensfelder-portrait" style="width: 70%;">
+					<div class="mx-auto mx-lg-auto">
+						<img src="assets/img/lionel-ensfelder.jpg" class="rounded d-block" alt="lionel-ensfelder-portrait" style="width: 70%;">
 					</div>
 				</div>
 			</div>
-		</header>
+		</div>
 	`
 })
 
@@ -147,50 +127,38 @@ Vue.component('component-header', {
 Vue.component('component-about', {
 	data: function () {
 		return {
-			
+
 		}
 	},
 	props: ['about'],
 	template: `
 	<div class="">
 		<div class="row">
+			<div class="row">
+				<slot></slot>
+			</div>	
+		</div>
+	</div>
+	`
+})
 
-			<div class="col-sm">
-				<div class="">
-					<p class="">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-						Nunc convallis dolor vel massa maximus, 
-						et varius magna sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-						Nunc convallis dolor vel massa maximus, 
-						et varius magna sodales.
-					</p>
-					<button type="button" class="btn btn-primary btn-lg my-4">Mon CV</button>
-				</div>
+//TECH ---------------------
+Vue.component('component-tech', {
+	data: function () {
+		return {
+
+		}
+	},
+	props: ['tech'],
+	template: `
+	<div class="card border-0 text-center col-6 col-sm-3 col-md-4 col-lg-3 bg-transparent">
+		<div class="card-body pt-0">
+			<div class="">
+				<div v-html="tech.icon"></div>
 			</div>
-
-			<div class="col-sm">
-				<div class="mb-4">
-					<span>HTML5 + CSS3</span>
-					<div class="progress">
-						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-					</div>
-				</div>
-
-				<div class="mb-4">
-					<span>HTML5 + CSS3</span>
-					<div class="progress">
-						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-					</div>
-				</div>
-
-				<div class="">
-					<span>HTML5 + CSS3</span>
-					<div class="progress">
-						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-					</div>
-				</div>
+			<div class="">
+				<h5>{{tech.title}}</h5>
 			</div>
-
 		</div>
 	</div>
 	`
@@ -198,9 +166,9 @@ Vue.component('component-about', {
 
 //EXPERIENCES ---------------------
 Vue.component('component-experience', {
-data: function () {
+	data: function () {
 		return {
-			
+
 		}
 	},
 	props: ['experience'],
@@ -232,7 +200,7 @@ data: function () {
 Vue.component('component-work', {
 	data: function () {
 		return {
-			
+
 		}
 	},
 	props: ['work'],
@@ -253,7 +221,7 @@ Vue.component('component-work', {
 						<div class="modal-header">
 							<h5 class="modal-title" v-bind:id="work.target + \'Label\'">{{work.title}}</h5>
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
+								<span aria-hidden="true">&times;</span>
 							</button>
 						</div>
 						<div class="modal-body">
@@ -280,38 +248,333 @@ Vue.component('component-work', {
 	`
 })
 
+//CAROUSEL ---------------------
+Vue.component('component-carousel-testimonial', {
+	data: function () {
+		return {
 
+		}
+	},
+	props: ['carousel-testimonial'],
+	template: `
+		<div id="carousel-testimonial" class="carousel slide" data-ride="carousel">
+			<div id="carousel-testimonial-inner" class="carousel-inner">
+				<slot></slot>
+			</div>
+			<a class="carousel-control-prev" href="#carousel-testimonial" role="button" data-slide="prev">
+				<span class="las la-chevron-circle-left display-4" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carousel-testimonial" role="button" data-slide="next">
+				<span class="las la-chevron-circle-right display-4" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	`
+})
+
+//CAROUSEL ITEM ---------------------
+Vue.component('component-carousel-testimonial-item', {
+	data: function () {
+		return {
+
+		}
+	},
+	props: ['testimonial'],
+	template: `
+		<div class="carousel-item">
+			<div class="card border-0">
+				<div class="card-body text-center border-0 bg-dark">
+					<div><img class="img-fluid" :src="testimonial.photo" alt="card image" width="100px"></div>
+					<h5 class="card-title">{{testimonial.name}}</h5>
+					<h6 class="card-title">{{testimonial.client}}</h6>
+					<p class="card-text">{{testimonial.testimonial}}</p>
+					<a href="#" class="badge badge-light">
+						<i class="las la-link"></i>
+						Link
+					</a>
+						<a href="#" class="badge badge-light">
+						<i class="lab la-linkedin-in"></i>
+						LinkedIn
+					</a>
+				</div>
+			</div>
+		</div>
+
+	`
+})
+
+//CONTACT ---------------------
+Vue.component('component-contact', {
+	data: function () {
+		return {
+
+		}
+	},
+	template: `
+		<div class="row">
+			<slot></slot>
+		</div>
+	`
+})
+
+//CONTACT ITEM---------------------
+Vue.component('component-contact-item', {
+	data: function () {
+		return {
+
+		}
+	},
+	props: ['contactitem'],
+	template: `
+	<div class="col-12 col-lg-6">
+		<button type="button" class="btn bg-transparent btn-lg btn-block text-white">
+		<i v-html="contactitem.icon"></i>
+		{{contactitem.text}}
+		</button>
+	</div>
+	`
+})
+
+//FOOTER ---------------------
+Vue.component('component-footer', {
+	data: function () {
+		return {
+
+		}
+	},
+	template: `
+	<footer class="navbar navbar-light bg-light">
+		<div class="text-center">
+			<a href="" class="">Copyrights</a>
+			<a href="" class="">Mentions</a>
+			<a href="" class="">View on github</a>
+		</div>
+	</footer>
+	`
+})
 
 //VUE ---------------------
 new Vue({
 	el: '#app',
 	data: {
-		sectionDark : 'py-5 text-white bg-dark',
-		sectionGrey : 'py-5 text-white bg-warning',
-		sectionNav:'p-0 bg-dark',
-		cards: [
-			{id: 1, title: 'Card 1', content: 'erffgs gfdgdfgghf dghfghhgf', link:'Link 1', url: 'wwww.g1.fr', img: './assets/img/1.jpg'},
-			{id: 2, title: 'Card 2', content: 'erffgs gfdgdfgghf dghfghhgf', link:'Link 2', url: 'wwww.g2.fr', img: './assets/img/2.jpg'},
-			{id: 3, title: 'Card 3', content: 'erffgs gfdgdfgghf dghfghhgf', link:'Link 3', url: 'wwww.g3.fr', img: './assets/img/3.jpg'},
-			{id: 4, title: 'Card 4', content: 'erffgs gfdgdfgghf dghfghhgf', link:'Link 4', url: 'wwww.g3.fr', img: './assets/img/1.jpg'}
+		sectionDark: 'py-5 text-white bg-dark',
+		sectionGrey: 'py-5 text-white bg-warning',
+		sectionNav: 'py-0 m-0 bg-dark',
+		navitems: [{
+				id: 1,
+				text: 'Qui suis-je ?',
+				url: '#about'
+			},
+			{
+				id: 2,
+				text: 'Mon expérience',
+				url: '#experiences'
+			},
+			{
+				id: 3,
+				text: 'Mes réalisations',
+				url: '#works'
+			},
+			{
+				id: 4,
+				text: 'Témoignages',
+				url: '#testimonials'
+			},
+			{
+				id: 5,
+				text: 'Contactez moi',
+				url: '#contact'
+			}
 		],
-		navitems: [
-			{id: 1, text: 'A propos', url:'wwww.google.com'},
-			{id: 2, text: 'Mon expérience', url:'wwww.google.com'},
-			{id: 3, text: 'Mes réalisations', url:'wwww.google.com'},
-			{id: 4, text: 'Témoignages', url:'wwww.google.com'},
-			{id: 5, text: 'Contactez moi', url:'wwww.google.com'}
+		footeritems: [{
+				id: 1,
+				text: 'dfsfdgdfg',
+				url: 'wwww.google.com'
+			},
+			{
+				id: 2,
+				text: 'dfgfdg gfdg ',
+				url: 'wwww.google.com'
+			},
+			{
+				id: 3,
+				text: 'fdgdfggfdfg dfgdfg',
+				url: 'wwww.google.com'
+			}
 		],
-		experiences: [
-			{id: 1, icon: '<i class="las la-exclamation-circle display-4"></i>', company: 'Marine Nationale', date:'2000 - 2003', job: 'Opérateur télécommunications', description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.', url:'wwww.google.com'},
-			{id: 2, icon: '<i class="las la-exclamation-circle display-4"></i>', company: 'Hkjfg jdkgj', date:'2000 - 2003', job: 'Yfgdsfg dgdfg ', description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.', url:'wwww.google.com'},
-			{id: 3, icon: '<i class="las la-exclamation-circle display-4"></i>', company: 'Psjkhf sfd ', date:'2000 - 2003', job: 'Ihgfdssf', description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.', url:'wwww.google.com'},
-			{id: 4, icon: '<i class="las la-exclamation-circle display-4"></i>', company: 'Edfsdf IU', date:'2000 - 2003', job: 'Mojfgh', description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.', url:'wwww.google.com'},
+		experiences: [{
+				id: 1,
+				icon: '<i class="las la-exclamation-circle display-4"></i>',
+				company: 'Marine Nationale',
+				date: '2000 - 2003',
+				job: 'Opérateur télécommunications',
+				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+				url: 'wwww.google.com'
+			},
+			{
+				id: 2,
+				icon: '<i class="las la-exclamation-circle display-4"></i>',
+				company: 'Hkjfg jdkgj',
+				date: '2000 - 2003',
+				job: 'Yfgdsfg dgdfg ',
+				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+				url: 'wwww.google.com'
+			},
+			{
+				id: 3,
+				icon: '<i class="las la-exclamation-circle display-4"></i>',
+				company: 'Psjkhf sfd ',
+				date: '2000 - 2003',
+				job: 'Ihgfdssf',
+				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+				url: 'wwww.google.com'
+			},
+			{
+				id: 4,
+				icon: '<i class="las la-exclamation-circle display-4"></i>',
+				company: 'Edfsdf IU',
+				date: '2000 - 2003',
+				job: 'Mojfgh',
+				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+				url: 'wwww.google.com'
+			},
 		],
-		works: [
-			{id: 1, target:'a', title: 'Work TITLE', image: './assets/img/1.jpg', client: 'Marine Nationale', date:'2000 - 2003', job: 'Opérateur télécommunications', description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.', url:'wwww.google.com'},
-			{id: 2, target:'b', title: 'Work TITLE 2', image: './assets/img/2.jpg', client: 'Madfdfdf', date:'2000 - 2008', job: 'Opdfdfur tédfdfdfications', description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.', url:'wwww.google.com'},
-			{id: 3, target:'c', title: 'Work TITLE 3', image: './assets/img/3.jpg', client: 'fgfdhghgjhkj', date:'2000 - 2008', job: 'Opdfdbnvbnbtions', description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.', url:'wwww.google.com'}
+		works: [{
+				id: 1,
+				target: 'a',
+				title: 'Work TITLE',
+				image: './assets/img/1.jpg',
+				client: 'Marine Nationale',
+				date: '2000 - 2003',
+				job: 'Opérateur télécommunications',
+				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+				url: 'wwww.google.com'
+			},
+			{
+				id: 2,
+				target: 'b',
+				title: 'Work TITLE 2',
+				image: './assets/img/2.jpg',
+				client: 'Madfdfdf',
+				date: '2000 - 2008',
+				job: 'Opdfdfur tédfdfdfications',
+				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+				url: 'wwww.google.com'
+			},
+			{
+				id: 3,
+				target: 'c',
+				title: 'Work TITLE 3',
+				image: './assets/img/3.jpg',
+				client: 'fgfdhghgjhkj',
+				date: '2000 - 2008',
+				job: 'Opdfdbnvbnbtions',
+				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+				url: 'wwww.google.com'
+			}
+		],
+		testimonials: [
+			{
+				id: 1,
+				name: 'Marc Dotri',
+				job: 'CEO at vanillajs.com',
+				photo: './assets/img/testimonials/1.jpg',
+				client: 'Marine Nationale',
+				testimonial: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+				url: 'wwww.google.com'
+			},
+			{
+				id: 2,
+				name: 'Marc Dotri',
+				job: 'CEO at vanillajs.com',
+				photo: './assets/img/testimonials/2.jpg',
+				client: 'Marine Nationale',
+				testimonial: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+				url: 'wwww.google.com'
+			}
+		],
+		contactitems: [
+			{
+				id: 1,
+				text: 'Marc Dotri',
+				icon: '<i class="las la-car"></i>',
+				url: 'wwww.google.com'
+			},
+			{
+				id: 2,
+				text: 'Marc Dotri',
+				icon: '<i class="las la-sms"></i>',
+				url: 'wwww.google.com'
+			},
+			{
+				id: 3,
+				text: 'Marc Dotri',
+				icon: '<i class="las la-exclamation-circle"></i>',
+				url: 'wwww.google.com'
+			},
+			{
+				id: 4,
+				text: 'Marc Dotri',
+				icon: '<i class="las la-exclamation-circle"></i>',
+				url: 'wwww.google.com'
+			},
+			{
+				id: 5,
+				text: 'Marc Dotri',
+				icon: '<i class="las la-exclamation-circle"></i>',
+				url: 'wwww.google.com'
+			},
+			{
+				id: 6,
+				text: 'Marc Dotri',
+				icon: '<i class="las la-exclamation-circle"></i>',
+				url: 'wwww.google.com'
+			}
+		],
+		techs:[
+			{
+				id:1,
+				title: 'Vue.js',
+				icon: '<i class="lab la-vuejs display-4"></i>',
+				url: 'wwww.google.com'
+			},
+			{
+				id:2,
+				title: 'Bootstrap',
+				icon: '<i class="lab la-bootstrap display-4"></i>',
+				url: 'wwww.google.com'
+			},
+			{
+				id:3,
+				title: 'Tech Title',
+				icon: '<i class="las la-exclamation-circle display-4"></i>',
+				url: 'wwww.google.com'
+			},
+			{
+				id:4,
+				title: 'Tech Title',
+				icon: '<i class="las la-exclamation-circle display-4"></i>',
+				url: 'wwww.google.com'
+			},
+			{
+				id:5,
+				title: 'Tech Title',
+				icon: '<i class="las la-exclamation-circle display-4"></i>',
+				url: 'wwww.google.com'
+			},
+			{
+				id:6,
+				title: 'Tech Title',
+				icon: '<i class="las la-exclamation-circle display-4"></i>',
+				url: 'wwww.google.com'
+			},
+			{
+				id:7,
+				title: 'Tech Title',
+				icon: '<i class="las la-exclamation-circle display-4"></i>',
+				url: 'wwww.google.com'
+			}
 		]
 	}
 })
