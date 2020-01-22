@@ -31,6 +31,10 @@ a:hover{
 .white{
     background-color: #FFFFFF;
 }
+.arsenic-transparent{
+    background-color: #42424258;
+}
+
 
 /* FONT WEIGHT */
 .custom-date, .custom-url{
@@ -60,7 +64,7 @@ a:hover{
   }
   
   .containerHovered:hover .toHide{
-    opacity: 0.3;
+    opacity: 0.5;
   }
   
   .containerHovered:hover .toDisplay {
@@ -68,6 +72,6 @@ a:hover{
   }
 
   .containerHovered:hover img{
-    
+    filter: blur(3px);
   }
     

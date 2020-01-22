@@ -243,29 +243,6 @@ Vue.component('component-experience', {
 	`
 })
 
-//TEST HOVER ---------------------
-Vue.component('component-hover', {
-	data: function () {
-		return {
-
-		}
-	},
-	props: ['hover'],
-	template: `
-		<div class="mb-3 col-6 mx-auto position-relative">
-			<div class="card containerHovered">
-				<div class="h-100 toHide">
-					<img src="./assets/img/5.jpg" class="card-img h-100" alt="...">
-				</div>
-				<div class="toDisplay text-center position-absolute">
-					<a class="display-3"><i class="rounded-circle bg-light text-dark las la-anchor"></i></a>
-					<p class="text-dark">ojuhuhhjhkhhljk</p>
-				</div>
-			</div>
-		</div>
-	`
-})
-
 //WORK ---------------------
 Vue.component('component-work', {
 	data: function () {
@@ -275,70 +252,23 @@ Vue.component('component-work', {
 	},
 	props: ['work'],
 	template: `
-		<div class="mb-3 col">
-			<div class="card h-100">
-				<img v-bind:src="work.image" class="card-img h-100" alt="...">
-				<div class="card-img-overlay">
-					<!-- Button trigger modal -->
-					<a href="#" class="stretched-link" data-toggle="modal" v-bind:data-target="\'#\'+ work.target"></a>
+		<div class="mb-4 col">
+			<div class="card border-0 containerHovered h-100">
+				<div class="h-100 toHide">
+					<img :src="work.image" class="card-img h-100" alt="...">
 				</div>
-
-				<!-- Modal -->
-				<div class="modal fade" v-bind:id="work.target" data-backdrop="static" tabindex="-1" role="dialog" v-bind:aria-labelledby="work.target + \'Label\'" aria-hidden="true">
-					<div class="modal-dialog modal-dialog-scrollable border-0" role="document">
-						<div class="modal-content bg-dark">
-						<div class="modal-header border-0">
-							<h5 class="modal-title" v-bind:id="work.target + \'Label\'">{{work.title}}</h5>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true"><i class="text-white las la-times-circle"></i></span>
-							</button>
-						</div>
-						<div class="modal-body">
-							{{work.description}}
-							<br>
-							<div class="row">
-								<div class="card col-4">
-									<img v-bind:src="work.image" class="card-img h-100" alt="...">
-									<div class="card-img-overlay">
-										<!-- Button trigger modal -->
-										<a href="#" class="stretched-link" data-toggle="modal" v-bind:data-target="\'#\'+ work.target"></a>
-									</div>
-								</div>
-								<div class="card col-4">
-									<img v-bind:src="work.image" class="card-img h-100" alt="...">
-									<div class="card-img-overlay">
-										<!-- Button trigger modal -->
-										<a href="#" class="stretched-link" data-toggle="modal" v-bind:data-target="\'#\'+ work.target"></a>
-									</div>
-								</div>
-								<div class="card col-4">
-									<img v-bind:src="work.image" class="card-img h-100" alt="...">
-									<div class="card-img-overlay">
-										<!-- Button trigger modal -->
-										<a href="#" class="stretched-link" data-toggle="modal" v-bind:data-target="\'#\'+ work.target"></a>
-									</div>
-								</div>
-							</div>
-							<div class="">
-								<span class="badge badge-light">Light</span>
-								<span class="badge badge-light">Light</span>
-								<span class="badge badge-light">Light</span>
-							</div>
-							<div class="">
-								<a href=""><span class="badge badge-dark"><i class="lab la-github"></i>Github</span></a>
-								<a href=""><span class="badge badge-dark"><i class="las la-external-link-alt"></i>Voir</span></a>
-							</div>
-						</div>
-						<!-- <div class="modal-footer border-0">
-							<button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-						</div> -->
-						</div>
-					</div>
+				<div class="toDisplay text-left position-absolute">
+					<a href="#" class="display-4"><i class="rounded-circle arsenic-transparent text-white las la-link"></i></a>
+					<a href="#" class="display-4"><i class="rounded-circle arsenic-transparent text-white lab la-git"></i></a>
+					<h5 class="text-dark">{{work.title}}</h5>
+					<span class="text-dark font-weight-lighter">{{work.description}}</span>
 				</div>
 			</div>
 		</div>
 	`
 })
+
+
 
 //CAROUSEL ---------------------
 Vue.component('component-carousel-testimonial', {
@@ -549,7 +479,7 @@ new Vue({
 		works: [{
 				id: 1,
 				target: 'a',
-				title: 'Work TITLE',
+				title: 'AID83',
 				image: './assets/img/1.jpg',
 				client: 'Marine Nationale',
 				date: '2000 - 2003',
