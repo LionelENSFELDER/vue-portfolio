@@ -1,0 +1,73 @@
+body{
+    font-family: Poppins;
+    font-weight: 400;
+    color: #fff;
+}
+h1{
+    font-family: Montserrat;
+    font-weight: 700;
+}
+a{
+    color:inherit;
+}
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*BACKGROND COLOR*/
+.raisin{
+    background-color: #202020;
+} 
+.charleston{
+    background-color: #2D2D2D;
+} 
+.onyx{
+    background-color: #383838;
+}
+.arsenic{
+    background-color: #424242;
+}
+.white{
+    background-color: #FFFFFF;
+}
+
+/* FONT WEIGHT */
+.custom-date, .custom-url{
+    font-weight: 200;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+/* HOVER IMAGE */
+.containerHovered{
+    position: relative;
+}
+
+.toHide {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .toDisplay {
+    transition: .5s ease;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  
+  .containerHovered:hover .toHide{
+    opacity: 0.3;
+  }
+  
+  .containerHovered:hover .toDisplay {
+    opacity: 1;
+  }
+
+  .containerHovered:hover img{
+    
+  }
+    
