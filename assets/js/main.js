@@ -9,7 +9,7 @@ Vue.component('component-section', {
 	template: `
 		<section id="" class="">
 			<div class="container">
-				<h1>{{ title }}</h1>
+				<h1 class="text-center mb-5">{{ title }}</h1>
 				<slot></slot>
 			</div>
 		</section>
@@ -55,7 +55,7 @@ Vue.component('component-navbar', {
 	},
 	template: `
 		<header>
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<nav class="navbar navbar-expand-lg navbar-dark">
 			<div class="container">
 				<a class="navbar-brand" href="#"><i class="lab la-connectdevelop display-4"></i></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
@@ -103,14 +103,15 @@ Vue.component('component-feature', {
 			<div class="row">
 				<div class="col-sm">
 					<div class="">
-						<span>Salut, je m'appelle </span>
-						<h1>Lionel Ensfelder</h1>
-						<p class="">
+						<span class="text-white-50 d-block mb-2">Salut, je m'appelle</span>
+						<h1>LIONEL ENSFELDER</h1>
+						<p class="text-white-50">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 							Nunc convallis dolor vel massa maximus, 
-							et varius magna sodales.
+							et varius magna sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							Nunc convallis dolor vel massa maximus, et varius magna sodales.
 						</p>
-						<button type="button" class="btn btn-light btn-lg my-4">Mes réalisations</button>
+						<button type="button" class="btn btn-outline-light my-4">MES REALISATIONS</button>
 					</div>
 				</div>
 				<div class="col-sm">
@@ -123,27 +124,69 @@ Vue.component('component-feature', {
 	`
 })
 
-//ABOUT ME ---------------------
-Vue.component('component-about', {
+//STACK ---------------------
+Vue.component('component-stack', {
 	data: function () {
 		return {
 
 		}
 	},
-	props: ['about'],
+	props: ['stack'],
 	template: `
-	<div class="">
-		<div class="row">
+		<div class="">
 			<div class="row">
-				<slot></slot>
-			</div>	
+
+				<div class="col-sm">
+					<div class="mx-auto mx-auto">
+						<slot></slot>
+					</div>
+				</div>
+
+				<div class="col-sm">
+					<div class="">
+						<p class="text-white-50">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							Nunc convallis dolor vel massa maximus, 
+							et varius magna sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+							Nunc convallis dolor vel massa maximus, et varius magna sodales.
+						</p>
+						<button type="button" class="btn btn-outline-light my-4">ROADMAP</button>
+						<button type="button" class="btn btn-outline-light my-4">Github</button>
+					</div>
+				</div>
+				
+			</div>
 		</div>
-	</div>
 	`
 })
 
-//TECH ---------------------
-Vue.component('component-tech', {
+//CAROUSEL TECH---------------------
+Vue.component('component-carousel-tech', {
+	data: function () {
+		return {
+
+		}
+	},
+	props: ['carouseltech'],
+	template: `
+		<div id="carousel-tech" class="carousel slide h-100" data-ride="carousel" data-interval="500">
+			<div id="carousel-tech-inner" class="carousel-inner">
+				<slot></slot>
+			</div>
+			<!-- <a class="carousel-control-prev" href="#carousel-tech" role="button" data-slide="prev">
+				<span class="las la-chevron-circle-left display-4" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carousel-tech" role="button" data-slide="next">
+				<span class="las la-chevron-circle-right display-4" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a> -->
+		</div>
+	`
+})
+
+//CAROUSEL ITEM TECH---------------------
+Vue.component('component-carousel-tech-item', {
 	data: function () {
 		return {
 
@@ -151,16 +194,19 @@ Vue.component('component-tech', {
 	},
 	props: ['tech'],
 	template: `
-	<div class="card border-0 text-center col-6 col-sm-3 col-md-4 col-lg-3 bg-transparent">
-		<div class="card-body pt-0">
-			<div class="">
-				<div v-html="tech.icon"></div>
-			</div>
-			<div class="">
-				<h5>{{tech.title}}</h5>
+		<div class="carousel-item">
+			<div class="card border-0 text-center bg-transparent rounded mx-auto">
+				<div class="card-body">
+					<div class="mb-4">
+						<div v-html="tech.icon"></div>
+					</div>
+					<div class="">
+						<h5>{{tech.title}}</h5>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
+
 	`
 })
 
@@ -173,26 +219,50 @@ Vue.component('component-experience', {
 	},
 	props: ['experience'],
 	template: `
-	<div class="">
-		<div class="">
-			<div class="card bg-transparent">
-				<div class="card-body">
+		<div class="col-12 col-md-6 mb-4">
+			<div class="card charleston">
+				<div class="card-body p-2">
 					<div class="row">
 						<div class="col-2">
-						<div v-html="experience.icon"></div>
+							<div v-html="experience.icon"></div>
 						</div>
 						<div class="col-10">
 							<h5 class="card-title">{{experience.company}}</h5>
-							<h6 class="card-subtitle mb-2">{{experience.date}}</h6>
-							<h6 class="card-title">{{experience.job}}</h6>
-							<p class="card-text">{{experience.description}}</p>
-							<a href="#" class="card-link">{{experience.url}}</a>
+							<p class="custom-date mb-0">{{experience.date}}</p>
+							<span class="card-title">{{experience.job}}</span>
+							<p class="">{{experience.description}}</p>
+							<a href="#" class="custom-url">
+								<i class="las la-external-link-alt"></i>
+								{{experience.urlText}}
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	`
+})
+
+//TEST HOVER ---------------------
+Vue.component('component-hover', {
+	data: function () {
+		return {
+
+		}
+	},
+	props: ['hover'],
+	template: `
+		<div class="mb-3 col-6 mx-auto position-relative">
+			<div class="card containerHovered">
+				<div class="h-100 toHide">
+					<img src="./assets/img/5.jpg" class="card-img h-100" alt="...">
+				</div>
+				<div class="toDisplay text-center position-absolute">
+					<a class="display-3"><i class="rounded-circle bg-light text-dark las la-anchor"></i></a>
+					<p class="text-dark">ojuhuhhjhkhhljk</p>
+				</div>
+			</div>
+		</div>
 	`
 })
 
@@ -205,28 +275,50 @@ Vue.component('component-work', {
 	},
 	props: ['work'],
 	template: `
-		<div class="mb-3">
-			<div class="card">
-				<img v-bind:src="work.image" class="card-img" alt="...">
+		<div class="mb-3 col">
+			<div class="card h-100">
+				<img v-bind:src="work.image" class="card-img h-100" alt="...">
 				<div class="card-img-overlay">
-
 					<!-- Button trigger modal -->
 					<a href="#" class="stretched-link" data-toggle="modal" v-bind:data-target="\'#\'+ work.target"></a>
 				</div>
 
 				<!-- Modal -->
 				<div class="modal fade" v-bind:id="work.target" data-backdrop="static" tabindex="-1" role="dialog" v-bind:aria-labelledby="work.target + \'Label\'" aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content bg-warning">
-						<div class="modal-header">
+					<div class="modal-dialog modal-dialog-scrollable border-0" role="document">
+						<div class="modal-content bg-dark">
+						<div class="modal-header border-0">
 							<h5 class="modal-title" v-bind:id="work.target + \'Label\'">{{work.title}}</h5>
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
+								<span aria-hidden="true"><i class="text-white las la-times-circle"></i></span>
 							</button>
 						</div>
 						<div class="modal-body">
 							{{work.description}}
 							<br>
+							<div class="row">
+								<div class="card col-4">
+									<img v-bind:src="work.image" class="card-img h-100" alt="...">
+									<div class="card-img-overlay">
+										<!-- Button trigger modal -->
+										<a href="#" class="stretched-link" data-toggle="modal" v-bind:data-target="\'#\'+ work.target"></a>
+									</div>
+								</div>
+								<div class="card col-4">
+									<img v-bind:src="work.image" class="card-img h-100" alt="...">
+									<div class="card-img-overlay">
+										<!-- Button trigger modal -->
+										<a href="#" class="stretched-link" data-toggle="modal" v-bind:data-target="\'#\'+ work.target"></a>
+									</div>
+								</div>
+								<div class="card col-4">
+									<img v-bind:src="work.image" class="card-img h-100" alt="...">
+									<div class="card-img-overlay">
+										<!-- Button trigger modal -->
+										<a href="#" class="stretched-link" data-toggle="modal" v-bind:data-target="\'#\'+ work.target"></a>
+									</div>
+								</div>
+							</div>
 							<div class="">
 								<span class="badge badge-light">Light</span>
 								<span class="badge badge-light">Light</span>
@@ -237,9 +329,9 @@ Vue.component('component-work', {
 								<a href=""><span class="badge badge-dark"><i class="las la-external-link-alt"></i>Voir</span></a>
 							</div>
 						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						</div>
+						<!-- <div class="modal-footer border-0">
+							<button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+						</div> -->
 						</div>
 					</div>
 				</div>
@@ -273,7 +365,7 @@ Vue.component('component-carousel-testimonial', {
 	`
 })
 
-//CAROUSEL ITEM ---------------------
+//CAROUSEL ITEM TESTIMONIAL---------------------
 Vue.component('component-carousel-testimonial-item', {
 	data: function () {
 		return {
@@ -358,32 +450,32 @@ Vue.component('component-footer', {
 new Vue({
 	el: '#app',
 	data: {
-		sectionDark: 'py-5 text-white bg-dark',
-		sectionGrey: 'py-5 text-white bg-warning',
+		sectionDark: 'py-5 text-white raisin',
+		sectionGrey: 'py-5 text-white onyx',
 		sectionNav: 'py-0 m-0 bg-dark',
 		navitems: [{
 				id: 1,
-				text: 'Qui suis-je ?',
+				text: 'QUI SUIS-JE ?',
 				url: '#about'
 			},
 			{
 				id: 2,
-				text: 'Mon expérience',
+				text: 'EXPERIENCES',
 				url: '#experiences'
 			},
 			{
 				id: 3,
-				text: 'Mes réalisations',
+				text: 'REALISATIONS',
 				url: '#works'
 			},
 			{
 				id: 4,
-				text: 'Témoignages',
+				text: 'TEMOIGNAGES',
 				url: '#testimonials'
 			},
 			{
 				id: 5,
-				text: 'Contactez moi',
+				text: 'CONTACT',
 				url: '#contact'
 			}
 		],
@@ -405,40 +497,54 @@ new Vue({
 		],
 		experiences: [{
 				id: 1,
-				icon: '<i class="las la-exclamation-circle display-4"></i>',
+				icon: '<i class="las la-exclamation-circle display-4 raisin rounded-lg"></i>',
 				company: 'Marine Nationale',
 				date: '2000 - 2003',
 				job: 'Opérateur télécommunications',
 				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+				urlText: 'url of website',
 				url: 'wwww.google.com'
 			},
 			{
 				id: 2,
-				icon: '<i class="las la-exclamation-circle display-4"></i>',
+				icon: '<i class="las la-exclamation-circle display-4 raisin rounded-lg"></i>',
 				company: 'Hkjfg jdkgj',
 				date: '2000 - 2003',
 				job: 'Yfgdsfg dgdfg ',
 				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+				urlText: 'url of website',
 				url: 'wwww.google.com'
 			},
 			{
 				id: 3,
-				icon: '<i class="las la-exclamation-circle display-4"></i>',
+				icon: '<i class="las la-exclamation-circle display-4 raisin rounded-lg"></i>',
 				company: 'Psjkhf sfd ',
 				date: '2000 - 2003',
 				job: 'Ihgfdssf',
 				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+				urlText: 'url of website',
 				url: 'wwww.google.com'
 			},
 			{
 				id: 4,
-				icon: '<i class="las la-exclamation-circle display-4"></i>',
+				icon: '<i class="las la-exclamation-circle display-4 raisin rounded-lg"></i>',
 				company: 'Edfsdf IU',
 				date: '2000 - 2003',
 				job: 'Mojfgh',
 				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+				urlText: 'url of website',
 				url: 'wwww.google.com'
 			},
+			{
+				id: 5,
+				icon: '<i class="las la-exclamation-circle display-4 raisin rounded-lg"></i>',
+				company: 'Edfsdf IU',
+				date: '2000 - 2003',
+				job: 'Mojfgh',
+				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+				urlText: 'url of website',
+				url: 'wwww.google.com'
+			}
 		],
 		works: [{
 				id: 1,
@@ -467,6 +573,28 @@ new Vue({
 				target: 'c',
 				title: 'Work TITLE 3',
 				image: './assets/img/3.jpg',
+				client: 'fgfdhghgjhkj',
+				date: '2000 - 2008',
+				job: 'Opdfdbnvbnbtions',
+				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+				url: 'wwww.google.com'
+			},
+			{
+				id: 4,
+				target: 'c',
+				title: 'Work TITLE 3',
+				image: './assets/img/4.jpg',
+				client: 'fgfdhghgjhkj',
+				date: '2000 - 2008',
+				job: 'Opdfdbnvbnbtions',
+				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+				url: 'wwww.google.com'
+			},
+			{
+				id: 5,
+				target: 'c',
+				title: 'Work TITLE 3',
+				image: './assets/img/5.jpg',
 				client: 'fgfdhghgjhkj',
 				date: '2000 - 2008',
 				job: 'Opdfdbnvbnbtions',
@@ -547,8 +675,8 @@ new Vue({
 			},
 			{
 				id:3,
-				title: 'Tech Title',
-				icon: '<i class="las la-exclamation-circle display-4"></i>',
+				title: 'Git',
+				icon: '<i class="lab la-git display-4"></i>',
 				url: 'wwww.google.com'
 			},
 			{

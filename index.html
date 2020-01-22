@@ -7,8 +7,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<!-- css -->
-		<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./assets/css/bootstrap.css" />
 		<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,600i,700,900,900i|Poppins:200,200i,300,300i,400,400i,600,600i,900,900i&display=swap" rel="stylesheet">
+		<!-- custom -->
+		<link rel="stylesheet" href="./assets/css/custom.css" />
 		<!-- title -->
 		<title>Ensfelder Lionel</title>
 	</head>
@@ -17,7 +21,7 @@
 		<!-- APP -->
 		<div id="app">
 			<!-- navbar -->
-			<component-navbar>
+			<component-navbar class="raisin">
 				<component-navbar-item 
 					v-for="navitem in navitems" 
 					v-bind:key="navitem.id" 
@@ -29,37 +33,60 @@
 				<component-feature></component-feature>
 			</component-section>
 
-			<component-section id="about" :class="[sectionGrey]" title="Frameworks et techno">
-				<component-about>
-
-					<component-tech
-						v-for="tech in techs" 
-						v-bind:key="tech.id"
-						v-bind:tech="tech"
-					></component-tech>
-				</component-about>
+			<component-section id="stack" :class="[sectionGrey]" title="Stack">
+				<component-stack>
+					<component-carousel-tech>
+						<component-carousel-tech-item
+							v-for="tech in techs" 
+							v-bind:key="tech.id"
+							v-bind:tech="tech"
+						></component-carousel-tech-item>
+					</component-carousel-tech>
+				</component-stack>
 			</component-section>
 
 			<component-section id="experiences" :class="[sectionDark]" title="Mon experience">
-				<component-experience 
-					v-for="experience in experiences" 
-					v-bind:key="experience.id"
-					v-bind:experience="experience"
-				></component-experience>
+				<div class="row">
+					<component-experience 
+						v-for="experience in experiences" 
+						v-bind:key="experience.id"
+						v-bind:experience="experience"
+					></component-experience>
+
+					<!-- <div class="col-12 col-md-3">
+						<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+						<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+						<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+						<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+						<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+						</div>
+					</div>
+					<div class="col-12 col-md-9">
+						<div class="tab-content" id="v-pills-tabContent">
+						<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">amet, consectetur adipiscing elit. Nunc convallis dolor vel massa maximus, et varius magna sodales</div>
+						<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">amet, consectetur adipiscing elit. Nunc convallis dolor vel massa maximus, et varius magna sodales</div>
+						<div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">.amet, consectetur adipiscing elit. Nunc convallis dolor vel massa maximus, et varius magna sodales.dfgydfgdfgdfgd dfg dfg dfg dfg dfgd fgdf.</div>
+						<div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">..amet, consectetur adipiscing elit. Nunc convallis dolor vel massa maximus, et varius magna sodales.dfgydfgdfgdfgd dfg dfg dfg dfg dfgd fgdf</div>
+						</div>
+					</div> -->
+
+				</div>
 			</component-section>
 
 			<component-section id="works" :class="[sectionGrey]" title="Mes réalisations">
-				<component-work 
-					v-for="work in works" 
-					v-bind:key="work.id" 
-					v-bind:work="work"
-				></component-work>
+				<div class="row row-cols-1 row-cols-md-3">
+					<component-work 
+						v-for="work in works" 
+						v-bind:key="work.id" 
+						v-bind:work="work"
+					></component-work>
+				</div>
 			</component-section>
 
 			<!-- <component-section v-bind:class="[sectionDark]" title="Mes valeurs">
 			</component-section> -->
 
-			<component-section id="testimonials" :class="[sectionGrey]" title="Témoignages">
+			<component-section id="testimonials" :class="[sectionDark]" title="Témoignages">
 				<component-carousel-testimonial>
 					<component-carousel-testimonial-item 
 						v-for="testimonial in testimonials" 
@@ -72,7 +99,7 @@
 			<!-- <component-section v-bind:class="[sectionDark]" title="Mes articles">
 			</component-section> -->
 
-			<component-section id="contact" :class="[sectionDark]" title="Contacte moi">
+			<component-section id="contact" :class="[sectionGrey]" title="Contacte moi">
 				<component-contact>
 					<component-contact-item
 						v-for="contactitem in contactitems" 
@@ -82,6 +109,10 @@
 				</component-contact>
 			</component-section>
 
+			<component-hover></component-hover>
+
+
+			
 			<component-footer>
 				<component-footer-item 
 					v-for="footer in footeritems" 
