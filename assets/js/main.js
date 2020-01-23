@@ -594,44 +594,98 @@ new Vue({
 			{
 				id:1,
 				title: 'Vue.js',
-				icon: '<i class="lab la-vuejs display-4"></i>',
+				icon: '<i class="lab la-vuejs display-2"></i>',
 				url: 'wwww.google.com'
 			},
 			{
 				id:2,
 				title: 'Bootstrap',
-				icon: '<i class="lab la-bootstrap display-4"></i>',
+				icon: '<i class="lab la-bootstrap display-2"></i>',
 				url: 'wwww.google.com'
 			},
 			{
 				id:3,
 				title: 'Git',
-				icon: '<i class="lab la-git display-4"></i>',
+				icon: '<i class="lab la-git display-2"></i>',
 				url: 'wwww.google.com'
 			},
 			{
 				id:4,
-				title: 'Tech Title',
-				icon: '<i class="las la-exclamation-circle display-4"></i>',
+				title: 'UI Kit',
+				icon: '<i class="lab la-uikit display-2"></i>',
 				url: 'wwww.google.com'
 			},
 			{
 				id:5,
-				title: 'Tech Title',
-				icon: '<i class="las la-exclamation-circle display-4"></i>',
+				title: 'Scrum',
+				icon: '<i class="lab la-buffer display-2"></i>',
 				url: 'wwww.google.com'
 			},
 			{
 				id:6,
-				title: 'Tech Title',
-				icon: '<i class="las la-exclamation-circle display-4"></i>',
+				title: 'Wordpress',
+				icon: '<i class="lab la-wordpress display-2"></i>',
 				url: 'wwww.google.com'
 			},
 			{
 				id:7,
-				title: 'Tech Title',
-				icon: '<i class="las la-exclamation-circle display-4"></i>',
+				title: 'SASS',
+				icon: '<i class="lab la-sass display-2"></i>',
 				url: 'wwww.google.com'
+			},
+			{
+				id:8,
+				title: 'Symfony',
+				icon: '<i class="lab la-symfony display-2"></i>',
+				url: 'wwww.google.com'
+			},
+			{
+				id:9,
+				title: 'Apache, SQL',
+				icon: '<i class="las la-server display-2"></i>',
+				url: 'https://apache.org/'
+			},
+			{
+				id:10,
+				title: 'Figma',
+				icon: '<i class="lab la-figma display-2"></i>',
+				url: 'https://www.figma.com/'
+			},
+			{
+				id:11,
+				title: 'Windows Server',
+				icon: '<i class="lab la-windows display-2"></i>',
+				url: 'https://www.microsoft.com/fr-fr/cloud-platform/windows-server'
+			},
+			{
+				id:12,
+				title: 'Hyperledger Fabric',
+				icon: '<i class="lab la-connectdevelop display-2"></i>',
+				url: 'https://www.hyperledger.org/projects/fabric'
+			},
+			{
+				id:13,
+				title: 'PHP Unit',
+				icon: '<i class="las la-file-code display-2"></i>',
+				url: 'https://phpunit.de/'
+			},
+			{
+				id:14,
+				title: 'Jest',
+				icon: '<i class="las la-file-code display-2"></i>',
+				url: 'https://jestjs.io/'
+			},
+			{
+				id:15,
+				title: 'Foundation',
+				icon: '<i class="las la-file-code display-2"></i>',
+				url: 'https://foundation.zurb.com/'
+			},
+			{
+				id:16,
+				title: 'Ubuntu',
+				icon: '<i class="lab la-ubuntu display-2"></i>',
+				url: 'https://www.ubuntu-fr.org/'
 			}
 		]
 	}
