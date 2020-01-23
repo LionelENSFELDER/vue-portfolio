@@ -106,4 +106,17 @@ a:hover{
     background-color: rgba(0, 0, 0, 0.582);
     border: 0;
   }
-    
+
+/* carousel */
+#myCarousel {
+margin-left: 50px;
+margin-right: 50px;
+}
+
+.carousel-control-prev {
+margin-left: -0px;
+}
+
+.carousel-control-next {
+margin-right: -0px;
+}

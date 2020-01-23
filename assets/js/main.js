@@ -279,8 +279,8 @@ Vue.component('component-carousel-testimonial', {
 	},
 	props: ['carousel-testimonial'],
 	template: `
-		<div id="carousel-testimonial" class="carousel slide" data-ride="carousel">
-			<div id="carousel-testimonial-inner" class="carousel-inner">
+		<div id="carousel-testimonial" class="carousel slide row" data-ride="carousel" data-touch="true">
+			<div id="carousel-testimonial-inner" class="carousel-inner mx-auto col col-md-10 col-lg-10">
 				<slot></slot>
 			</div>
 			<a class="carousel-control-prev" href="#carousel-testimonial" role="button" data-slide="prev">
@@ -305,19 +305,17 @@ Vue.component('component-carousel-testimonial-item', {
 	props: ['testimonial'],
 	template: `
 		<div class="carousel-item">
-			<div class="card border-0">
-				<div class="card-body text-center border-0 bg-dark">
-					<div><img class="img-fluid" :src="testimonial.photo" alt="card image" width="100px"></div>
+			<div class="card border-0 text-center bg-transparent">
+				<div class="card-body">
+					<div><img class="img-fluid rounded-circle mb-4" :src="testimonial.photo" alt="card image" width="100px"></div>
 					<h5 class="card-title">{{testimonial.name}}</h5>
 					<h6 class="card-title">{{testimonial.client}}</h6>
 					<p class="card-text">{{testimonial.testimonial}}</p>
-					<a href="#" class="badge badge-light">
-						<i class="las la-link"></i>
-						Link
+					<a :href="testimonial.url" class="badge font-15">
+						<i class="p-2 border border-dark white font-raisin rounded-circle lab la-black-tie"></i>	
 					</a>
-						<a href="#" class="badge badge-light">
-						<i class="lab la-linkedin-in"></i>
-						LinkedIn
+					<a :href="testimonial.linkedin" class="badge font-15">
+						<i class="p-2 border border-dark white font-raisin rounded-circle lab la-linkedin-in"></i>
 					</a>
 				</div>
 			</div>
@@ -517,8 +515,9 @@ new Vue({
 				job: 'CEO at vanillajs.com',
 				photo: './assets/img/testimonials/1.jpg',
 				client: 'Marine Nationale',
-				testimonial: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
-				url: 'wwww.google.com'
+				testimonial: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+				url: 'wwww.google.com',
+				linkedin: ''
 			},
 			{
 				id: 2,
@@ -527,7 +526,8 @@ new Vue({
 				photo: './assets/img/testimonials/2.jpg',
 				client: 'Marine Nationale',
 				testimonial: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
-				url: 'wwww.google.com'
+				url: 'wwww.google.com',
+				linkedin: ''
 			}
 		],
 		contactitems: [
