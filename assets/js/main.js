@@ -251,16 +251,17 @@ Vue.component('component-work', {
 	},
 	props: ['work'],
 	template: `
-		<div class="mb-4 col">
-			<div class="card border-0 containerHovered h-100">
+		<div class="col mb-4 containerHovered">
+			<div class="card border-0 h-100">
 				<div class="h-100 toHide">
 					<img :src="work.image" class="card-img h-100" alt="...">
 				</div>
-				<div class="toDisplay text-left position-absolute">
-					<a href="#" class="display-4"><i class="rounded-circle arsenic-transparent text-white las la-link"></i></a>
-					<a href="#" class="display-4"><i class="rounded-circle arsenic-transparent text-white lab la-git"></i></a>
-					<h5 class="text-dark">{{work.title}}</h5>
-					<span class="text-dark font-weight-lighter">{{work.description}}</span>
+				<div class="toDisplay text-center font-white position-absolute">
+					<h5 class="">{{work.title}}</h5>
+					<div>
+						<a :href="work.url" target="_blank" class="mr-3"><i class="font-15 p-2 border border-light rounded-circle text-white las la-link"></i></a>
+						<a :href="work.github" target="_blank" class=""><i class="font-15 p-2 border border-light rounded-circle text-white lab la-git"></i></a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -457,67 +458,56 @@ new Vue({
 				id: 4,
 				icon: '<i class="las la-anchor font-spanish display-4 rounded-lg"></i>',
 				company: 'Marine Nationale',
-				date: '9ans',
+				date: '9 ans',
 				job: 'Mojfgh',
 				description: 'Administration et maintenance des réseaux fibre et satellite. Administrations de serveurs et support niveau 2. Rédaction de documentations technique.',
 				urlText: 'defense.gouv.fr',
 				url: 'https://www.defense.gouv.fr/marine'
-			},
+			}
 		],
 		works: [{
 				id: 1,
-				target: 'a',
 				title: 'AID83',
-				image: './assets/img/1.jpg',
-				client: 'Marine Nationale',
-				date: '2000 - 2003',
-				job: 'Opérateur télécommunications',
+				image: './assets/img/works/aid83.jpg',
+				client: 'AID83',
+				date: '',
+				job: '',
 				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
-				url: 'wwww.google.com'
+				url: 'https://www.aid83.org/',
+				github:'https://github.com/LionelENSFELDER/aid83-v2'
 			},
 			{
 				id: 2,
-				target: 'b',
-				title: 'Work TITLE 2',
-				image: './assets/img/2.jpg',
-				client: 'Madfdfdf',
-				date: '2000 - 2008',
-				job: 'Opdfdfur tédfdfdfications',
+				title: 'Sophromassage',
+				image: './assets/img/works/sophromassage.jpg',
+				client: 'Eléonore Hottou',
+				date: '',
+				job: '',
 				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
-				url: 'wwww.google.com'
+				url: '#',
+				github:'https://github.com/LionelENSFELDER/sophromassage'
 			},
 			{
 				id: 3,
-				target: 'c',
-				title: 'Work TITLE 3',
-				image: './assets/img/3.jpg',
-				client: 'fgfdhghgjhkj',
-				date: '2000 - 2008',
-				job: 'Opdfdbnvbnbtions',
+				title: 'Portfolio',
+				image: './assets/img/works/portfolio.jpg',
+				client: 'Lionel Ensfelder',
+				date: '',
+				job: '',
 				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
-				url: 'wwww.google.com'
+				url: '#',
+				github:'https://github.com/LionelENSFELDER/about-me'
 			},
 			{
 				id: 4,
-				target: 'c',
-				title: 'Work TITLE 3',
-				image: './assets/img/4.jpg',
-				client: 'fgfdhghgjhkj',
-				date: '2000 - 2008',
-				job: 'Opdfdbnvbnbtions',
-				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
-				url: 'wwww.google.com'
-			},
-			{
-				id: 5,
-				target: 'c',
-				title: 'Work TITLE 3',
-				image: './assets/img/5.jpg',
-				client: 'fgfdhghgjhkj',
-				date: '2000 - 2008',
-				job: 'Opdfdbnvbnbtions',
-				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
-				url: 'wwww.google.com'
+				title: 'Do It On Time',
+				image: './assets/img/works/do-it-on-time.png',
+				client: 'Lionel Ensfelder',
+				date: '',
+				job: '',
+				description: 'Bientôt disponible...',
+				url: '#',
+				github:'#'
 			}
 		],
 		testimonials: [

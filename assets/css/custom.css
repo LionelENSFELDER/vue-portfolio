@@ -64,6 +64,12 @@ a:hover{
     font-size: 0.8em;
     font-style: italic;
 }
+.font-15{
+    font-size: 1.5em;
+}
+.font-20{
+    font-size: 2em;
+}
 
 /* HOVER IMAGE */
 .containerHovered{
@@ -73,7 +79,7 @@ a:hover{
 .toHide {
     opacity: 1;
     transition: .5s ease;
-    backface-visibility: hidden;
+    /* backface-visibility: hidden; */
   }
   
   .toDisplay {
@@ -94,6 +100,10 @@ a:hover{
   }
 
   .containerHovered:hover img{
-    filter: blur(3px);
+    filter: brightness(50%);
+  }
+  .containerHovered:hover .card{
+    background-color: rgba(0, 0, 0, 0.582);
+    border: 0;
   }
     
