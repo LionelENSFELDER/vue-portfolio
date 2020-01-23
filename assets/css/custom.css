@@ -35,6 +35,28 @@ a:hover{
     background-color: #42424258;
 }
 
+/* FONT COLOR */
+.font-raisin{
+    color: #202020;
+} 
+.font-charleston{
+    color: #2D2D2D;
+} 
+.font-onyx{
+    color: #383838;
+}
+.font-arsenic{
+    color: #424242;
+}
+.font-spanish{
+    color: #929C9C;
+}
+.font-white{
+    color: #FFFFFF;
+}
+.font-arsenic-transparent{
+    color: #42424258;
+}
 
 /* FONT WEIGHT */
 .custom-date, .custom-url{
