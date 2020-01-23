@@ -110,6 +110,12 @@
 			</component-section>
 
 			<component-footer>
+					<component-contact-item
+						v-for="contactitem in contactitems" 
+						v-bind:key="contactitem.id" 
+						v-bind:contactitem="contactitem"
+					></component-contact-item>
+				
 				<component-footer-item 
 					v-for="footer in footeritems" 
 					v-bind:key="footer.id" 

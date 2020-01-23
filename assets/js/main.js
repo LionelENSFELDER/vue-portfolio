@@ -116,7 +116,7 @@ Vue.component('component-feature', {
 				</div>
 				<div class="col-sm">
 					<div class="mx-auto mx-lg-auto">
-						<img src="assets/img/lionel-ensfelder.jpg" class="rounded d-block" alt="lionel-ensfelder-portrait" style="width: 70%;">
+						<img src="assets/img/lionel-ensfelder.jpg" class="rounded d-block" alt="lionel-ensfelder-portrait" style="width: 500px;">
 					</div>
 				</div>
 			</div>
@@ -137,7 +137,7 @@ Vue.component('component-stack', {
 			<div class="row">
 
 				<div class="col-sm">
-					<div class="mx-auto mx-auto">
+					<div class="mx-auto">
 						<slot></slot>
 					</div>
 				</div>
@@ -332,8 +332,25 @@ Vue.component('component-contact', {
 		}
 	},
 	template: `
-		<div class="row">
-			<slot></slot>
+		<div class="card-deck">
+
+			<div class="card border-0 bg-transparent">
+				<div class="mx-auto">
+					<img src="assets/img/advancedts-removebg-preview.png" class="rounded d-block mx-auto" alt="lionel-ensfelder-portrait" style="width: 300px;">
+				</div>
+			</div>
+
+			<div class="card border-0 bg-transparent my-auto">
+				<p class="text-white-50">
+				Toulon, 83000<br>
+				06 52 40 10 21<br>
+				ensfelder.lionel@gmail.com
+				</p>
+				<div>
+					<slot></slot>
+				</div>
+			</div>
+			
 		</div>
 	`
 })
@@ -347,12 +364,9 @@ Vue.component('component-contact-item', {
 	},
 	props: ['contactitem'],
 	template: `
-	<div class="col-12 col-lg-6">
-		<button type="button" class="btn bg-transparent btn-lg btn-block text-white">
-		<i v-html="contactitem.icon"></i>
-		{{contactitem.text}}
-		</button>
-	</div>
+		<a type="" :href="contactitem.url" target="_blank" class="font-12 mr-3 bg-transparent text-white" data-toggle="tooltip" data-placement="bottom" :title="contactitem.text">
+			<i v-html="contactitem.icon"></i>
+		</a>
 	`
 })
 
@@ -364,11 +378,10 @@ Vue.component('component-footer', {
 		}
 	},
 	template: `
-	<footer class="navbar navbar-light bg-light">
-		<div class="text-center">
-			<a href="" class="">Copyrights</a>
-			<a href="" class="">Mentions</a>
-			<a href="" class="">View on github</a>
+	<footer class="py-5 raisin">
+		<div class="pt-5 text-center font-12">
+			<a href="" class="d-block">© Lionel ENSFELDER. All Right Reserved.</a>
+			<a href="" class="d-block">Made with <i class="lab la-bootstrap"></i><i class="lab la-vuejs"></i> </a>
 		</div>
 	</footer>
 	`
@@ -533,39 +546,21 @@ new Vue({
 		contactitems: [
 			{
 				id: 1,
-				text: 'Marc Dotri',
-				icon: '<i class="las la-car"></i>',
-				url: 'wwww.google.com'
+				text: 'lionel-ensfelder',
+				icon: '<i class="font-20 lab la-linkedin-in"></i>',
+				url: 'https://www.linkedin.com/in/lionel-ensfelder/'
 			},
 			{
 				id: 2,
-				text: 'Marc Dotri',
-				icon: '<i class="las la-sms"></i>',
-				url: 'wwww.google.com'
+				text: 'LionelENSFELDER',
+				icon: '<i class="font-20 lab la-github"></i>',
+				url: 'https://github.com/LionelENSFELDER'
 			},
 			{
 				id: 3,
-				text: 'Marc Dotri',
-				icon: '<i class="las la-exclamation-circle"></i>',
-				url: 'wwww.google.com'
-			},
-			{
-				id: 4,
-				text: 'Marc Dotri',
-				icon: '<i class="las la-exclamation-circle"></i>',
-				url: 'wwww.google.com'
-			},
-			{
-				id: 5,
-				text: 'Marc Dotri',
-				icon: '<i class="las la-exclamation-circle"></i>',
-				url: 'wwww.google.com'
-			},
-			{
-				id: 6,
-				text: 'Marc Dotri',
-				icon: '<i class="las la-exclamation-circle"></i>',
-				url: 'wwww.google.com'
+				text: '@ensfelder.lionel',
+				icon: '<i class="font-20 lab la-medium"></i>',
+				url: 'https://medium.com/@ensfelder.lionel'
 			}
 		],
 		techs:[
