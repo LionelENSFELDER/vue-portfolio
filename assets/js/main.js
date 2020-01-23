@@ -220,17 +220,16 @@ Vue.component('component-experience', {
 	props: ['experience'],
 	template: `
 		<div class="col-12 col-md-6 mb-4">
-			<div class="card charleston">
+			<div class="card h-100 charleston">
 				<div class="card-body p-2">
 					<div class="row">
-						<div class="col-2">
+						<div class="col-2 my-auto">
 							<div v-html="experience.icon"></div>
 						</div>
 						<div class="col-10">
 							<h5 class="card-title">{{experience.company}}</h5>
-							<p class="custom-date mb-0">{{experience.date}}</p>
-							<span class="card-title">{{experience.job}}</span>
-							<p class="">{{experience.description}}</p>
+							<p class="custom-date mb-0 font-spanish">{{experience.date}}</p>
+							<p class="font-spanish">{{experience.description}}</p>
 							<a href="#" class="custom-url">
 								<i class="las la-external-link-alt"></i>
 								{{experience.urlText}}
@@ -382,7 +381,6 @@ new Vue({
 	data: {
 		sectionDark: 'py-5 text-white raisin',
 		sectionGrey: 'py-5 text-white onyx',
-		sectionNav: 'py-0 m-0 bg-dark',
 		navitems: [{
 				id: 1,
 				text: 'QUI SUIS-JE ?',
@@ -427,54 +425,44 @@ new Vue({
 		],
 		experiences: [{
 				id: 1,
-				icon: '<i class="las la-exclamation-circle display-4 raisin rounded-lg"></i>',
-				company: 'Marine Nationale',
-				date: '2000 - 2003',
+				icon: '<i class="las la-laptop-code font-spanish display-4 rounded-lg"></i>',
+				company: 'Uziit',
+				date: '2 mois',
 				job: 'Opérateur télécommunications',
-				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
-				urlText: 'url of website',
-				url: 'wwww.google.com'
+				description: 'Amélioration de l\'interface utilisateur. Récupération des données sur l\’API Rest de la Blockchain. Stockage des avis mis en avant dans la base MySQL.',
+				urlText: 'uziit.biz',
+				url: 'https://www.uziit.biz/'
 			},
 			{
 				id: 2,
-				icon: '<i class="las la-exclamation-circle display-4 raisin rounded-lg"></i>',
-				company: 'Hkjfg jdkgj',
-				date: '2000 - 2003',
+				icon: '<i class="las la-wrench font-spanish display-4 rounded-lg"></i>',
+				company: 'Monnaie Services',
+				date: '1 an',
 				job: 'Yfgdsfg dgdfg ',
-				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
-				urlText: 'url of website',
-				url: 'wwww.google.com'
+				description: 'Montage, configuration et maintenance de bornes tactiles. Administration et support de niveau 2',
+				urlText: 'monnaie-services.com',
+				url: 'https://www.monnaie-services.com/'
 			},
 			{
 				id: 3,
-				icon: '<i class="las la-exclamation-circle display-4 raisin rounded-lg"></i>',
-				company: 'Psjkhf sfd ',
-				date: '2000 - 2003',
+				icon: '<i class="las la-network-wired font-spanish display-4 rounded-lg"></i>',
+				company: 'Free Infrastructures',
+				date: '4 mois',
 				job: 'Ihgfdssf',
-				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
-				urlText: 'url of website',
-				url: 'wwww.google.com'
+				description: 'Installation de réseaux fibres optique. Gestion des incidents niveaux 2.',
+				urlText: 'free.fr',
+				url: 'https://www.free.fr/freebox/fibre-optique'
 			},
 			{
 				id: 4,
-				icon: '<i class="las la-exclamation-circle display-4 raisin rounded-lg"></i>',
-				company: 'Edfsdf IU',
-				date: '2000 - 2003',
+				icon: '<i class="las la-anchor font-spanish display-4 rounded-lg"></i>',
+				company: 'Marine Nationale',
+				date: '9ans',
 				job: 'Mojfgh',
-				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
-				urlText: 'url of website',
-				url: 'wwww.google.com'
+				description: 'Administration et maintenance des réseaux fibre et satellite. Administrations de serveurs et support niveau 2. Rédaction de documentations technique.',
+				urlText: 'defense.gouv.fr',
+				url: 'https://www.defense.gouv.fr/marine'
 			},
-			{
-				id: 5,
-				icon: '<i class="las la-exclamation-circle display-4 raisin rounded-lg"></i>',
-				company: 'Edfsdf IU',
-				date: '2000 - 2003',
-				job: 'Mojfgh',
-				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
-				urlText: 'url of website',
-				url: 'wwww.google.com'
-			}
 		],
 		works: [{
 				id: 1,
