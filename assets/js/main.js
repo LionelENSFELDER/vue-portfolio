@@ -335,7 +335,7 @@ Vue.component('component-contact', {
 
 			<div class="card border-0 bg-transparent">
 				<div class="mx-auto">
-					<img src="assets/img/advancedts-removebg-preview.png" class="rounded d-block mx-auto" alt="lionel-ensfelder-portrait" style="width: 300px;">
+					<img src="assets/img/contact.png" class="rounded d-block mx-auto" alt="contact image" style="width: 300px;">
 				</div>
 			</div>
 
