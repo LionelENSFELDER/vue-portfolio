@@ -8,7 +8,7 @@ Vue.component('component-section', {
 	props: ['title'],
 	template: `
 		<section id="" class="">
-			<div class="container">
+			<div class="container py-5">
 				<h1 class="text-center mb-5">{{ title }}</h1>
 				<slot></slot>
 			</div>
@@ -54,7 +54,7 @@ Vue.component('component-navbar', {
 		}
 	},
 	template: `
-		<header>
+		<header class="fixed-top">
 			<nav class="navbar navbar-expand-lg navbar-dark">
 			<div class="container">
 				<a class="navbar-brand" href="#"><i class="lab la-connectdevelop display-4"></i></a>

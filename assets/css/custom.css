@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body{
     font-family: Poppins;
     font-weight: 400;
@@ -16,6 +19,9 @@ a:hover{
 }
 
 /*BACKGROND COLOR*/
+.hard-dark{
+    background-color: #000;
+}
 .raisin{
     background-color: #202020;
 } 
