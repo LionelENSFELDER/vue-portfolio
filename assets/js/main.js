@@ -99,10 +99,10 @@ Vue.component('component-feature', {
 	},
 	props: ['feature'],
 	template: `
-		<div class="">
-			<div class="row">
-				<div class="col-sm">
-					<div class="">
+		
+			<div class="card-deck">
+				<div class="card border-0 bg-transparent">
+					<div>
 						<span class="text-white-50 d-block mb-2">Salut, je m'appelle</span>
 						<h1>LIONEL ENSFELDER</h1>
 						<p class="text-white-50">
@@ -111,16 +111,15 @@ Vue.component('component-feature', {
 							et varius magna sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 							Nunc convallis dolor vel massa maximus, et varius magna sodales.
 						</p>
-						<button type="button" class="btn btn-outline-light my-4">MES REALISATIONS</button>
+						<button type="button" class="btn btn-outline-light my-4">MON CV</button>
 					</div>
 				</div>
-				<div class="col-sm">
-					<div class="mx-auto mx-lg-auto">
-						<img src="assets/img/lionel-ensfelder.jpg" class="rounded d-block" alt="lionel-ensfelder-portrait" style="width: 500px;">
+				<div class="card border-0 bg-transparent">
+					<div class="my-auto mx-sd-auto mx-md-auto">
+						<img src="assets/img/lionel-ensfelder.jpg" class="rounded img-fluid" alt="lionel-ensfelder-portrait" style="width: 250px;">
 					</div>
 				</div>
 			</div>
-		</div>
 	`
 })
 
