@@ -251,18 +251,22 @@ Vue.component('component-work', {
 	props: ['work'],
 	template: `
 		<div class="col mb-4 containerHovered">
+
 			<div class="card border-0 h-100">
+
 				<div class="h-100 toHide">
 					<img :src="work.image" class="card-img h-100" alt="...">
 				</div>
+
 				<div class="toDisplay text-center font-white position-absolute">
-					<h5 class="">{{work.title}}</h5>
 					<div>
-						<a :href="work.url" target="_blank" class="mr-3"><i class="font-15 p-2 border border-light rounded-circle text-white las la-link"></i></a>
-						<a :href="work.github" target="_blank" class=""><i class="font-15 p-2 border border-light rounded-circle text-white lab la-git"></i></a>
+					<a :href="work.url" target="_blank" class=""><i class="font-20 p-2 mb-3 border border-light rounded-circle text-white las la-link"></i></a>
 					</div>
+					<h5 class="font-weight-bold">{{work.title}}</h5>
 				</div>
+
 			</div>
+
 		</div>
 	`
 })
@@ -478,7 +482,7 @@ new Vue({
 		works: [{
 				id: 1,
 				title: 'AID83',
-				image: './assets/img/works/aid83.jpg',
+				image: './assets/img/works/placeholder.jpg',
 				client: 'AID83',
 				date: '',
 				job: '',
@@ -489,7 +493,7 @@ new Vue({
 			{
 				id: 2,
 				title: 'Sophromassage',
-				image: './assets/img/works/sophromassage.jpg',
+				image: './assets/img/works/placeholder.jpg',
 				client: 'Eléonore Hottou',
 				date: '',
 				job: '',
@@ -500,7 +504,7 @@ new Vue({
 			{
 				id: 3,
 				title: 'Portfolio',
-				image: './assets/img/works/portfolio.jpg',
+				image: './assets/img/works/placeholder.jpg',
 				client: 'Lionel Ensfelder',
 				date: '',
 				job: '',
@@ -511,7 +515,7 @@ new Vue({
 			{
 				id: 4,
 				title: 'Do It On Time',
-				image: './assets/img/works/do-it-on-time.png',
+				image: './assets/img/works/placeholder.jpg',
 				client: 'Lionel Ensfelder',
 				date: '',
 				job: '',
