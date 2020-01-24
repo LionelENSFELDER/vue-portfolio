@@ -230,7 +230,7 @@ Vue.component('component-experience', {
 							<h5 class="card-title">{{experience.company}}</h5>
 							<p class="custom-date mb-0 font-spanish">{{experience.date}}</p>
 							<p class="font-spanish">{{experience.description}}</p>
-							<a href="#" class="custom-url">
+							<a :href="experience.url" target="_blank" class="custom-url">
 								<i class="las la-external-link-alt"></i>
 								{{experience.urlText}}
 							</a>
