@@ -209,6 +209,25 @@ Vue.component('component-carousel-tech-item', {
 	`
 })
 
+//FORMATION ---------------------
+Vue.component('component-formation', {
+	data: function () {
+		return {
+
+		}
+	},
+	props: ['formation'],
+	template: `
+		<div class="card charleston col-12 mb-4" style="min-height: 130px">
+			<div class="card-body">
+				<h5 class="card-title">{{formation.job}}</h5>
+				<span href="#" class="badge badge-light mb-3">{{formation.date}} | {{formation.company}}</span>
+				<p class="font-spanish">{{formation.description}}</p>
+			</div>
+		</div>
+	`
+})
+
 //EXPERIENCES ---------------------
 Vue.component('component-experience', {
 	data: function () {
@@ -218,24 +237,12 @@ Vue.component('component-experience', {
 	},
 	props: ['experience'],
 	template: `
-		<div class="col-12 col-md-6 mb-4">
-			<div class="card h-100 charleston">
-				<div class="card-body p-2">
-					<div class="row">
-						<div class="col-2 my-auto">
-							<div v-html="experience.icon"></div>
-						</div>
-						<div class="col-10">
-							<h5 class="card-title">{{experience.company}}</h5>
-							<p class="custom-date mb-0 font-spanish">{{experience.date}}</p>
-							<p class="font-spanish">{{experience.description}}</p>
-							<a :href="experience.url" target="_blank" class="custom-url">
-								<i class="las la-external-link-alt"></i>
-								{{experience.urlText}}
-							</a>
-						</div>
-					</div>
-				</div>
+		<div class="card charleston col-12 mb-4" style="min-height: 150px">
+			<div class="card-body">
+				<h5 class="card-title">{{experience.job}}</h5>
+				<span href="#" class="badge badge-light mb-3">{{experience.date}} | {{experience.company}}</span>
+				<p class="font-spanish">{{experience.description}}</p>
+				<a :href="experience.url" target="_blank" class="custom-url"><i class="las la-external-link-alt"></i>{{experience.urlText}}</a>
 			</div>
 		</div>
 	`
@@ -403,8 +410,8 @@ new Vue({
 			},
 			{
 				id: 2,
-				text: 'EXPERIENCES',
-				url: '#experiences'
+				text: 'PARCOURS',
+				url: '#parcours'
 			},
 			{
 				id: 3,
@@ -438,6 +445,68 @@ new Vue({
 				url: 'wwww.google.com'
 			}
 		],
+		formations:[
+			{
+				id: 1,
+				icon: '<i class="las la-laptop-code font-spanish display-4 rounded-lg"></i>',
+				company: 'AFPA',
+				date: '2019',
+				job: 'Développeur Web et Web Mobile',
+				description: 'Développeur Web et Web Mobile (RNCP niv. 5, anciennement niv. III).',
+				urlText: '',
+				url: ''
+			},
+			{
+				id: 2,
+				icon: '<i class="las la-laptop-code font-spanish display-4 rounded-lg"></i>',
+				company: 'Marine Nationale',
+				date: '2014',
+				job: 'Mise en oeuvre - Routeurs Cisco.',
+				description: 'Mise en oeuvre - Routeurs Cisco.',
+				urlText: '',
+				url: ''
+			},
+			{
+				id: 3,
+				icon: '<i class="las la-laptop-code font-spanish display-4 rounded-lg"></i>',
+				company: 'Marine Nationale',
+				date: '2009',
+				job: 'Réseaux locaux / TCP / IP.',
+				description: 'Réseaux locaux / TCP / IP.',
+				urlText: '',
+				url: ''
+			},
+			{
+				id: 4,
+				icon: '<i class="las la-laptop-code font-spanish display-4 rounded-lg"></i>',
+				company: 'Marine Nationale',
+				date: '2008',
+				job: 'Technicien informatique et télécoms (SITEL).',
+				description: 'Technicien informatique et télécoms (SITEL).',
+				urlText: '',
+				url: ''
+			},
+			{
+				id: 5,
+				icon: '<i class="las la-laptop-code font-spanish display-4 rounded-lg"></i>',
+				company: 'GRETA',
+				date: '2007',
+				job: 'Professionnalisation en maintenance informatique.',
+				description: 'Professionnalisation en maintenance informatique.',
+				urlText: '',
+				url: ''
+			},
+			{
+				id: 6,
+				icon: '<i class="las la-laptop-code font-spanish display-4 rounded-lg"></i>',
+				company: 'Lycée Frantz Fanon,',
+				date: '2006',
+				job: 'B.E.P électrotechnique.',
+				description: 'B.E.P électrotechnique.',
+				urlText: '',
+				url: ''
+			}
+		],
 		experiences: [{
 				id: 1,
 				icon: '<i class="las la-laptop-code font-spanish display-4 rounded-lg"></i>',
@@ -453,7 +522,7 @@ new Vue({
 				icon: '<i class="las la-wrench font-spanish display-4 rounded-lg"></i>',
 				company: 'Monnaie Services',
 				date: '1 an',
-				job: 'Yfgdsfg dgdfg ',
+				job: 'Technicien informatique',
 				description: 'Montage, configuration et maintenance de bornes tactiles. Administration et support de niveau 2',
 				urlText: 'monnaie-services.com',
 				url: 'https://www.monnaie-services.com/'
@@ -463,7 +532,7 @@ new Vue({
 				icon: '<i class="las la-network-wired font-spanish display-4 rounded-lg"></i>',
 				company: 'Free Infrastructures',
 				date: '4 mois',
-				job: 'Ihgfdssf',
+				job: 'Technicien fibre',
 				description: 'Installation de réseaux fibres optique. Gestion des incidents niveaux 2.',
 				urlText: 'free.fr',
 				url: 'https://www.free.fr/freebox/fibre-optique'
@@ -473,7 +542,7 @@ new Vue({
 				icon: '<i class="las la-anchor font-spanish display-4 rounded-lg"></i>',
 				company: 'Marine Nationale',
 				date: '9 ans',
-				job: 'Mojfgh',
+				job: 'Technicien réseaux et télécoms',
 				description: 'Administration et maintenance des réseaux fibre et satellite. Administrations de serveurs et support niveau 2. Rédaction de documentations technique.',
 				urlText: 'defense.gouv.fr',
 				url: 'https://www.defense.gouv.fr/marine'
