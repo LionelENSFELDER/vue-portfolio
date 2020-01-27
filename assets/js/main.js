@@ -106,10 +106,11 @@ Vue.component('component-feature', {
 						<span class="text-white-50 d-block mb-2">Salut, je m'appelle</span>
 						<h1>LIONEL ENSFELDER</h1>
 						<p class="text-white-50">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-							Nunc convallis dolor vel massa maximus, 
-							et varius magna sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-							Nunc convallis dolor vel massa maximus, et varius magna sodales.
+							Après plusieurs années dans la Marine Nationale en tant que technicien réseau et télécoms, 
+							je réoriente ma carrière professionnelle vers le métier de développeur web et web mobile.
+							<br><br>
+							Mon but ultime est de créer des interfaces web unique et remarquable tout en restant 
+							accessibles pour l'utilisateur et maintenable pour l'équipe de développeurs.
 						</p>
 						<a href="./assets/docs/cv-ensfelder-lionel.pdf" target="_blank" type="button" class="btn btn-outline-light my-4">MON CV</a href="./">
 					</div>
@@ -144,10 +145,10 @@ Vue.component('component-stack', {
 				<div class="col-sm">
 					<div class="">
 						<p class="text-white-50">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-							Nunc convallis dolor vel massa maximus, 
-							et varius magna sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-							Nunc convallis dolor vel massa maximus, et varius magna sodales.
+							Une interface jolie et agréable ne fait pas tout ! 
+							La partie backend est aussi essentielle et je me forme en parallèle pour en maîtriser les outils déterminants.
+							<br>
+							Une application réussie repose aussi sur un backend respectant les bonnes pratiques, un code testé et bien documenté ainsi que l'utilisation des bons outils.
 						</p>
 						<a href="" type="button" class="btn btn-outline-light my-4" data-toggle="modal" data-target="#exampleModal">Roadmap</a>
 						<a href="https://github.com/LionelENSFELDER" target="_blank" type="button" class="btn btn-outline-light my-4">Github</a>
@@ -373,9 +374,9 @@ Vue.component('component-contact', {
 
 			<div class="card border-0 bg-transparent my-auto">
 				<p class="text-white-50">
-				Toulon, 83000<br>
-				06 52 40 10 21<br>
-				ensfelder.lionel@gmail.com
+				Je suis actuellement en recherche d'opportunités professionnelles.<br>
+				Je vis dans la ville de Toulon (83000).<br>
+				Mon numéro de téléphone est le <span class="font-white">06 52 40 10 21</span> ou envoyez-moi un mail à <a href="mailto:ensfelder.lionel@gmail.com" class="font-white">ensfelder.lionel@gmail.com</a> &#128521;
 				</p>
 				<div>
 					<slot></slot>
