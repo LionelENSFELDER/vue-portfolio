@@ -16,8 +16,8 @@ I try to keep this project simple and minimal as possible with no dépendencies 
 ## Roadmap
 
 - [x] Make a very minimal version
-- [] Improve design (eg. add some parallax and hover effects)
-- [] Add Vue CLI
-- [] Integrate node.js with auto reload
-- [] Separate design (.vue?) from data (.json?)
-- [] Improve Directives (eg. display link only if a link available)
+- [ ] Improve design (eg. add some parallax and hover effects)
+- [ ] Add Vue CLI
+- [ ] Integrate node.js with auto reload
+- [ ] Separate design (.vue?) from data (.json?)
+- [ ] Improve Directives (eg. display link only if a link available)
