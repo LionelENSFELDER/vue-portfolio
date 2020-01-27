@@ -111,7 +111,7 @@ Vue.component('component-feature', {
 							et varius magna sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 							Nunc convallis dolor vel massa maximus, et varius magna sodales.
 						</p>
-						<button type="button" class="btn btn-outline-light my-4">MON CV</button>
+						<a href="./assets/docs/cv-ensfelder-lionel.pdf" target="_blank" type="button" class="btn btn-outline-light my-4">MON CV</a href="./">
 					</div>
 				</div>
 				<div class="card border-0 bg-transparent">
@@ -149,8 +149,29 @@ Vue.component('component-stack', {
 							et varius magna sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 							Nunc convallis dolor vel massa maximus, et varius magna sodales.
 						</p>
-						<button type="button" class="btn btn-outline-light my-4">ROADMAP</button>
-						<button type="button" class="btn btn-outline-light my-4">Github</button>
+						<a href="" type="button" class="btn btn-outline-light my-4" data-toggle="modal" data-target="#exampleModal">Roadmap</a>
+						<a href="https://github.com/LionelENSFELDER" target="_blank" type="button" class="btn btn-outline-light my-4">Github</a>
+
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Save changes</button>
+								</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				
@@ -388,10 +409,13 @@ Vue.component('component-footer', {
 		}
 	},
 	template: `
-	<footer class="py-5 raisin">
-		<div class="pt-5 text-center font-12">
-			<a href="" class="d-block">© Lionel ENSFELDER. All Right Reserved.</a>
-			<a href="" class="d-block">Made with <i class="lab la-bootstrap"></i><i class="lab la-vuejs"></i> </a>
+	<footer class="py-4 raisin">
+		<div class="text-center">
+			<span class="d-block">© Lionel ENSFELDER. All Right Reserved.</span>
+			Launched by 
+			<a href="https://getbootstrap.com/" target="_blank" class="d-inline"><i class="lab la-bootstrap"></i></a>
+			and 
+			<a href="https://vuejs.org/" target="_blank" class="d-inline"><i class="lab la-vuejs"></i></a>
 		</div>
 	</footer>
 	`
