@@ -578,45 +578,45 @@ new Vue({
 				title: 'AID83',
 				image: './assets/img/works/placeholder.jpg',
 				client: 'AID83',
-				date: '',
+				date: '2018',
 				job: '',
 				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
 				url: 'https://www.aid83.org/',
 				github:'https://github.com/LionelENSFELDER/aid83-v2'
 			},
-			{
-				id: 2,
-				title: 'Sophromassage',
-				image: './assets/img/works/placeholder.jpg',
-				client: 'Eléonore Hottou',
-				date: '',
-				job: '',
-				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
-				url: '#',
-				github:'https://github.com/LionelENSFELDER/sophromassage'
-			},
+			// {
+			// 	id: 2,
+			// 	title: 'Sophromassage',
+			// 	image: './assets/img/works/placeholder.jpg',
+			// 	client: 'Eléonore Hottou',
+			// 	date: '2019',
+			// 	job: '',
+			// 	description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+			// 	url: '#',
+			// 	github:'https://github.com/LionelENSFELDER/sophromassage'
+			// },
 			{
 				id: 3,
 				title: 'Portfolio',
 				image: './assets/img/works/placeholder.jpg',
 				client: 'Lionel Ensfelder',
-				date: '',
+				date: '2020',
 				job: '',
 				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
 				url: '#',
 				github:'https://github.com/LionelENSFELDER/about-me'
 			},
-			{
-				id: 4,
-				title: 'Do It On Time',
-				image: './assets/img/works/placeholder.jpg',
-				client: 'Lionel Ensfelder',
-				date: '',
-				job: '',
-				description: 'Bientôt disponible...',
-				url: '#',
-				github:'#'
-			}
+			// {
+			// 	id: 4,
+			// 	title: 'Do It On Time',
+			// 	image: './assets/img/works/placeholder.jpg',
+			// 	client: 'Lionel Ensfelder',
+			// 	date: '2010',
+			// 	job: '',
+			// 	description: 'Bientôt disponible...',
+			// 	url: '#',
+			// 	github:'#'
+			// }
 		],
 		testimonials: [
 			{
