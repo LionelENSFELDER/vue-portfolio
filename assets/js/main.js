@@ -109,8 +109,8 @@ Vue.component('component-feature', {
 							Après plusieurs années dans la Marine Nationale en tant que technicien réseau et télécoms, 
 							je réoriente ma carrière professionnelle vers le métier de développeur web et web mobile.
 							<br><br>
-							Mon but ultime est de créer des interfaces web unique et remarquable tout en restant 
-							accessibles pour l'utilisateur et maintenable pour l'équipe de développeurs.
+							Mon but ultime est de créer des interfaces web uniques et remarquables tout en restant 
+							accessibles pour l'utilisateur et maintenables pour l'équipe de développeurs.
 						</p>
 						<a href="./assets/docs/cv-ensfelder-lionel.pdf" target="_blank" type="button" class="btn btn-outline-light my-4">MON CV</a href="./">
 					</div>
@@ -148,9 +148,9 @@ Vue.component('component-stack', {
 							Une interface jolie et agréable ne fait pas tout ! 
 							La partie backend est aussi essentielle et je me forme en parallèle pour en maîtriser les outils déterminants.
 							<br>
-							Une application réussie repose aussi sur un backend respectant les bonnes pratiques, un code testé et bien documenté ainsi que l'utilisation des bons outils.
+							Une application réussie repose aussi sur un code respectant les bonnes pratiques, facilement testable et bien documenté.
 						</p>
-						<a href="" type="button" class="btn btn-outline-light my-4" data-toggle="modal" data-target="#exampleModal">Roadmap</a>
+						<!-- <a href="" type="button" class="btn btn-outline-light my-4" data-toggle="modal" data-target="#exampleModal">Roadmap</a> -->
 						<a href="https://github.com/LionelENSFELDER" target="_blank" type="button" class="btn btn-outline-light my-4">Github</a>
 
 						<!-- Modal -->
