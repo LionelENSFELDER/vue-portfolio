@@ -1,0 +1,23 @@
+{
+  "name": "about-me",
+  "version": "1.0.0",
+  "description": "My personal website made with Vue.js. For now it is an experiment of very simple and minimal portfolio to get hired. The essential before all.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LionelENSFELDER/about-me.git"
+  },
+  "author": "Lionel Ensfelder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LionelENSFELDER/about-me/issues"
+  },
+  "homepage": "https://github.com/LionelENSFELDER/about-me#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2"
+  }
+}
