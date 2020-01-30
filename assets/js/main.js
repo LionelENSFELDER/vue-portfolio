@@ -104,7 +104,7 @@ Vue.component('component-feature', {
 				<div class="card border-0 bg-transparent">
 					<div>
 						<span class="text-white-50 d-block mb-2">Salut, je m'appelle</span>
-						<h1>LIONEL ENSFELDER</h1>
+						<h1><span class="text-warning">L</span>IONEL <span class="text-warning">E</span>NSFELDER</h1>
 						<p class="text-white-50">
 							Après plusieurs années dans la Marine Nationale en tant que technicien réseau et télécoms, 
 							je réoriente ma carrière professionnelle vers le métier de développeur web et web mobile.
@@ -522,7 +522,7 @@ new Vue({
 			{
 				id: 6,
 				icon: '<i class="las la-laptop-code font-spanish display-4 rounded-lg"></i>',
-				company: 'Lycée Frantz Fanon,',
+				company: 'Lycée Frantz Fanon',
 				date: '2006',
 				job: 'B.E.P électrotechnique.',
 				description: 'B.E.P électrotechnique.',
@@ -535,7 +535,7 @@ new Vue({
 				icon: '<i class="las la-laptop-code font-spanish display-4 rounded-lg"></i>',
 				company: 'Uziit',
 				date: '2 mois',
-				job: 'Opérateur télécommunications',
+				job: 'Développeur web',
 				description: 'Amélioration de l\'interface utilisateur. Récupération des données sur l\’API Rest de la Blockchain. Stockage des avis mis en avant dans la base MySQL.',
 				urlText: 'uziit.biz',
 				url: 'https://www.uziit.biz/'
