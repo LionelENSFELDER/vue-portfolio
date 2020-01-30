@@ -327,7 +327,7 @@ Vue.component('component-carousel-testimonial', {
 	`
 })
 
-//CAROUSEL ITEM TESTIMONIAL---------------------
+//CAROUSEL TESTIMONIAL ITEM---------------------
 Vue.component('component-carousel-testimonial-item', {
 	data: function () {
 		return {
@@ -343,12 +343,10 @@ Vue.component('component-carousel-testimonial-item', {
 					<h5 class="card-title">{{testimonial.name}}</h5>
 					<h6 class="card-title">{{testimonial.client}}</h6>
 					<p class="card-text">{{testimonial.testimonial}}</p>
-					<a :href="testimonial.url" class="badge font-15">
+					<a :href="testimonial.url" target="_blank" class="badge font-15">
 						<i class="p-2 border border-dark white font-raisin rounded-circle lab la-black-tie"></i>	
 					</a>
-					<a :href="testimonial.linkedin" class="badge font-15">
-						<i class="p-2 border border-dark white font-raisin rounded-circle lab la-linkedin-in"></i>
-					</a>
+					<a :href="testimonial.link" target="_blank" class="badge font-15" v-html="testimonial.linkIcon"></a>
 				</div>
 			</div>
 		</div>
@@ -621,23 +619,25 @@ new Vue({
 		testimonials: [
 			{
 				id: 1,
-				name: 'Marc Dotri',
-				job: 'CEO at vanillajs.com',
+				name: 'Céline Tréhin',
+				job: 'Présidente AID83',
 				photo: './assets/img/testimonials/1.jpg',
-				client: 'Marine Nationale',
-				testimonial: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
-				url: 'wwww.google.com',
-				linkedin: ''
+				client: 'AID83',
+				testimonial: 'Très à l\'écoute, Lionel à su moderniser notre site.',
+				url: 'https://www.aid83.org/',
+				linkIcon:'<i class="p-2 border border-dark white font-raisin rounded-circle lab la-facebook-f"></i>',
+				link: 'https://bit.ly/2U6u6FO'
 			},
 			{
 				id: 2,
-				name: 'Marc Dotri',
-				job: 'CEO at vanillajs.com',
-				photo: './assets/img/testimonials/2.jpg',
-				client: 'Marine Nationale',
-				testimonial: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
-				url: 'wwww.google.com',
-				linkedin: ''
+				name: 'Eléonore Hottou',
+				job: 'Sophrologue et masseuse',
+				photo: './assets/img/testimonials/Eleonore-Hottou.jpg',
+				client: 'Sophromassage',
+				testimonial: 'Lionel fait preuve d\'une bonne capacité à cerner les besoins et à les respecter.',
+				url: '#testimonials',
+				linkIcon:'<i class="p-2 border border-dark white font-raisin rounded-circle lab la-facebook-f"></i>',
+				link: 'https://bit.ly/2REGhbc'
 			}
 		],
 		contactitems: [
