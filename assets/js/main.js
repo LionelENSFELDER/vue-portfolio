@@ -117,7 +117,7 @@ Vue.component('component-feature', {
 				</div>
 				<div class="card border-0 bg-transparent">
 					<div class="my-auto mx-sd-auto mx-md-auto">
-						<img src="assets/img/lionel-ensfelder.jpg" class="rounded img-fluid" alt="lionel-ensfelder-portrait" style="width: 250px;">
+						<img src="assets/img/lionel-ensfelder.jpg" class="rounded img-fluid" title="Lionel Ensfelder" alt="lionel Ensfelder" style="width: 250px;">
 					</div>
 				</div>
 			</div>
@@ -284,7 +284,7 @@ Vue.component('component-work', {
 			<div class="card border-0 h-100">
 
 				<div class="h-100 toHide">
-					<img :src="work.image" class="card-img h-100" alt="...">
+					<img :src="work.coverImage" class="card-img h-100" :title="work.coverTitle" :alt="work.coverAlt">
 				</div>
 
 				<div class="toDisplay text-center font-white position-absolute">
@@ -339,7 +339,7 @@ Vue.component('component-carousel-testimonial-item', {
 		<div class="carousel-item">
 			<div class="card border-0 text-center bg-transparent">
 				<div class="card-body">
-					<div><img class="img-fluid rounded-circle mb-4" :src="testimonial.photo" alt="card image" width="100px"></div>
+					<div><img class="img-fluid rounded-circle mb-4" :src="testimonial.photo" :title="testimonial.photoTitle" :alt="testimonial.photoAlt" width="100px"></div>
 					<h5 class="card-title">{{testimonial.name}}</h5>
 					<h6 class="card-title">{{testimonial.client}}</h6>
 					<p class="card-text">{{testimonial.testimonial}}</p>
@@ -366,7 +366,7 @@ Vue.component('component-contact', {
 
 			<div class="card border-0 bg-transparent">
 				<div class="mx-auto">
-					<img src="assets/img/contact.png" class="rounded d-block mx-auto" alt="contact image" style="width: 300px;">
+					<img src="assets/img/contact.png" class="rounded d-block mx-auto" title="Illustration partie contact" alt="Illustration partie contact" style="width: 300px;">
 				</div>
 			</div>
 
@@ -574,7 +574,9 @@ new Vue({
 		works: [{
 				id: 1,
 				title: 'AID83',
-				image: './assets/img/works/placeholder.jpg',
+				coverImage: './assets/img/works/placeholder.jpg',
+				coverTitle: 'Image du site Aid 83',
+				coverAlt:'Aid 83',
 				client: 'AID83',
 				date: '2018',
 				job: '',
@@ -596,7 +598,10 @@ new Vue({
 			{
 				id: 3,
 				title: 'Portfolio',
-				image: './assets/img/works/placeholder.jpg',
+				coverImage: './assets/img/works/placeholder.jpg',
+				coverTitle: 'Image du portfolio',
+				coverAlt:'Portfilio de Lionel Ensfelder',
+				alt:'aid83',
 				client: 'Lionel Ensfelder',
 				date: '2020',
 				job: '',
@@ -622,6 +627,8 @@ new Vue({
 				name: 'Céline Tréhin',
 				job: 'Présidente AID83',
 				photo: './assets/img/testimonials/1.jpg',
+				photoTitle:"Céline Tréhin",
+				photoAlt:"Céline Tréhin",
 				client: 'AID83',
 				testimonial: 'Très à l\'écoute, Lionel à su moderniser notre site.',
 				url: 'https://www.aid83.org/',
@@ -633,6 +640,8 @@ new Vue({
 				name: 'Eléonore Hottou',
 				job: 'Sophrologue et masseuse',
 				photo: './assets/img/testimonials/Eleonore-Hottou.jpg',
+				photoTitle:"Eléonore Hottou",
+				photoAlt:"Eléonore Hottou",
 				client: 'Sophromassage',
 				testimonial: 'Lionel fait preuve d\'une bonne capacité à cerner les besoins et à les respecter.',
 				url: '#testimonials',
