@@ -103,10 +103,10 @@ Vue.component('component-feature', {
 			<div class="card-deck">
 				<div class="card border-0 bg-transparent">
 					<div>
-						<span class="text-white-50 d-block mb-2">Salut, je m'appelle</span>
-						<h1><span class="text-warning">L</span>IONEL <span class="text-warning">E</span>NSFELDER</h1>
+						<span class="text-white-50 d-block mb-2">Salut, je suis</span>
+						<h1><span class="">L</span>IONEL <span class="">E</span>NSFELDER</h1>
 						<p class="text-white-50">
-							Après plusieurs années dans la Marine Nationale en tant que technicien réseau et télécoms, 
+							Après des années passionnantes dans la Marine Nationale en tant que technicien réseau et télécoms, 
 							je réoriente ma carrière professionnelle vers le métier de développeur web et web mobile.
 							<br><br>
 							Mon but ultime est de créer des interfaces web uniques et remarquables tout en restant 
