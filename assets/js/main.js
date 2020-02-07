@@ -106,11 +106,11 @@ Vue.component('component-feature', {
 						<span class="text-white-50 d-block mb-2">Salut, je suis</span>
 						<h1><span class="">L</span>IONEL <span class="">E</span>NSFELDER</h1>
 						<p class="text-white-50">
-							Après des années passionnantes dans la Marine Nationale en tant que technicien réseau et télécoms, 
-							je réoriente ma carrière professionnelle vers le métier de développeur web et web mobile.
-							<br><br>
-							Mon but ultime est de créer des interfaces web uniques et remarquables tout en restant 
-							accessibles pour l'utilisateur et maintenables pour l'équipe de développeurs.
+						👋
+						Après des années passionnantes dans la Marine Nationale en tant que technicien réseau et télécoms, je réoriente ma carrière professionnelle vers le métier de développeur web.
+						<br><br>
+						J'ambitionne de monter en compétences techniques (Vue.js, React, Node.js en particulier) à travers des formations et des projets pratiques dans le but de me spécialiser dans la création d'interfaces utilisateur uniques.
+						✌️ 
 						</p>
 						<a href="./assets/docs/cv-ensfelder-lionel.pdf" target="_blank" type="button" class="btn btn-outline-light my-4">MON CV</a href="./">
 					</div>
