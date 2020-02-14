@@ -14,5 +14,5 @@ jobs:
         FTP_USERNAME: ${{ secrets.ftp_login }}
         FTP_PASSWORD: ${{ secrets.ftp_password }}
         METHOD: sftp
-        PORT: 22
+        PORT: 7280
         ARGS: --delete
