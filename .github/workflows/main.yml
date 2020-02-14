@@ -1,21 +1,18 @@
-name: FTP Deploy
+on: push
+name: Publish Website over SFTP
+jobs:
+  FTP-Deploy-Action:
+  name: FTP-Deploy-Action
+  runs-on: ubuntu-latest
+  steps:
+  - uses: actions/checkout@master
+
+  - name: FTP-Deploy-Action
   uses: SamKirkland/FTP-Deploy-Action@2.0.0
-  with:
-    # FTP server name (you may need to specify a port)
-    ftp_server: ${{ secrets.ftp_server }}
-    # FTP account username
-    ftp_username: ${{ secrets.ftp_login }}
-    # FTP account password
-    ftp_password: ${{ secrets.ftp_password }}
-    # Protocol used to deploy (ftp or sftp)
-    method: # optional, default is ftp
-    # The port used to connect to server
-    port: # optional, default is 21
-    # The local folder to copy, defaults to root project folder
-    local_dir: # optional, default is 
-    # The remote folder to copy to, deafults to root FTP folder (I recommend you configure this on your server side instead of here)
-    remote_dir: www 
-    # Passes through options into lftp
-    ARGS: 
-    --exclude=gulpfile.js
-     --exclude=package.json
+  env:
+  FTP_SERVER: ${{ secrets.ftp_server }}
+  FTP_USERNAME: ${{ secrets.ftp_login }}
+  FTP_PASSWORD: ${{ secrets.ftp_password }}
+  METHOD: sftp
+  PORT: 21
+  ARGS: --delete
