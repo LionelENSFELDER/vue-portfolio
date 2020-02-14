@@ -2,11 +2,11 @@ name: FTP Deploy
   uses: SamKirkland/FTP-Deploy-Action@2.0.0
   with:
     # FTP server name (you may need to specify a port)
-    ftp_server: 
+    ftp_server: ${{ secrets.ftp_server }}
     # FTP account username
-    ftp_username: 
+    ftp_username: ${{ secrets.ftp_login }}
     # FTP account password
-    ftp_password: 
+    ftp_password: ${{ secrets.ftp_password }}
     # Protocol used to deploy (ftp or sftp)
     method: # optional, default is ftp
     # The port used to connect to server
