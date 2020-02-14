@@ -2,17 +2,17 @@ on: push
 name: Publish Website over SFTP
 jobs:
   FTP-Deploy-Action:
-  name: FTP-Deploy-Action
-  runs-on: ubuntu-latest
-  steps:
-  - uses: actions/checkout@master
-
-  - name: FTP-Deploy-Action
-  uses: SamKirkland/FTP-Deploy-Action@2.0.0
-  env:
-  FTP_SERVER: ${{ secrets.ftp_server }}
-  FTP_USERNAME: ${{ secrets.ftp_login }}
-  FTP_PASSWORD: ${{ secrets.ftp_password }}
-  METHOD: sftp
-  PORT: 21
-  ARGS: --delete
+    name: FTP-Deploy-Action
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    
+    - name: FTP-Deploy-Action
+      uses: SamKirkland/FTP-Deploy-Action@2.0.0
+      env:
+        FTP_SERVER: ${{ secrets.ftp_server }}
+        FTP_USERNAME: ${{ secrets.ftp_login }}
+        FTP_PASSWORD: ${{ secrets.ftp_password }}
+        METHOD: sftp
+        PORT: 22
+        ARGS: --delete
