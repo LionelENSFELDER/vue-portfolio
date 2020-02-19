@@ -149,7 +149,7 @@ Vue.component('component-stack', {
 				<div class="col-sm">
 					<div class="">
 						<p class="text-white-50">
-							Conscients que le métier de développeur est en constante évolution, 
+							Conscient que le métier de développeur est en constante évolution, 
 							je me forme constamment sur les dernières technologies. 
 							La philosophie "learning by doing" et la loi de Pareto sont mes 
 							mantras pour rester à jour et monter en compétences.
