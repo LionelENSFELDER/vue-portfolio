@@ -106,13 +106,19 @@ Vue.component('component-feature', {
 						<span class="text-white-50 d-block mb-2">Salut, je suis</span>
 						<h1><span class="">L</span>IONEL <span class="">E</span>NSFELDER</h1>
 						<p class="text-white-50">
-						👋
-						Après des années passionnantes dans la Marine Nationale en tant que technicien réseau et télécoms, je réoriente ma carrière professionnelle vers le métier de développeur web.
-						<br><br>
-						J'ambitionne de monter en compétences techniques (Vue.js, React, Node.js en particulier) à travers des formations et des projets pratiques dans le but de me spécialiser dans la création d'interfaces utilisateur uniques.
-						✌️ 
+							👋
+							Après des années passionnantes dans la Marine Nationale en tant que technicien réseau et télécoms, 
+							je réoriente ma carrière professionnelle vers le métier de développeur web.
+							<br><br>
+							N'hésitez pas à jetter un coup d'oeil à mon profil <a href="https://www.linkedin.com/in/lionel-ensfelder/" target="_blank" class="font-candy">Github</a> 
+							et 
+							<a href="https://www.linkedin.com/in/lionel-ensfelder/" target="_blank" class="font-candy">LinkedIn</a>. 
+							Pour télécharger mon CV c'est 
+							<a href="./assets/docs/cv-ensfelder-lionel.pdf" target="_blank" class="font-candy">ici !</a>
 						</p>
-						<a href="./assets/docs/cv-ensfelder-lionel.pdf" target="_blank" type="button" class="btn btn-outline-light my-4">MON CV</a href="./">
+						<!-- <a href="./assets/docs/cv-ensfelder-lionel.pdf" target="_blank" type="button" class="btn btn-outline-light my-4">MON CV</a>
+						<a href="https://github.com/LionelENSFELDER?tab=repositories" target="_blank" type="button" class="btn btn-outline-light my-4">GITHUB</a>
+						<a href="https://www.linkedin.com/in/lionel-ensfelder/" target="_blank" type="button" class="btn btn-outline-light my-4">LINKEDIN</a> -->
 					</div>
 				</div>
 				<div class="card border-0 bg-transparent">
@@ -135,47 +141,63 @@ Vue.component('component-stack', {
 	template: `
 		<div class="">
 			<div class="row">
-
 				<div class="col-sm">
-					<div class="mx-auto">
+					<div class="d-flex flex-column justify-content-center align-items-center h-100">
 						<slot></slot>
 					</div>
 				</div>
-
 				<div class="col-sm">
 					<div class="">
 						<p class="text-white-50">
-							Une interface jolie et agréable ne fait pas tout ! 
-							La partie backend est aussi essentielle et je me forme en parallèle pour en maîtriser les outils déterminants.
+							Conscients que le métier de développeur est en constante évolution, 
+							je me forme constamment sur les dernières technologies. 
+							La philosophie "learning by doing" et la loi de Pareto sont mes 
+							mantras pour rester à jour et monter en compétences.
+							<br><br>
+							Ma feuille de route
 							<br>
-							Une application réussie repose aussi sur un code respectant les bonnes pratiques, facilement testable et bien documenté.
-						</p>
-						<!-- <a href="" type="button" class="btn btn-outline-light my-4" data-toggle="modal" data-target="#exampleModal">Roadmap</a> -->
-						<a href="https://github.com/LionelENSFELDER" target="_blank" type="button" class="btn btn-outline-light my-4">Github</a>
-
-						<!-- Modal -->
-						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-							<div class="modal-dialog" role="document">
-								<div class="modal-content">
-								<div class="modal-header">
-									<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-									</button>
-								</div>
-								<div class="modal-body">
-									...
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-									<button type="button" class="btn btn-primary">Save changes</button>
-								</div>
+							<!-- bar -->
+							<div class="mb-3">
+								<span class="">Algorithms and Data Structures Certification (FreeCodeCamp)</span>
+								<div class="progress" style="height: 5px;">
+									<div class="progress-bar progress-bar-striped progress-bar-animated candy" role="progressbar" style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
 							</div>
-						</div>
+
+							<!-- bar -->
+							<div class="mb-3">
+								<span class="">Symfony</span>
+								<div class="progress" style="height: 5px;">
+									<div class="progress-bar progress-bar-striped progress-bar-animated candy" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+
+							<!-- bar -->
+							<div class="mb-3">
+								<span class="">Vue.js</span>
+								<div class="progress" style="height: 5px;">
+									<div class="progress-bar progress-bar-striped progress-bar-animated candy" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+
+							<!-- bar -->
+							<div class="mb-3">
+								<span class="">React</span>
+								<div class="progress" style="height: 5px;">
+									<div class="progress-bar progress-bar-striped progress-bar-animated candy" role="progressbar" style="width: 5%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+
+							<!-- bar -->
+							<div class="mb-3">
+								<span class="">Google Analytics Academy</span>
+								<div class="progress" style="height: 3px;">
+									<div class="progress-bar progress-bar-striped progress-bar-animated candy" role="progressbar" style="width: 1%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+						</p>
 					</div>
 				</div>
-				
 			</div>
 		</div>
 	`
@@ -190,7 +212,7 @@ Vue.component('component-carousel-tech', {
 	},
 	props: ['carouseltech'],
 	template: `
-		<div id="carousel-tech" class="carousel slide h-100" data-ride="carousel" data-interval="500">
+		<div id="carousel-tech" class="carousel slide w-100" data-ride="carousel" data-interval="500">
 			<div id="carousel-tech-inner" class="carousel-inner">
 				<slot></slot>
 			</div>
@@ -292,6 +314,7 @@ Vue.component('component-work', {
 					<a :href="work.url" target="_blank" class=""><i class="font-20 p-2 mb-3 border border-light rounded-circle text-white las la-link"></i></a>
 					</div>
 					<h5 class="font-weight-bold">{{work.title}}</h5>
+					<span class="custom-tags">{{work.tags}}</span>
 				</div>
 
 			</div>
@@ -394,9 +417,22 @@ Vue.component('component-contact-item', {
 	},
 	props: ['contactitem'],
 	template: `
-		<a type="" :href="contactitem.url" target="_blank" class="font-12 mr-3 bg-transparent text-white" data-toggle="tooltip" data-placement="bottom" :title="contactitem.text">
-			<i v-html="contactitem.icon"></i>
-		</a>
+		<div class="col mb-3">
+			<div class="card p-3 mb-3 contactitem-card">
+				<a :href=contactitem.url target=_blank class="stretched-link"></a>
+				<div class="row">
+					<div class="col-8 my-auto">
+						<span class="font-15">{{contactitem.text}}</span>
+						<br>
+						<span class="font-08">{{contactitem.info}}</span>
+						
+					</div>
+					<div class="col-4">
+						<span v-html="contactitem.icon"></span>
+					</div>
+				</div>
+			</div>
+		</div>
 	`
 })
 
@@ -429,25 +465,30 @@ new Vue({
 		navitems: [{
 				id: 1,
 				text: 'QUI SUIS-JE ?',
-				url: '#about'
+				url: '#quisuisje'
 			},
 			{
 				id: 2,
+				text: 'TECHNOLOGIES',
+				url: '#technologies'
+			},
+			{
+				id: 3,
 				text: 'PARCOURS',
 				url: '#parcours'
 			},
 			{
-				id: 3,
-				text: 'REALISATIONS',
-				url: '#works'
-			},
-			{
 				id: 4,
-				text: 'TEMOIGNAGES',
-				url: '#testimonials'
+				text: 'REALISATIONS',
+				url: '#realisations'
 			},
 			{
 				id: 5,
+				text: 'TEMOIGNAGES',
+				url: '#temoignages'
+			},
+			{
+				id: 6,
 				text: 'CONTACT',
 				url: '#contact'
 			}
@@ -574,13 +615,14 @@ new Vue({
 		works: [{
 				id: 1,
 				title: 'AID83',
-				coverImage: './assets/img/works/placeholder.jpg',
+				coverImage: 'assets/img/works/placeholder.jpg',
 				coverTitle: 'Image du site Aid 83',
 				coverAlt:'Aid 83',
 				client: 'AID83',
 				date: '2018',
 				job: '',
 				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+				tags: "UI Kit | PHPMailer" ,
 				url: 'https://www.aid83.org/',
 				github:'https://github.com/LionelENSFELDER/aid83-v2'
 			},
@@ -598,7 +640,7 @@ new Vue({
 			{
 				id: 3,
 				title: 'Portfolio',
-				coverImage: './assets/img/works/placeholder.jpg',
+				coverImage: 'assets/img/works/placeholder.jpg',
 				coverTitle: 'Image du portfolio',
 				coverAlt:'Portfilio de Lionel Ensfelder',
 				alt:'aid83',
@@ -606,6 +648,7 @@ new Vue({
 				date: '2020',
 				job: '',
 				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+				tags: "Bootstrap | Vue.js | Gulp" ,
 				url: '#',
 				github:'https://github.com/LionelENSFELDER/about-me'
 			},
@@ -630,7 +673,7 @@ new Vue({
 				photoTitle:"Céline Tréhin",
 				photoAlt:"Céline Tréhin",
 				client: 'AID83',
-				testimonial: 'Très à l\'écoute, Lionel à su moderniser notre site.',
+				testimonial: 'Très à l\'écoute, Lionel a su moderniser notre site.',
 				url: 'https://www.aid83.org/',
 				linkIcon:'<i class="p-2 border border-dark white font-raisin rounded-circle lab la-facebook-f"></i>',
 				link: 'https://bit.ly/2U6u6FO'
@@ -652,20 +695,45 @@ new Vue({
 		contactitems: [
 			{
 				id: 1,
-				text: 'lionel-ensfelder',
-				icon: '<i class="font-20 lab la-linkedin-in"></i>',
-				url: 'https://www.linkedin.com/in/lionel-ensfelder/'
+				text: 'Adresse',
+				info: '612 Avenue Maréchal Foch',
+				icon: '<i class="align-middle border-0 font-raisin font-40 las la-globe"></i>',
+				url: '#'
+
 			},
 			{
 				id: 2,
-				text: 'LionelENSFELDER',
-				icon: '<i class="font-20 lab la-github"></i>',
+				text: 'Téléphone',
+				info: '06 52 40 10 21',
+				icon: '<i class="align-middle border-0 font-raisin font-40 las la-mobile"></i>',
 				url: 'https://github.com/LionelENSFELDER'
 			},
 			{
 				id: 3,
-				text: '@ensfelder.lionel',
-				icon: '<i class="font-20 lab la-medium"></i>',
+				text: 'Mail',
+				info: 'ensfelder.lionel@gmail.com',
+				icon: '<i class="align-middle border-0 font-raisin font-40 las la-at"></i>',
+				url: 'mailto://ensfelder.lionel@gmail.com'
+			},
+			{
+				id: 4,
+				text: 'Github',
+				info: 'LionelENSFELDER',
+				icon: '<i class="align-middle border-0 font-raisin font-40 lab la-github"></i>',
+				url: 'https://github.com/LionelENSFELDER'
+			},
+			{
+				id: 5,
+				text: 'LinkedIn',
+				info: 'lionel-ensfelder',
+				icon: '<i class="align-middle border-0 font-raisin font-40 lab la-linkedin-in"></i>',
+				url: 'https://www.linkedin.com/in/lionel-ensfelder/'
+			},
+			{
+				id: 6,
+				text: 'Medium',
+				info: '@ensfelder.lionel',
+				icon: '<i class="align-middle border-0 font-raisin font-40 lab la-medium"></i>',
 				url: 'https://medium.com/@ensfelder.lionel'
 			}
 		],

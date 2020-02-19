@@ -14,7 +14,7 @@
 		<!-- custom -->
 		<link rel="stylesheet" href="./assets/css/custom.css" />
 		<!-- title -->
-		<title>Ensfelder Lionel</title>
+		<title>Lionel E.</title>
 		<!-- favico -->
 		<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favico/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favico/favicon-32x32.png">
@@ -34,13 +34,13 @@
 				></component-navbar-item>
 			</component-navbar>
 
-			<component-section id="about" :class="[sectionDark]">
+			<component-section id="quisuisje" :class="[sectionDark]">
 				<component-feature></component-feature>
 			</component-section>
 
-			<component-section id="stack" :class="[sectionGrey]" title="Stack">
+			<component-section id="technologies" :class="[sectionGrey]" title="Technologies">
 				<component-stack>
-					<component-carousel-tech>
+					<component-carousel-tech class="">
 						<component-carousel-tech-item
 							v-for="tech in techs" 
 							v-bind:key="tech.id"
@@ -74,7 +74,7 @@
 				</div>
 			</component-section>
 
-			<component-section id="works" :class="[sectionGrey]" title="Mes réalisations">
+			<component-section id="realisations" :class="[sectionGrey]" title="Mes réalisations">
 				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
 					<component-work 
 						v-for="work in works" 
@@ -87,7 +87,7 @@
 			<!-- <component-section v-bind:class="[sectionDark]" title="Mes valeurs">
 			</component-section> -->
 
-			<component-section id="testimonials" :class="[sectionDark]" title="Témoignages">
+			<component-section id="temoignages" :class="[sectionDark]" title="Témoignages">
 				<component-carousel-testimonial>
 					<component-carousel-testimonial-item 
 						v-for="testimonial in testimonials" 
@@ -101,6 +101,16 @@
 			</component-section> -->
 
 			<component-section id="contact" :class="[sectionGrey]" title="Contacte-moi">
+				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+					<component-contact-item
+						v-for="contactitem in contactitems" 
+						v-bind:key="contactitem.id" 
+						v-bind:contactitem="contactitem"
+					></component-contact-item>
+				</div>
+			</component-section>
+
+			<!-- <component-section id="contact" :class="[sectionGrey]" title="Contacte-moi">
 				<component-contact>
 					<component-contact-item
 						v-for="contactitem in contactitems" 
@@ -108,7 +118,7 @@
 						v-bind:contactitem="contactitem"
 					></component-contact-item>
 				</component-contact>
-			</component-section>
+			</component-section> -->
 
 			<component-footer>
 					<component-contact-item

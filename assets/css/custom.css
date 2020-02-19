@@ -40,6 +40,9 @@ a:hover{
 .arsenic-transparent{
     background-color: #42424258;
 }
+.candy{
+    background-color: rgb(255, 0, 98);
+}
 
 /* FONT COLOR */
 .font-raisin{
@@ -60,15 +63,21 @@ a:hover{
 .font-white{
     color: #FFFFFF;
 }
+.font-candy{
+    color: rgb(255, 0, 98);
+}
 .font-arsenic-transparent{
     color: #42424258;
 }
 
 /* FONT WEIGHT */
-.custom-date, .custom-url{
+.custom-date, .custom-url, .custom-tags{
     font-weight: 200;
     font-size: 0.8rem;
     font-style: italic;
+}
+.font-08{
+    font-size: 0.8rem;
 }
 .font-12{
     font-size: 1.2rem;
@@ -78,6 +87,9 @@ a:hover{
 }
 .font-20{
     font-size: 2rem;
+}
+.font-40{
+    font-size: 4rem;
 }
 .font-100{
     font-size: 10rem;
@@ -131,4 +143,14 @@ margin-left: -0px;
 
 .carousel-control-next {
 margin-right: -0px;
+}
+/* contactitem */
+.contactitem-card{
+    background-color: transparent;
+}
+.contactitem-card:hover{
+    background-color: rgb(255, 0, 98);
+}
+.contactitem-card:hover i{
+    color: #000;
 }
