@@ -1,0 +1,13 @@
+# REDIRECTION TO HTTPS
+# https://wiki.apache.org/httpd/RewriteHTTPToHTTPS
+
+
+RewriteEngine On
+
+RewriteCond %{HTTPS} !=on
+
+RewriteRule ^/?(.*) https://www.lioens.dev/$1 [R,L]
+# RewriteRule ^/?(.*) https://lioens.dev/$1 [R,L]
+
+
+ErrorDocument 404 https://www.lioens.dev/404.html
