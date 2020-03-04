@@ -1,8 +1,12 @@
 
-var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+sass.compiler = require('node-sass');
+const browserSync = require('browser-sync').create();
 
-gulp.task('browser-sync', function() {
+
+
+function server() {
     browserSync.init({
         server: {
             baseDir: "./",
@@ -13,14 +17,25 @@ gulp.task('browser-sync', function() {
         scrollProportionally: false,
         directory: true
     });
-});
+};
 
-gulp.task('watch', function() {
+function sassCompile() {
+    return gulp.src('./assets/sass/custom.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./assets/css'));
+};
+
+function watch() {
+    gulp.watch("./assets/sass/custom.scss").on('change', sassCompile, browserSync.reload);
     gulp.watch("./*.html").on('change', browserSync.reload);
     gulp.watch("./assets/css/*.css").on('change', browserSync.reload);
     gulp.watch("./assets/js/*.js").on('change', browserSync.reload);
-});
+};
 
-gulp.task('server', gulp.parallel('browser-sync', 'watch', function() { 
-    
-}));
+function log() {
+    console.log("tasks queue ready !");
+};
+
+module.exports = {
+    default: gulp.parallel(server, watch, log)
+};
