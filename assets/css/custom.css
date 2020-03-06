@@ -114,3 +114,8 @@ a:hover {
 
 .contactitem-card:hover i {
   color: #476761; }
+
+/* testimonial */
+#temoignages a i:hover {
+  background-color: white;
+  color: #6FA198; }

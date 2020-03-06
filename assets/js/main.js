@@ -155,7 +155,7 @@ Vue.component('component-stack', {
 							<br>
 							<!-- bar -->
 							<div class="mb-3">
-								<span class="">Algorithms and Data Structures Certification (FreeCodeCamp)</span>
+								<span class=""><i class="lab la-free-code-camp"></i>Algorithms and Data Structures Certification (FreeCodeCamp)</span>
 								<div class="progress" style="height: 8px;">
 									<div class="progress-bar progress-bar-striped progress-bar-animated bg-main" role="progressbar" style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
@@ -466,11 +466,11 @@ new Vue({
 				text: 'TECHNOLOGIES',
 				url: '#technologies'
 			},
-			{
-				id: 3,
-				text: 'PARCOURS',
-				url: '#parcours'
-			},
+			// {
+			// 	id: 3,
+			// 	text: 'PARCOURS',
+			// 	url: '#parcours'
+			// },
 			{
 				id: 4,
 				text: 'REALISATIONS',
@@ -663,12 +663,12 @@ new Vue({
 				id: 1,
 				name: 'Céline Tréhin',
 				job: 'Présidente AID83',
-				photo: './assets/img/testimonials/1.jpg',
+				photo: './assets/img/testimonials/celine-trehin.jpg',
 				photoTitle:"Céline Tréhin",
 				photoAlt:"Céline Tréhin",
 				client: 'AID83',
 				testimonial: 'Très à l\'écoute, Lionel a su moderniser notre site.',
-				urlIcon: '<i class="p-2 border border-dark white font-onyx rounded-circle lab la-black-tie"></i>',
+				urlIcon: '<i class="p-2 border border-dark white font-onyx rounded-circle las la-eye"></i>',
 				url: 'https://www.aid83.org/',
 				linkIcon:'<i class="p-2 border border-dark white font-onyx rounded-circle lab la-facebook-f"></i>',
 				link: 'https://bit.ly/2U6u6FO'
@@ -677,12 +677,12 @@ new Vue({
 				id: 2,
 				name: 'Eléonore Hottou',
 				job: 'Sophrologue et masseuse',
-				photo: './assets/img/testimonials/Eleonore-Hottou.jpg',
+				photo: './assets/img/testimonials/eleonore-hottou.jpg',
 				photoTitle:"Eléonore Hottou",
 				photoAlt:"Eléonore Hottou",
 				client: 'Sophromassage',
 				testimonial: 'Lionel fait preuve d\'une bonne capacité à cerner les besoins et à les respecter.',
-				urlIcon: '<i class="p-2 border border-dark white font-onyx rounded-circle lab la-black-tie"></i>',
+				urlIcon: '<i class="p-2 border border-dark white font-onyx rounded-circle las la-eye"></i>',
 				url: '#testimonials',
 				linkIcon:'<i class="p-2 border border-dark white font-onyx rounded-circle lab la-facebook-f"></i>',
 				link: 'https://bit.ly/2REGhbc'
