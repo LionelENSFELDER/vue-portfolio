@@ -1,0 +1,165 @@
+// COLORS VARIABLES
+$raisin: #fa0404;//section dark
+$hard-dark: #000;
+$charleston: #2D2D2D;
+$onyx: #383838;//section grey
+$arsenic: #424242;
+$white: rgb(255, 255, 255);
+$arsenic-transparent: #42424258;
+$main: #6FA198;
+$second: #476761;
+/*TAGS*/
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Poppins;
+    font-weight: 400;
+    color: $white;
+}
+h1{
+    font-family: Montserrat;
+    font-weight: 700;
+}
+a{
+    color:inherit;
+}
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+/*BACKGROND COLOR*/
+.bg-main{
+    background-color: $main;
+} 
+.bg-raisin{
+    background-color: $raisin;
+} 
+.bg-onyx{
+    background-color: $onyx;
+}
+// .hard-dark{
+//     background-color: $hard-dark;
+// }
+// .charleston{
+//     background-color: $charleston;
+// } 
+// .arsenic{
+//     background-color: $arsenic;
+// }
+// .white{
+//     background-color: $white;
+// }
+// .arsenic-transparent{
+//     background-color: $arsenic-transparent;
+// }
+// .candy{
+//     background-color: $main;
+// }
+/* FONT COLOR */
+.font-raisin{
+    color: $raisin;
+} 
+.font-onyx{
+    color: $onyx;
+}
+.font-white{
+    color: $white;
+}
+// .font-charleston{
+//     color: $charleston;
+// } 
+// .font-arsenic{
+//     color: $arsenic;
+// }
+// .font-main-dark{
+//     color: $second;
+// }
+// .font-arsenic-transparent{
+//     color: $arsenic-transparent;
+// }
+/* FONT WEIGHT */
+.custom-date, .custom-url, .custom-tags{
+    font-weight: 200;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+.font-08{
+    font-size: 0.8rem;
+}
+.font-12{
+    font-size: 1.2rem;
+}
+.font-15{
+    font-size: 1.5rem;
+}
+.font-20{
+    font-size: 2rem;
+}
+.font-40{
+    font-size: 4rem;
+}
+.font-100{
+    font-size: 10rem;
+}
+/* BUTTONS */
+// .btn-outline-light:hover{
+//     background-color: $main;
+//     color: $second;
+//     font-weight: 600;
+//     border-color: $main;
+// }
+/* HOVER IMAGE */
+.containerHovered{
+    position: relative;
+}
+.toHide {
+    opacity: 1;
+    transition: .5s ease;
+    /* backface-visibility: hidden; */
+}
+.toDisplay {
+    transition: .5s ease;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.containerHovered:hover .toHide{
+    opacity: 0.5;
+
+}
+.containerHovered:hover .toDisplay {
+    opacity: 1;
+}
+.containerHovered:hover img{
+    filter: brightness(50%);
+}
+.containerHovered:hover .card{
+    background-color: rgba(0, 0, 0, 0.582);
+    border: 0;
+}
+/* carousel */
+#myCarousel {
+margin-left: 50px;
+margin-right: 50px;
+}
+.carousel-control-prev {
+margin-left: -0px;
+}
+.carousel-control-next {
+margin-right: -0px;
+}
+/* contactitem */
+.contactitem-card{
+    background-color: transparent;
+    color: $white;
+}
+.contactitem-card:hover{
+    background-color: $main;
+}
+.contactitem-card:hover i{
+    color: $second;
+}
+

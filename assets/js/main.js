@@ -55,7 +55,7 @@ Vue.component('component-navbar', {
 	},
 	template: `
 		<header class="fixed-top">
-			<nav class="navbar navbar-expand-lg navbar-dark">
+			<nav class="navbar navbar-expand-lg">
 			<div class="container">
 				<a class="navbar-brand" href="#"><i class="lab la-connectdevelop display-4"></i></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
@@ -106,18 +106,16 @@ Vue.component('component-feature', {
 						<span class="text-white-50 d-block mb-2">Salut, je suis</span>
 						<h1><span class="">L</span>IONEL <span class="">E</span>NSFELDER</h1>
 						<p class="text-white-50">
-							👋
-							Après des années passionnantes dans la Marine Nationale en tant que technicien réseau et télécoms, 
-							je réoriente ma carrière professionnelle vers le métier de développeur web.
-							<br><br>
-							N'hésitez pas à jetter un coup d'oeil à mon profil <a href="https://www.linkedin.com/in/lionel-ensfelder/" target="_blank" class="font-candy">Github</a> 
-							et 
-							<a href="https://www.linkedin.com/in/lionel-ensfelder/" target="_blank" class="font-candy">LinkedIn</a>. 
-							Pour télécharger mon CV c'est 
-							<a href="./assets/docs/cv-ensfelder-lionel.pdf" target="_blank" class="font-candy">ici !</a>
+							
+							Après des années enrichissantes dans la Marine Nationale en tant que technicien réseau et télécoms, j'ai décidé de devenir développeur web.
+							<br>
+							Je souhaite résoudre des problèmes de façon simple, esthétique et ergonomique.
+							J'aime employer des stratégies pour améliorer l'organisation, la productivité et automatiser les processus redondants.
+							<br>
+							Je suis spécialisé dans la création d'interfaces et de solutions utilisant principalement Vue.js, React et Node.js.
 						</p>
-						<!-- <a href="./assets/docs/cv-ensfelder-lionel.pdf" target="_blank" type="button" class="btn btn-outline-light my-4">MON CV</a>
-						<a href="https://github.com/LionelENSFELDER?tab=repositories" target="_blank" type="button" class="btn btn-outline-light my-4">GITHUB</a>
+						<a href="./assets/docs/cv-ensfelder-lionel.pdf" target="_blank" type="button" class="btn btn-outline-light my-4">MON CV</a>
+						<!-- <a href="https://github.com/LionelENSFELDER?tab=repositories" target="_blank" type="button" class="btn btn-outline-light my-4">GITHUB</a>
 						<a href="https://www.linkedin.com/in/lionel-ensfelder/" target="_blank" type="button" class="btn btn-outline-light my-4">LINKEDIN</a> -->
 					</div>
 				</div>
@@ -151,48 +149,47 @@ Vue.component('component-stack', {
 						<p class="text-white-50">
 							Conscient que le métier de développeur est en constante évolution, 
 							je me forme constamment sur les dernières technologies. 
-							La philosophie "learning by doing" et la loi de Pareto sont mes 
-							mantras pour rester à jour et monter en compétences.
+							J'applique la philosophie "learning by doing" pour rester à jour et monter en compétences rapidement.
 							<br><br>
 							Ma feuille de route
 							<br>
 							<!-- bar -->
 							<div class="mb-3">
 								<span class="">Algorithms and Data Structures Certification (FreeCodeCamp)</span>
-								<div class="progress" style="height: 5px;">
-									<div class="progress-bar progress-bar-striped progress-bar-animated candy" role="progressbar" style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="progress" style="height: 8px;">
+									<div class="progress-bar progress-bar-striped progress-bar-animated bg-main" role="progressbar" style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
 							</div>
 
 							<!-- bar -->
 							<div class="mb-3">
 								<span class="">Symfony</span>
-								<div class="progress" style="height: 5px;">
-									<div class="progress-bar progress-bar-striped progress-bar-animated candy" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="progress" style="height: 8px;">
+									<div class="progress-bar progress-bar-striped progress-bar-animated bg-main" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
 							</div>
 
 							<!-- bar -->
 							<div class="mb-3">
 								<span class="">Vue.js</span>
-								<div class="progress" style="height: 5px;">
-									<div class="progress-bar progress-bar-striped progress-bar-animated candy" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="progress" style="height: 8px;">
+									<div class="progress-bar progress-bar-striped progress-bar-animated bg-main" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
 							</div>
 
 							<!-- bar -->
 							<div class="mb-3">
 								<span class="">React</span>
-								<div class="progress" style="height: 5px;">
-									<div class="progress-bar progress-bar-striped progress-bar-animated candy" role="progressbar" style="width: 5%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="progress" style="height: 8px;">
+									<div class="progress-bar progress-bar-striped progress-bar-animated bg-main" role="progressbar" style="width: 5%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
 							</div>
 
 							<!-- bar -->
 							<div class="mb-3">
 								<span class="">Google Analytics Academy</span>
-								<div class="progress" style="height: 3px;">
-									<div class="progress-bar progress-bar-striped progress-bar-animated candy" role="progressbar" style="width: 1%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="progress" style="height: 8px;">
+									<div class="progress-bar progress-bar-striped progress-bar-animated bg-main" role="progressbar" style="width: 1%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
 							</div>
 						</p>
@@ -262,11 +259,10 @@ Vue.component('component-formation', {
 	},
 	props: ['formation'],
 	template: `
-		<div class="card charleston col-12 mb-4" style="min-height: 130px">
+		<div class="card bg-raisin col-12 mb-4" style="min-height: 130px">
 			<div class="card-body">
 				<h5 class="card-title">{{formation.job}}</h5>
 				<span href="#" class="badge badge-light mb-3">{{formation.date}} | {{formation.company}}</span>
-				<p class="font-spanish">{{formation.description}}</p>
 			</div>
 		</div>
 	`
@@ -281,7 +277,7 @@ Vue.component('component-experience', {
 	},
 	props: ['experience'],
 	template: `
-		<div class="card charleston col-12 mb-4" style="min-height: 150px">
+		<div class="card bg-raisin col-12 mb-4" style="min-height: 150px">
 			<div class="card-body">
 				<h5 class="card-title">{{experience.job}}</h5>
 				<span href="#" class="badge badge-light mb-3">{{experience.date}} | {{experience.company}}</span>
@@ -366,9 +362,7 @@ Vue.component('component-carousel-testimonial-item', {
 					<h5 class="card-title">{{testimonial.name}}</h5>
 					<h6 class="card-title">{{testimonial.client}}</h6>
 					<p class="card-text">{{testimonial.testimonial}}</p>
-					<a :href="testimonial.url" target="_blank" class="badge font-15">
-						<i class="p-2 border border-dark white font-raisin rounded-circle lab la-black-tie"></i>	
-					</a>
+					<a :href="testimonial.url" target="_blank" class="badge font-15" v-html="testimonial.urlIcon"></a>
 					<a :href="testimonial.link" target="_blank" class="badge font-15" v-html="testimonial.linkIcon"></a>
 				</div>
 			</div>
@@ -444,7 +438,7 @@ Vue.component('component-footer', {
 		}
 	},
 	template: `
-	<footer class="py-4 raisin">
+	<footer class="py-4 bg-raisin">
 		<div class="text-center">
 			<span class="d-block">© Lionel ENSFELDER. All Right Reserved.</span>
 			Launched by 
@@ -460,8 +454,8 @@ Vue.component('component-footer', {
 new Vue({
 	el: '#app',
 	data: {
-		sectionDark: 'py-5 text-white raisin',
-		sectionGrey: 'py-5 text-white onyx',
+		sectionDark: 'py-5 text-white bg-raisin',
+		sectionGrey: 'py-5 text-white bg-onyx',
 		navitems: [{
 				id: 1,
 				text: 'QUI SUIS-JE ?',
@@ -515,7 +509,7 @@ new Vue({
 				icon: '<i class="las la-laptop-code font-spanish display-4 rounded-lg"></i>',
 				company: 'AFPA',
 				date: '2019',
-				job: 'Développeur Web et Web Mobile',
+				job: 'Développeur Web et Web Mobile (RNCP niv. 5, anciennement niv. III)',
 				description: 'Développeur Web et Web Mobile (RNCP niv. 5, anciennement niv. III).',
 				urlText: '',
 				url: ''
@@ -555,8 +549,8 @@ new Vue({
 				icon: '<i class="las la-laptop-code font-spanish display-4 rounded-lg"></i>',
 				company: 'GRETA',
 				date: '2007',
-				job: 'Professionnalisation en maintenance informatique.',
-				description: 'Professionnalisation en maintenance informatique.',
+				job: 'Certification en maintenance informatique.',
+				description: 'Certification en maintenance informatique.',
 				urlText: '',
 				url: ''
 			},
@@ -674,8 +668,9 @@ new Vue({
 				photoAlt:"Céline Tréhin",
 				client: 'AID83',
 				testimonial: 'Très à l\'écoute, Lionel a su moderniser notre site.',
+				urlIcon: '<i class="p-2 border border-dark white font-onyx rounded-circle lab la-black-tie"></i>',
 				url: 'https://www.aid83.org/',
-				linkIcon:'<i class="p-2 border border-dark white font-raisin rounded-circle lab la-facebook-f"></i>',
+				linkIcon:'<i class="p-2 border border-dark white font-onyx rounded-circle lab la-facebook-f"></i>',
 				link: 'https://bit.ly/2U6u6FO'
 			},
 			{
@@ -687,8 +682,9 @@ new Vue({
 				photoAlt:"Eléonore Hottou",
 				client: 'Sophromassage',
 				testimonial: 'Lionel fait preuve d\'une bonne capacité à cerner les besoins et à les respecter.',
+				urlIcon: '<i class="p-2 border border-dark white font-onyx rounded-circle lab la-black-tie"></i>',
 				url: '#testimonials',
-				linkIcon:'<i class="p-2 border border-dark white font-raisin rounded-circle lab la-facebook-f"></i>',
+				linkIcon:'<i class="p-2 border border-dark white font-onyx rounded-circle lab la-facebook-f"></i>',
 				link: 'https://bit.ly/2REGhbc'
 			}
 		],
@@ -706,7 +702,7 @@ new Vue({
 				text: 'Téléphone',
 				info: '06 52 40 10 21',
 				icon: '<i class="align-middle border-0 font-raisin font-40 las la-mobile"></i>',
-				url: 'https://github.com/LionelENSFELDER'
+				url: 'tel:+33652401021'
 			},
 			{
 				id: 3,
