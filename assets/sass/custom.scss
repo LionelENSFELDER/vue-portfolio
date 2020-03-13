@@ -1,5 +1,5 @@
 // COLORS VARIABLES
-$raisin: #fa0404;//section dark
+$raisin: #202020;//section dark
 $hard-dark: #000;
 $charleston: #2D2D2D;
 $onyx: #383838;//section grey
@@ -27,6 +27,16 @@ a{
 a:hover{
     text-decoration: none;
     color: inherit;
+}
+/*BACKGROND IMAGE*/
+.bg-wallpaper1{
+    background-image: url(../img/wallpapers/wallpaper1.jpg);
+    z-index: 999;
+}
+.bg-testimonial{
+    background-image: url(../img/wallpapers/testimonial-wallpaper.jpg);
+    z-index: 999;
+    background-size: contain;
 }
 /*BACKGROND COLOR*/
 .bg-main{
@@ -151,6 +161,9 @@ margin-left: -0px;
 .carousel-control-next {
 margin-right: -0px;
 }
+.swiper-container {
+    height: 100%;
+}
 /* contactitem */
 .contactitem-card{
     background-color: transparent;
@@ -162,4 +175,8 @@ margin-right: -0px;
 .contactitem-card:hover i{
     color: $second;
 }
-
+/* testimonial */
+#temoignages a i:hover{
+    background-color: $white;
+    color: $main;
+}

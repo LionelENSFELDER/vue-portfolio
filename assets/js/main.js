@@ -1,4 +1,3 @@
-//SECTION ---------------------
 Vue.component('component-section', {
 	data: function () {
 		return {
@@ -29,20 +28,6 @@ Vue.component('component-section-without-title', {
 				<slot></slot>
 			</div>
 		</section>
-	`
-})
-
-//CONTAINER ---------------------
-Vue.component('component-container', {
-	data: function () {
-		return {
-
-		}
-	},
-	template: `
-		<div class="container">
-			<slot></slot>
-		</div>
 	`
 })
 
@@ -90,6 +75,20 @@ Vue.component('component-navbar-item', {
 	`
 })
 
+//CONTAINER ---------------------
+Vue.component('component-container', {
+	data: function () {
+		return {
+
+		}
+	},
+	template: `
+		<div class="container">
+			<slot></slot>
+		</div>
+	`
+})
+
 //FEATURE ---------------------
 Vue.component('component-feature', {
 	data: function () {
@@ -105,7 +104,7 @@ Vue.component('component-feature', {
 					<div>
 						<span class="text-white-50 d-block mb-2">Salut, je suis</span>
 						<h1><span class="">L</span>IONEL <span class="">E</span>NSFELDER</h1>
-						<p class="text-white-50">
+						<p id="featurePragraph" class="text-white-50">
 							
 							Après des années enrichissantes dans la Marine Nationale en tant que technicien réseau et télécoms, j'ai décidé de devenir développeur web.
 							<br>
@@ -114,14 +113,14 @@ Vue.component('component-feature', {
 							<br>
 							Je suis spécialisé dans la création d'interfaces et de solutions utilisant principalement Vue.js, React et Node.js.
 						</p>
-						<a href="./assets/docs/cv-ensfelder-lionel.pdf" target="_blank" type="button" class="btn btn-outline-light my-4">MON CV</a>
-						<!-- <a href="https://github.com/LionelENSFELDER?tab=repositories" target="_blank" type="button" class="btn btn-outline-light my-4">GITHUB</a>
-						<a href="https://www.linkedin.com/in/lionel-ensfelder/" target="_blank" type="button" class="btn btn-outline-light my-4">LINKEDIN</a> -->
+						<a href="./assets/docs/cv-ensfelder-lionel.pdf" target="_blank" type="button" class="btn btn-outline-light my-4 animated bounce delay-3s">MON CV</a>
+						<a id="github" href="#" target="_blank" type="button" class="btn btn-outline-light my-4">GITHUB</a>
+						<!-- <a href="https://www.linkedin.com/in/lionel-ensfelder/" target="_blank" type="button" class="btn btn-outline-light my-4">LINKEDIN</a> -->
 					</div>
 				</div>
 				<div class="card border-0 bg-transparent">
 					<div class="my-auto mx-sd-auto mx-md-auto">
-						<img src="assets/img/lionel-ensfelder.jpg" class="rounded img-fluid" title="Lionel Ensfelder" alt="lionel Ensfelder" style="width: 250px;">
+						<img id="featureImage" src="assets/img/lionel-ensfelder.jpg" class="rounded img-fluid" title="Lionel Ensfelder" alt="lionel Ensfelder" style="width: 250px;">
 					</div>
 				</div>
 			</div>
@@ -135,64 +134,74 @@ Vue.component('component-stack', {
 
 		}
 	},
+	template: `
+		<div class="card-deck">
+			<slot></slot>
+		</div>
+	`
+})
+
+//STACK CATEGORY CARD---------------------
+Vue.component('component-stack-category', {
+	data: function () {
+		return {
+
+		}
+	},
 	props: ['stack'],
 	template: `
-		<div class="">
-			<div class="row">
-				<div class="col-sm">
-					<div class="d-flex flex-column justify-content-center align-items-center h-100">
-						<slot></slot>
+		<div class="card bg-transparent font-white text-center">
+			<div class=""><div v-html="stack.icon"></div></div>
+			<div class="card-body">
+				<span class="font-15">{{stack.title}}</span>
+				<p class="text-left mt-4">{{stack.content}}</p>
+			</div>
+		</div>
+	`
+})
+
+//SWIPER CAROUSEL---------------------
+Vue.component('component-swiper-carousel', {
+	data: function () {
+		return {
+
+		}
+	},
+	props: ['swiper-carousel'],
+	template: `
+		<!-- Swiper -->
+		<div class="row swiper-container">
+			<div class="swiper-wrapper">
+				<slot></slot>
+			</div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
+	`
+})
+
+//WORK ---------------------
+Vue.component('component-work', {
+	data: function () {
+		return {
+
+		}
+	},
+	props: ['work'],
+	template: `
+		<div class="swiper-slide">
+			<div class="containerHovered">
+				<div class="card border-0">
+					<div class="toHide">
+						<img :src="work.coverImage" class="card-img" :title="work.coverTitle" :alt="work.coverAlt">
 					</div>
-				</div>
-				<div class="col-sm">
-					<div class="">
-						<p class="text-white-50">
-							Conscient que le métier de développeur est en constante évolution, 
-							je me forme constamment sur les dernières technologies. 
-							J'applique la philosophie "learning by doing" pour rester à jour et monter en compétences rapidement.
-							<br><br>
-							Ma feuille de route
-							<br>
-							<!-- bar -->
-							<div class="mb-3">
-								<span class=""><i class="lab la-free-code-camp"></i>Algorithms and Data Structures Certification (FreeCodeCamp)</span>
-								<div class="progress" style="height: 8px;">
-									<div class="progress-bar progress-bar-striped progress-bar-animated bg-main" role="progressbar" style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-
-							<!-- bar -->
-							<div class="mb-3">
-								<span class="">Symfony</span>
-								<div class="progress" style="height: 8px;">
-									<div class="progress-bar progress-bar-striped progress-bar-animated bg-main" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-
-							<!-- bar -->
-							<div class="mb-3">
-								<span class="">Vue.js</span>
-								<div class="progress" style="height: 8px;">
-									<div class="progress-bar progress-bar-striped progress-bar-animated bg-main" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-
-							<!-- bar -->
-							<div class="mb-3">
-								<span class="">React</span>
-								<div class="progress" style="height: 8px;">
-									<div class="progress-bar progress-bar-striped progress-bar-animated bg-main" role="progressbar" style="width: 5%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-
-							<!-- bar -->
-							<div class="mb-3">
-								<span class="">Google Analytics Academy</span>
-								<div class="progress" style="height: 8px;">
-									<div class="progress-bar progress-bar-striped progress-bar-animated bg-main" role="progressbar" style="width: 1%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-						</p>
+					<div class="toDisplay text-center font-white position-absolute">
+						<div>
+							<a :href="work.url" target="_blank" class=""><i class="font-20 p-2 mb-3 border border-light rounded-circle text-white las la-link"></i></a>
+						</div>
+						<h5 class="font-weight-bold">{{work.title}}</h5>
+						<span class="custom-tags">{{work.tags}}</span>
 					</div>
 				</div>
 			</div>
@@ -288,37 +297,6 @@ Vue.component('component-experience', {
 	`
 })
 
-//WORK ---------------------
-Vue.component('component-work', {
-	data: function () {
-		return {
-
-		}
-	},
-	props: ['work'],
-	template: `
-		<div class="col mb-4 containerHovered">
-
-			<div class="card border-0 h-100">
-
-				<div class="h-100 toHide">
-					<img :src="work.coverImage" class="card-img h-100" :title="work.coverTitle" :alt="work.coverAlt">
-				</div>
-
-				<div class="toDisplay text-center font-white position-absolute">
-					<div>
-					<a :href="work.url" target="_blank" class=""><i class="font-20 p-2 mb-3 border border-light rounded-circle text-white las la-link"></i></a>
-					</div>
-					<h5 class="font-weight-bold">{{work.title}}</h5>
-					<span class="custom-tags">{{work.tags}}</span>
-				</div>
-
-			</div>
-
-		</div>
-	`
-})
-
 
 
 //CAROUSEL ---------------------
@@ -330,16 +308,16 @@ Vue.component('component-carousel-testimonial', {
 	},
 	props: ['carousel-testimonial'],
 	template: `
-		<div id="carousel-testimonial" class="carousel slide row" data-ride="carousel" data-touch="true">
+		<div id="carousel-testimonial" class="carousel carousel-fade slide row" data-ride="carousel" data-touch="true">
 			<div id="carousel-testimonial-inner" class="carousel-inner mx-auto col col-md-10 col-lg-10">
 				<slot></slot>
 			</div>
 			<a class="carousel-control-prev" href="#carousel-testimonial" role="button" data-slide="prev">
-				<span class="las la-chevron-circle-left display-4" aria-hidden="true"></span>
+				<span class="las la-chevron-left display-4 font-onyx" aria-hidden="true"></span>
 				<span class="sr-only">Previous</span>
 			</a>
 			<a class="carousel-control-next" href="#carousel-testimonial" role="button" data-slide="next">
-				<span class="las la-chevron-circle-right display-4" aria-hidden="true"></span>
+				<span class="las la-chevron-right display-4 font-onyx" aria-hidden="true"></span>
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
@@ -609,7 +587,7 @@ new Vue({
 		works: [{
 				id: 1,
 				title: 'AID83',
-				coverImage: 'assets/img/works/placeholder.jpg',
+				coverImage: 'assets/img/works/placeholder-portrait.jpg',
 				coverTitle: 'Image du site Aid 83',
 				coverAlt:'Aid 83',
 				client: 'AID83',
@@ -620,21 +598,23 @@ new Vue({
 				url: 'https://www.aid83.org/',
 				github:'https://github.com/LionelENSFELDER/aid83-v2'
 			},
-			// {
-			// 	id: 2,
-			// 	title: 'Sophromassage',
-			// 	image: './assets/img/works/placeholder.jpg',
-			// 	client: 'Eléonore Hottou',
-			// 	date: '2019',
-			// 	job: '',
-			// 	description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
-			// 	url: '#',
-			// 	github:'https://github.com/LionelENSFELDER/sophromassage'
-			// },
+			{
+				id: 2,
+				title: 'Sophromassage',
+				coverImage: './assets/img/works/placeholder-portrait.jpg',
+				coverTitle: 'Image du site Sophromassage',
+				client: 'Eléonore Hottou',
+				date: '2019',
+				job: '',
+				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+				tags: "Wordpress | Bootstrap" ,
+				url: '#',
+				github:'https://github.com/LionelENSFELDER/sophromassage'
+			},
 			{
 				id: 3,
 				title: 'Portfolio',
-				coverImage: 'assets/img/works/placeholder.jpg',
+				coverImage: 'assets/img/works/placeholder-portrait.jpg',
 				coverTitle: 'Image du portfolio',
 				coverAlt:'Portfilio de Lionel Ensfelder',
 				alt:'aid83',
@@ -646,17 +626,6 @@ new Vue({
 				url: '#',
 				github:'https://github.com/LionelENSFELDER/about-me'
 			},
-			// {
-			// 	id: 4,
-			// 	title: 'Do It On Time',
-			// 	image: './assets/img/works/placeholder.jpg',
-			// 	client: 'Lionel Ensfelder',
-			// 	date: '2010',
-			// 	job: '',
-			// 	description: 'Bientôt disponible...',
-			// 	url: '#',
-			// 	github:'#'
-			// }
 		],
 		testimonials: [
 			{
@@ -829,6 +798,29 @@ new Vue({
 				title: 'Ubuntu',
 				icon: '<i class="lab la-ubuntu display-2"></i>',
 				url: 'https://www.ubuntu-fr.org/'
+			}
+		],
+		stacks:[
+			{
+				id: 1,
+				icon: '<i class="las la-brush display-2"></i>',
+				title: 'Frontend',
+				content: 'Figma, Bootstrap, UI Kit, Foundation, SAAS, Vue.js, React.'
+
+			},
+			{
+				id: 2,
+				icon: '<i class="las la-brain display-2"></i>',
+				title: 'Backend',
+				content: 'SQL, Redis, Symfony, Wordpress, Joomla, Node.js.'
+
+			},
+			{
+				id: 3,
+				icon: '<i class="las la-toolbox display-2"></i>',
+				title: 'Divers',
+				content: 'Jest, PHP Unit, Hyperledger Fabric, Git.'
+
 			}
 		]
 	}

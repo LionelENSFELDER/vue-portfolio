@@ -18,6 +18,16 @@ a:hover {
   text-decoration: none;
   color: inherit; }
 
+/*BACKGROND IMAGE*/
+.bg-wallpaper1 {
+  background-image: url(../img/wallpapers/wallpaper1.jpg);
+  z-index: 999; }
+
+.bg-testimonial {
+  background-image: url(../img/wallpapers/testimonial-wallpaper.jpg);
+  z-index: 999;
+  background-size: contain; }
+
 /*BACKGROND COLOR*/
 .bg-main {
   background-color: #6FA198; }
@@ -103,6 +113,9 @@ a:hover {
 
 .carousel-control-next {
   margin-right: -0px; }
+
+.swiper-container {
+  height: 100%; }
 
 /* contactitem */
 .contactitem-card {

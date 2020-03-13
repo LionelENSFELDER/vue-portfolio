@@ -13,6 +13,10 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,600i,700,900,900i|Poppins:200,200i,300,300i,400,400i,600,600i,900,900i&display=swap" rel="stylesheet">
 		<!-- custom css -->
 		<link rel="stylesheet" href="./assets/css/custom.css" />
+		<link rel="stylesheet" href="./assets/css/magic.css" />
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+		<!-- <link rel="stylesheet" href="./assets/motion-ui/css/motion-ui.css" /> -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 		<!-- title -->
 		<title>Lionel E.</title>
 		<!-- favico -->
@@ -40,13 +44,11 @@
 
 			<component-section id="technologies" :class="[sectionGrey]" title="Technologies">
 				<component-stack>
-					<component-carousel-tech class="">
-						<component-carousel-tech-item
-							v-for="tech in techs" 
-							v-bind:key="tech.id"
-							v-bind:tech="tech"
-						></component-carousel-tech-item>
-					</component-carousel-tech>
+					<component-stack-category
+						v-for="stack in stacks" 
+						v-bind:key="stack.id"
+						v-bind:stack="stack"
+					></component-stack-category>
 				</component-stack>
 			</component-section>
 
@@ -74,20 +76,27 @@
 				</div>
 			</component-section> -->
 
-			<component-section id="realisations" :class="[sectionGrey]" title="Mes réalisations">
-				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+			<component-section id="realisations" :class="[sectionDark]" title="Mes réalisations">
+				<!-- <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
 					<component-work 
 						v-for="work in works" 
 						v-bind:key="work.id" 
 						v-bind:work="work"
 					></component-work>
-				</div>
+				</div> -->
+				<component-swiper-carousel>
+					<component-work 
+						v-for="work in works" 
+						v-bind:key="work.id" 
+						v-bind:work="work"
+					></component-work>
+				</component-swiper-carousel>
 			</component-section>
 
 			<!-- <component-section v-bind:class="[sectionDark]" title="Mes valeurs">
 			</component-section> -->
 
-			<component-section id="temoignages" :class="[sectionDark]" title="Témoignages">
+			<component-section id="temoignages" :class="[sectionDark]" class="bg-testimonial" title="Témoignages">
 				<component-carousel-testimonial>
 					<component-carousel-testimonial-item 
 						v-for="testimonial in testimonials" 
@@ -137,8 +146,11 @@
 		</div>
 
 		<!-- SCRIPTS -->
+
+		<!-- vue -->
 		<script src="./assets/vue/vue.js"></script>
 		<script src="./assets/js/main.js"></script>
+		<!-- bootstrap -->
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
 			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
 		</script>
@@ -146,8 +158,58 @@
 			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
 		</script>
 		<script src="./assets/js/bootstrap.bundle.min.js"></script>
+		<!-- carousel -->
 		<script src="./assets/js/carousel.js"></script>
-		<script src="./assets/motion-ui/js/vendor/motion-ui.js"></script>
+		<!-- animation (magic) -->
+		<script src="./assets/js/animations.js"></script>
+		<!-- parallax -->
+
+		<!-- swiper carousel -->
+		<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+		<!-- <script>
+			var swiper = new Swiper('.swiper-container', {
+			  effect: 'coverflow',
+			  grabCursor: true,
+			  centeredSlides: true,
+			  slidesPerView: 'auto',
+			  coverflowEffect: {
+				rotate: 50,
+				stretch: 0,
+				depth: 100,
+				modifier: 1,
+				slideShadows : true,
+			  },
+			  pagination: {
+				el: '.swiper-pagination',
+			  },
+			});
+		</script> -->
+
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				effect: 'coverflow',
+				loop: false,
+				centeredSlides: true,
+				slidesPerView: 3,
+				initialSlide: 3,
+				keyboardControl: true,
+				mousewheelControl: true,
+				lazyLoading: true,
+				preventClicks: false,
+				preventClicksPropagation: false,
+				lazyLoadingInPrevNext: true,
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+
+				coverflow: {
+					rotate: 0,
+					stretch: 0,
+					depth: 250,
+					modifier: 1,
+					slideShadows : false,
+				}
+			});
+		</script>
 
 	</body>
 
