@@ -40,7 +40,7 @@ Vue.component('component-navbar', {
 	},
 	template: `
 		<header class="fixed-top">
-			<nav class="navbar navbar-expand-lg">
+			<nav class="navbar navbar-dark navbar-expand-lg">
 			<div class="container">
 				<a class="navbar-brand" href="#"><i class="lab la-connectdevelop display-4"></i></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
@@ -150,11 +150,13 @@ Vue.component('component-stack-category', {
 	},
 	props: ['stack'],
 	template: `
-		<div class="card bg-transparent font-white text-center">
-			<div class=""><div v-html="stack.icon"></div></div>
-			<div class="card-body">
+		<div class="card p-3 stack-card">
+			<div class="">
+				<div v-html="stack.icon"></div>
+			</div>
+			<div class="card-body text-center">
 				<span class="font-15">{{stack.title}}</span>
-				<p class="text-left mt-4">{{stack.content}}</p>
+				<p class="mt-4">{{stack.content}}</p>
 			</div>
 		</div>
 	`
@@ -313,11 +315,11 @@ Vue.component('component-carousel-testimonial', {
 				<slot></slot>
 			</div>
 			<a class="carousel-control-prev" href="#carousel-testimonial" role="button" data-slide="prev">
-				<span class="las la-chevron-left display-4 font-onyx" aria-hidden="true"></span>
+				<span class="las la-chevron-left display-4 font-white mr-5" aria-hidden="true"></span>
 				<span class="sr-only">Previous</span>
 			</a>
 			<a class="carousel-control-next" href="#carousel-testimonial" role="button" data-slide="next">
-				<span class="las la-chevron-right display-4 font-onyx" aria-hidden="true"></span>
+				<span class="las la-chevron-right display-4 font-white ml-5" aria-hidden="true"></span>
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
@@ -334,12 +336,13 @@ Vue.component('component-carousel-testimonial-item', {
 	props: ['testimonial'],
 	template: `
 		<div class="carousel-item">
-			<div class="card border-0 text-center bg-transparent">
+			<div class="card border-0 text-center bg-raisin rounded">
 				<div class="card-body">
 					<div><img class="img-fluid rounded-circle mb-4" :src="testimonial.photo" :title="testimonial.photoTitle" :alt="testimonial.photoAlt" width="100px"></div>
-					<h5 class="card-title">{{testimonial.name}}</h5>
-					<h6 class="card-title">{{testimonial.client}}</h6>
 					<p class="card-text">{{testimonial.testimonial}}</p>
+					<span class="card-text">- {{testimonial.name}}, </span>
+					<span class="card-text font-main">{{testimonial.client}}</span>
+					<br>
 					<a :href="testimonial.url" target="_blank" class="badge font-15" v-html="testimonial.urlIcon"></a>
 					<a :href="testimonial.link" target="_blank" class="badge font-15" v-html="testimonial.linkIcon"></a>
 				</div>
@@ -662,7 +665,7 @@ new Vue({
 				id: 1,
 				text: 'Adresse',
 				info: '612 Avenue Maréchal Foch',
-				icon: '<i class="align-middle border-0 font-raisin font-40 las la-globe"></i>',
+				icon: '<i class="align-middle border-0 font-onyx font-40 las la-globe"></i>',
 				url: '#'
 
 			},
@@ -670,35 +673,35 @@ new Vue({
 				id: 2,
 				text: 'Téléphone',
 				info: '06 52 40 10 21',
-				icon: '<i class="align-middle border-0 font-raisin font-40 las la-mobile"></i>',
+				icon: '<i class="align-middle border-0 font-onyx font-40 las la-mobile"></i>',
 				url: 'tel:+33652401021'
 			},
 			{
 				id: 3,
 				text: 'Mail',
 				info: 'ensfelder.lionel@gmail.com',
-				icon: '<i class="align-middle border-0 font-raisin font-40 las la-at"></i>',
+				icon: '<i class="align-middle border-0 font-onyx font-40 las la-at"></i>',
 				url: 'mailto://ensfelder.lionel@gmail.com'
 			},
 			{
 				id: 4,
 				text: 'Github',
 				info: 'LionelENSFELDER',
-				icon: '<i class="align-middle border-0 font-raisin font-40 lab la-github"></i>',
+				icon: '<i class="align-middle border-0 font-onyx font-40 lab la-github"></i>',
 				url: 'https://github.com/LionelENSFELDER'
 			},
 			{
 				id: 5,
 				text: 'LinkedIn',
 				info: 'lionel-ensfelder',
-				icon: '<i class="align-middle border-0 font-raisin font-40 lab la-linkedin-in"></i>',
+				icon: '<i class="align-middle border-0 font-onyx font-40 lab la-linkedin-in"></i>',
 				url: 'https://www.linkedin.com/in/lionel-ensfelder/'
 			},
 			{
 				id: 6,
 				text: 'Medium',
 				info: '@ensfelder.lionel',
-				icon: '<i class="align-middle border-0 font-raisin font-40 lab la-medium"></i>',
+				icon: '<i class="align-middle border-0 font-onyx font-40 lab la-medium"></i>',
 				url: 'https://medium.com/@ensfelder.lionel'
 			}
 		],
@@ -803,21 +806,21 @@ new Vue({
 		stacks:[
 			{
 				id: 1,
-				icon: '<i class="las la-brush display-2"></i>',
+				icon: '<i class="las la-brush display-4"></i>',
 				title: 'Frontend',
 				content: 'Figma, Bootstrap, UI Kit, Foundation, SAAS, Vue.js, React.'
 
 			},
 			{
 				id: 2,
-				icon: '<i class="las la-brain display-2"></i>',
+				icon: '<i class="las la-brain display-4"></i>',
 				title: 'Backend',
 				content: 'SQL, Redis, Symfony, Wordpress, Joomla, Node.js.'
 
 			},
 			{
 				id: 3,
-				icon: '<i class="las la-toolbox display-2"></i>',
+				icon: '<i class="las la-toolbox display-4"></i>',
 				title: 'Divers',
 				content: 'Jest, PHP Unit, Hyperledger Fabric, Git.'
 

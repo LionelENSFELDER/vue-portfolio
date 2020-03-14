@@ -96,7 +96,7 @@
 			<!-- <component-section v-bind:class="[sectionDark]" title="Mes valeurs">
 			</component-section> -->
 
-			<component-section id="temoignages" :class="[sectionDark]" class="bg-testimonial" title="Témoignages">
+			<component-section id="temoignages" :class="[sectionGrey]" class="" title="Témoignages">
 				<component-carousel-testimonial>
 					<component-carousel-testimonial-item 
 						v-for="testimonial in testimonials" 
@@ -109,7 +109,7 @@
 			<!-- <component-section v-bind:class="[sectionDark]" title="Mes articles">
 			</component-section> -->
 
-			<component-section id="contact" :class="[sectionGrey]" title="Contacte-moi">
+			<component-section id="contact" :class="[sectionDark]" title="Contacte-moi">
 				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
 					<component-contact-item
 						v-for="contactitem in contactitems" 
@@ -158,58 +158,12 @@
 			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
 		</script>
 		<script src="./assets/js/bootstrap.bundle.min.js"></script>
+		<!-- swiper carousel -->
+		<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 		<!-- carousel -->
 		<script src="./assets/js/carousel.js"></script>
 		<!-- animation (magic) -->
 		<script src="./assets/js/animations.js"></script>
-		<!-- parallax -->
-
-		<!-- swiper carousel -->
-		<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-		<!-- <script>
-			var swiper = new Swiper('.swiper-container', {
-			  effect: 'coverflow',
-			  grabCursor: true,
-			  centeredSlides: true,
-			  slidesPerView: 'auto',
-			  coverflowEffect: {
-				rotate: 50,
-				stretch: 0,
-				depth: 100,
-				modifier: 1,
-				slideShadows : true,
-			  },
-			  pagination: {
-				el: '.swiper-pagination',
-			  },
-			});
-		</script> -->
-
-		<script>
-			var swiper = new Swiper('.swiper-container', {
-				effect: 'coverflow',
-				loop: false,
-				centeredSlides: true,
-				slidesPerView: 3,
-				initialSlide: 3,
-				keyboardControl: true,
-				mousewheelControl: true,
-				lazyLoading: true,
-				preventClicks: false,
-				preventClicksPropagation: false,
-				lazyLoadingInPrevNext: true,
-				nextButton: '.swiper-button-next',
-				prevButton: '.swiper-button-prev',
-
-				coverflow: {
-					rotate: 0,
-					stretch: 0,
-					depth: 250,
-					modifier: 1,
-					slideShadows : false,
-				}
-			});
-		</script>
 
 	</body>
 

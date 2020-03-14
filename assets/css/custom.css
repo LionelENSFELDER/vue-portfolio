@@ -39,6 +39,9 @@ a:hover {
   background-color: #383838; }
 
 /* FONT COLOR */
+.font-main {
+  color: #6FA198; }
+
 .font-raisin {
   color: #202020; }
 
@@ -73,6 +76,20 @@ a:hover {
   font-size: 10rem; }
 
 /* BUTTONS */
+/*STACK CARD*/
+.stack-card {
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  color: white; }
+
+.stack-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #202020; }
+
+.stack-card:hover i {
+  color: #FF528D; }
+
 /* HOVER IMAGE */
 .containerHovered {
   position: relative; }
@@ -123,12 +140,15 @@ a:hover {
   color: white; }
 
 .contactitem-card:hover {
-  background-color: #6FA198; }
+  background-color: #FF528D; }
 
 .contactitem-card:hover i {
-  color: #476761; }
+  color: white; }
 
 /* testimonial */
 #temoignages a i:hover {
   background-color: white;
-  color: #6FA198; }
+  color: #FF528D; }
+
+#temoignages img.rounded-circle {
+  border: 4px solid; }
