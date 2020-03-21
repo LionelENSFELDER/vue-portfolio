@@ -10,7 +10,7 @@ function server() {
             index: 'index.html',
         },
         https: false,
-        port: 12,
+        port: 8001,
         scrollProportionally: false,
         directory: true
     });
@@ -26,6 +26,7 @@ function watch() {
     gulp.watch("./assets/sass/custom.scss").on('change', sassCompile, browserSync.reload);
     gulp.watch("./*.html").on('change', browserSync.reload);
     gulp.watch("./assets/css/*.css").on('change', browserSync.reload);
+    gulp.watch("./assets/vue/components/*.js").on('change', browserSync.reload);
     gulp.watch("./assets/js/*.js").on('change', browserSync.reload);
 };
 
