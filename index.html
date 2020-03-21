@@ -30,118 +30,71 @@
 		<!-- APP -->
 		<div id="app">
 			<!-- navbar -->
-			<component-navbar class="bg-raisin">
-				<component-navbar-item 
+			<vue-navbar class="bg-raisin">
+				<vue-navbar-item 
 					v-for="navitem in navitems" 
 					v-bind:key="navitem.id" 
 					v-bind:navitem="navitem"
-				></component-navbar-item>
-			</component-navbar>
+				></vue-navbar-item>
+			</vue-navbar>
 
-			<component-section id="quisuisje" :class="[sectionDark]">
-				<component-feature></component-feature>
-			</component-section>
+			<vue-section id="quisuisje" :class="[sectionDark]">
+				<vue-feature></vue-feature>
+			</vue-section>
 
-			<component-section id="technologies" :class="[sectionGrey]" title="Technologies">
-				<component-stack>
-					<component-stack-category
+			<vue-section id="technologies" :class="[sectionGrey]" title="Technologies">
+				<vue-stack>
+					<vue-stack-category
 						v-for="stack in stacks" 
 						v-bind:key="stack.id"
 						v-bind:stack="stack"
-					></component-stack-category>
-				</component-stack>
-			</component-section>
+					></vue-stack-category>
+				</vue-stack>
+			</vue-section>
 
-			<!-- <component-section id="parcours" :class="[sectionDark]" title="Mon parcours">
-				<div class="row match-height">
-
-					<div class="col-12 col-md-6">
-						<h2>Formation</h1>
-						<component-formation
-							v-for="formation in formations" 
-							v-bind:key="formation.id"
-							v-bind:formation="formation"
-						></component-formation>
-					</div>
-
-					<div class="col-12 col-md-6">
-						<h2>Expérience</h2>
-						<component-experience 
-							v-for="experience in experiences" 
-							v-bind:key="experience.id"
-							v-bind:experience="experience"
-						></component-experience>
-					</div>
-
-				</div>
-			</component-section> -->
-
-			<component-section id="realisations" :class="[sectionDark]" title="Mes réalisations">
-				<!-- <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-					<component-work 
+			<vue-section id="realisations" :class="[sectionDark]" title="Mes réalisations">
+				<vue-swiper-carousel>
+					<vue-work 
 						v-for="work in works" 
 						v-bind:key="work.id" 
 						v-bind:work="work"
-					></component-work>
-				</div> -->
-				<component-swiper-carousel>
-					<component-work 
-						v-for="work in works" 
-						v-bind:key="work.id" 
-						v-bind:work="work"
-					></component-work>
-				</component-swiper-carousel>
-			</component-section>
+					></vue-work>
+				</vue-swiper-carousel>
+			</vue-section>
 
-			<!-- <component-section v-bind:class="[sectionDark]" title="Mes valeurs">
-			</component-section> -->
-
-			<component-section id="temoignages" :class="[sectionGrey]" class="" title="Témoignages">
-				<component-carousel-testimonial>
-					<component-carousel-testimonial-item 
+			<vue-section id="temoignages" :class="[sectionGrey]" class="" title="Témoignages">
+				<vue-carousel-testimonial>
+					<vue-carousel-testimonial-item 
 						v-for="testimonial in testimonials" 
 						v-bind:key="testimonial.id" 
 						v-bind:testimonial="testimonial"
-					></component-carousel-testimonial-item>
-				</component-carousel-testimonial>
-			</component-section>
+					></vue-carousel-testimonial-item>
+				</vue-carousel-testimonial>
+			</vue-section>
 
-			<!-- <component-section v-bind:class="[sectionDark]" title="Mes articles">
-			</component-section> -->
-
-			<component-section id="contact" :class="[sectionDark]" title="Contacte-moi">
+			<vue-section id="contact" :class="[sectionDark]" title="Contacte-moi">
 				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-					<component-contact-item
+					<vue-contact-item
 						v-for="contactitem in contactitems" 
 						v-bind:key="contactitem.id" 
 						v-bind:contactitem="contactitem"
-					></component-contact-item>
+					></vue-contact-item>
 				</div>
-			</component-section>
+			</vue-section>
 
-			<!-- <component-section id="contact" :class="[sectionGrey]" title="Contacte-moi">
-				<component-contact>
-					<component-contact-item
+			<vue-footer>
+					<vue-contact-item
 						v-for="contactitem in contactitems" 
 						v-bind:key="contactitem.id" 
 						v-bind:contactitem="contactitem"
-					></component-contact-item>
-				</component-contact>
-			</component-section> -->
-
-			<component-footer>
-					<component-contact-item
-						v-for="contactitem in contactitems" 
-						v-bind:key="contactitem.id" 
-						v-bind:contactitem="contactitem"
-					></component-contact-item>
+					></vue-contact-item>
 				
-				<component-footer-item 
+				<vue-footer-item 
 					v-for="footer in footeritems" 
 					v-bind:key="footer.id" 
 					v-bind:footer="footer"
-				></component-footer-item>
-			</component-footer>
+				></vue-footer-item>
+			</vue-footer>
 
 		</div>
 
@@ -149,7 +102,7 @@
 
 		<!-- vue -->
 		<script src="./assets/vue/vue.js"></script>
-		<script src="./assets/js/main.js"></script>
+		<script type="module" src="./assets/js/main.js"></script>
 		<!-- bootstrap -->
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
 			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
@@ -161,7 +114,7 @@
 		<!-- swiper carousel -->
 		<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 		<!-- carousel -->
-		<script src="./assets/js/carousel.js"></script>
+		<script type="module" src="./assets/js/carousel.js"></script>
 		<!-- animation (magic) -->
 		<script src="./assets/js/animations.js"></script>
 
