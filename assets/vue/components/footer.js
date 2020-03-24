@@ -5,7 +5,7 @@ const footer = {
 		}
 	},
 	template: `
-	<footer class="py-4 bg-raisin">
+	<footer class="py-4">
 		<div class="text-center">
 			<span class="d-block">© Lionel ENSFELDER. All Right Reserved.</span>
 			Launched by 

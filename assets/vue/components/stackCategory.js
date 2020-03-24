@@ -6,8 +6,8 @@ const stackCategory = {
 	},
 	props: ['stack'],
 	template: `
-		<div class="card p-3 stack-card">
-			<div class="">
+		<div class="card p-3 stack-card animated-fadeInUp">
+			<div>
 				<div v-html="stack.icon"></div>
 			</div>
 			<div class="card-body text-center">

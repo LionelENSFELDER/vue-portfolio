@@ -35,8 +35,6 @@ Vue.component('vue-footer', footer);
 new Vue({
 	el: '#app',
 	data: {
-		sectionDark: 'py-5 text-white bg-raisin',
-		sectionGrey: 'py-5 text-white bg-onyx',
 		navitems: [{
 				id: 1,
 				text: 'QUI SUIS-JE ?',

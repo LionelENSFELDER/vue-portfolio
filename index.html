@@ -14,9 +14,8 @@
 		<!-- custom css -->
 		<link rel="stylesheet" href="./assets/css/custom.css" />
 		<link rel="stylesheet" href="./assets/css/magic.css" />
+		<link rel="stylesheet" href="./assets/css/animate.css" />
 		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-		<!-- <link rel="stylesheet" href="./assets/motion-ui/css/motion-ui.css" /> -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 		<!-- title -->
 		<title>Lionel E.</title>
 		<!-- favico -->
@@ -29,74 +28,82 @@
 	<body>
 		<!-- APP -->
 		<div id="app">
-			<!-- navbar -->
-			<vue-navbar class="bg-raisin">
-				<vue-navbar-item 
-					v-for="navitem in navitems" 
-					v-bind:key="navitem.id" 
-					v-bind:navitem="navitem"
-				></vue-navbar-item>
-			</vue-navbar>
+      
+      <!-- navbar -->
+      <vue-navbar class="bg-raisin">
+        <vue-navbar-item 
+          v-for="navitem in navitems" 
+          v-bind:key="navitem.id" 
+          v-bind:navitem="navitem"
+        ></vue-navbar-item>
+      </vue-navbar>
 
-			<vue-section id="quisuisje" :class="[sectionDark]">
-				<vue-feature></vue-feature>
-			</vue-section>
+      <!-- about me -->
+      <vue-section id="quisuisje" class="">
+        <vue-feature></vue-feature>
+      </vue-section>
+      
+      <!-- stack and tools -->
+      <vue-section id="technologies" class="" title="Technologies">
+        <vue-stack>
+          <vue-stack-category
+            v-for="stack in stacks" 
+            v-bind:key="stack.id"
+            v-bind:stack="stack"
+          ></vue-stack-category>
+        </vue-stack>
+      </vue-section>
 
-			<vue-section id="technologies" :class="[sectionGrey]" title="Technologies">
-				<vue-stack>
-					<vue-stack-category
-						v-for="stack in stacks" 
-						v-bind:key="stack.id"
-						v-bind:stack="stack"
-					></vue-stack-category>
-				</vue-stack>
-			</vue-section>
+      <!-- my works -->
+      <vue-section id="realisations" class="" title="Mes réalisations">
+        <vue-swiper-carousel>
+          <vue-work 
+            v-for="work in works" 
+            v-bind:key="work.id" 
+            v-bind:work="work"
+          ></vue-work>
+        </vue-swiper-carousel>
+      </vue-section>
 
-			<vue-section id="realisations" :class="[sectionDark]" title="Mes réalisations">
-				<vue-swiper-carousel>
-					<vue-work 
-						v-for="work in works" 
-						v-bind:key="work.id" 
-						v-bind:work="work"
-					></vue-work>
-				</vue-swiper-carousel>
-			</vue-section>
+      <!-- testimonials -->
+      <vue-section id="temoignages" class="" class="" title="Témoignages">
+        <vue-carousel-testimonial>
+          <vue-carousel-testimonial-item 
+            v-for="testimonial in testimonials" 
+            v-bind:key="testimonial.id" 
+            v-bind:testimonial="testimonial"
+          ></vue-carousel-testimonial-item>
+        </vue-carousel-testimonial>
+      </vue-section>
 
-			<vue-section id="temoignages" :class="[sectionGrey]" class="" title="Témoignages">
-				<vue-carousel-testimonial>
-					<vue-carousel-testimonial-item 
-						v-for="testimonial in testimonials" 
-						v-bind:key="testimonial.id" 
-						v-bind:testimonial="testimonial"
-					></vue-carousel-testimonial-item>
-				</vue-carousel-testimonial>
-			</vue-section>
+      <!-- contact -->
+      <vue-section id="contact" class="" title="Contacte-moi">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+          <vue-contact-item
+            v-for="contactitem in contactitems" 
+            v-bind:key="contactitem.id" 
+            v-bind:contactitem="contactitem"
+          ></vue-contact-item>
+        </div>
+      </vue-section>
 
-			<vue-section id="contact" :class="[sectionDark]" title="Contacte-moi">
-				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-					<vue-contact-item
-						v-for="contactitem in contactitems" 
-						v-bind:key="contactitem.id" 
-						v-bind:contactitem="contactitem"
-					></vue-contact-item>
-				</div>
-			</vue-section>
+      <!-- footer -->
+      <vue-footer>
+        <vue-contact-item
+            v-for="contactitem in contactitems" 
+            v-bind:key="contactitem.id" 
+            v-bind:contactitem="contactitem"
+        ></vue-contact-item>
+        
+        <vue-footer-item 
+          v-for="footer in footeritems" 
+          v-bind:key="footer.id" 
+          v-bind:footer="footer"
+        ></vue-footer-item>
+      </vue-footer>
+    </div>
 
-			<vue-footer>
-					<vue-contact-item
-						v-for="contactitem in contactitems" 
-						v-bind:key="contactitem.id" 
-						v-bind:contactitem="contactitem"
-					></vue-contact-item>
-				
-				<vue-footer-item 
-					v-for="footer in footeritems" 
-					v-bind:key="footer.id" 
-					v-bind:footer="footer"
-				></vue-footer-item>
-			</vue-footer>
-
-		</div>
+    <canvas class="particles"></canvas>
 
 		<!-- SCRIPTS -->
 
@@ -117,6 +124,8 @@
 		<script type="module" src="./assets/js/carousel.js"></script>
 		<!-- animation (magic) -->
 		<script src="./assets/js/animations.js"></script>
+		<!-- particles -->
+		<script src="./assets/js/particles.js"></script>
 
 	</body>
 

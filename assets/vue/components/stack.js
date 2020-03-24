@@ -7,6 +7,7 @@ const stack = {
 	template: `
 		<div class="card-deck">
 			<slot></slot>
+		</div>
     `
 }
 export default stack;

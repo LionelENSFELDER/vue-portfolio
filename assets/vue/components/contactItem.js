@@ -7,7 +7,7 @@ const contactItem = {
 	props: ['contactitem'],
 	template: `
 		<div class="col mb-3">
-			<div class="card p-3 mb-3 contactitem-card">
+			<div class="card p-3 mb-3 contactitem-card animated-fadeInDown">
 				<a :href=contactitem.url target=_blank class="stretched-link"></a>
 				<div class="row">
 					<div class="col-8 my-auto">
