@@ -6,6 +6,7 @@ let callback = function(entries, observer) {
 
 			entry.target.style.visibility = "visible";
 			entry.target.classList.add('animated');
+			//console.log('isIntersecting of ' + entry + ' is true');
 
 			if(entry.target.classList.contains('animated-fadeInLeft')){
 
@@ -26,6 +27,7 @@ let callback = function(entries, observer) {
 			}
 
 		}else if(entry.isIntersecting === false){
+			console.log('isIntersecting of ' + entry + ' is false');
 
 			entry.target.style.visibility = "hidden";
 
@@ -39,7 +41,7 @@ let callback = function(entries, observer) {
 const options = {
   root: null,
   rootMargin: '0px',
-  threshold: 1.0
+  threshold:  0
 };
 
 window.onload = function() {
@@ -48,7 +50,7 @@ window.onload = function() {
 
 	const animationsTargets = document.querySelectorAll('[class*="animated-"]');
 
-	console.log("animationsTargets= " + animationsTargets.length);
+	//console.log("animationsTargets= " + animationsTargets.length);
 
 	animationsTargets.forEach(function(currentValue){
 		observer.observe(currentValue);
