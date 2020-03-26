@@ -9,6 +9,7 @@ function server() {
             baseDir: "./",
             index: 'index.html',
         },
+        host: 'aboutme',
         https: false,
         port: 8001,
         scrollProportionally: false,
