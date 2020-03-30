@@ -1,3 +1,10 @@
+// FONTS
+@font-face {
+    font-family: "Anurati";
+    src: url("../fonts/Anurati/Anurati-Regular.ttf") format("ttf"),
+        url("../fonts/Anurati/Anurati-Regular.otf") format("otf");
+}
+
 // COLORS VARIABLES
 //$raisin: #202020;//section dark
 $raisin: #313334;//section dark
@@ -10,11 +17,6 @@ $white: rgb(255, 255, 255);
 $arsenic-transparent: #42424258;
 $main: #6FA198;
 $second: #476761;
-$pink: #FF528D;
-$cyberpink: #EA00D9;
-$cyberpurple: #711C91;
-$cyberblue: #0ABDC6;
-$yellow: #ECF232;
 /*TAGS*/
 html {
     scroll-behavior: smooth;
@@ -29,8 +31,8 @@ body{
     // background-size: cover;
 }
 h1{
-    font-family: Montserrat;
-    font-weight: 700;
+    font-family: Anurati;
+    font-size: 2rem;
 }
 a{
     color:inherit;
@@ -146,7 +148,7 @@ a:hover{
     background-color: $raisin;
 }
 .stack-card:hover i{
-    color: $pink;
+    color: $main;
     //background: linear-gradient(90deg, rgba(255,82,141,1) 38%, rgba(10,189,198,1) 74%);
     // background: linear-gradient(90deg, rgba(234,0,217,1) 0%, rgba(234,0,217,1) 23%, rgba(10,189,198,1) 100%);
 }
@@ -201,7 +203,7 @@ margin-right: -0px;
     color: $white;
 }
 .contactitem-card:hover{
-    background-color: $pink;
+    background-color: $main;
 }
 .contactitem-card:hover i{
     color: $white;
@@ -209,10 +211,13 @@ margin-right: -0px;
 /* testimonial */
 #temoignages a i:hover{
     background-color: $white;
-    color: $pink;
+    color: $main;
 }
 #temoignages img.rounded-circle{
     border: 4px solid;
+}
+.testimonial-item-link{
+    color: $main;
 }
 /* particles */
 .particles {
@@ -248,7 +253,7 @@ text set in the data-text attribute. */
 
 .glitch {
 position: relative;
-letter-spacing: .5em;
+// letter-spacing: .5em;
 /* Animation provies a slight random skew. Check bottom of doc
 for more information on how to random skew. */
 animation: glitch-skew 1s infinite linear alternate-reverse;

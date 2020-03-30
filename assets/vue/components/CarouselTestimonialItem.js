@@ -12,10 +12,7 @@ const CarouselTestimonialItem = {
 					<div><img class="img-fluid rounded-circle mb-4" :src="testimonial.photo" :title="testimonial.photoTitle" :alt="testimonial.photoAlt" width="100px"></div>
 					<p class="card-text">{{testimonial.testimonial}}</p>
 					<span class="card-text">- {{testimonial.name}}, </span>
-					<span class="card-text font-main">{{testimonial.client}}</span>
-					<br>
-					<a :href="testimonial.url" target="_blank" class="badge font-15" v-html="testimonial.urlIcon"></a>
-					<a :href="testimonial.link" target="_blank" class="badge font-15" v-html="testimonial.linkIcon"></a>
+					<a :href="testimonial.url" target="_blank" class="testimonial-item-link">{{testimonial.client}}</a>
 				</div>
 			</div>
 		</div>

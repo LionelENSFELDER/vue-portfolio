@@ -232,30 +232,22 @@ new Vue({
 			{
 				id: 1,
 				name: 'Céline Tréhin',
-				job: 'Présidente AID83',
 				photo: './assets/img/testimonials/celine-trehin.jpg',
 				photoTitle:"Céline Tréhin",
 				photoAlt:"Céline Tréhin",
 				client: 'AID83',
 				testimonial: 'Très à l\'écoute, Lionel a su moderniser notre site.',
-				urlIcon: '<i class="p-2 border border-dark white font-onyx rounded-circle las la-eye"></i>',
 				url: 'https://www.aid83.org/',
-				linkIcon:'<i class="p-2 border border-dark white font-onyx rounded-circle lab la-facebook-f"></i>',
-				link: 'https://bit.ly/2U6u6FO'
 			},
 			{
 				id: 2,
 				name: 'Eléonore Hottou',
-				job: 'Sophrologue et masseuse',
 				photo: './assets/img/testimonials/eleonore-hottou.jpg',
 				photoTitle:"Eléonore Hottou",
 				photoAlt:"Eléonore Hottou",
 				client: 'Sophromassage',
 				testimonial: 'Lionel fait preuve d\'une bonne capacité à cerner les besoins et à les respecter.',
-				urlIcon: '<i class="p-2 border border-dark white font-onyx rounded-circle las la-eye"></i>',
 				url: '#testimonials',
-				linkIcon:'<i class="p-2 border border-dark white font-onyx rounded-circle lab la-facebook-f"></i>',
-				link: 'https://bit.ly/2REGhbc'
 			}
 		],
 		contactitems: [

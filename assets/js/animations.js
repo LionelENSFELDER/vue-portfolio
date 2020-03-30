@@ -62,7 +62,7 @@ window.onload = function() {
 		connectParticles: true,
 		sizeVariations: 1,
 		speed: 1,
-		color: ['#EA00D9']
+		color: ['#6FA198']
 	});
   
 };

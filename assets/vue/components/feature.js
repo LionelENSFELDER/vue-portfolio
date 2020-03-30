@@ -11,7 +11,7 @@ const feature = {
 				<div class="card border-0 bg-transparent">
 					<div>
 						<span class="text-white-50 d-block mb-2">Salut, je suis</span>
-						<h1 class="glitch" data-text="Lionel ENSFELDER">Lionel ENSFELDER</h1>
+						<h1 class="glitch" data-text="LIONEL ENSFELDER">LIONEL ENSFELDER</h1>
 						<p class="text-white-50 animated-fadeInRight">
 							
 							Après des années enrichissantes dans la Marine Nationale en tant que technicien réseau et télécoms, j'ai décidé de devenir développeur web.
