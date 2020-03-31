@@ -188,7 +188,7 @@ new Vue({
 		works: [{
 				id: 1,
 				title: 'AID83',
-				coverImage: 'assets/img/works/placeholder-portrait.jpg',
+				coverImage: 'assets/img/works/placeholder-portrait.webp',
 				coverTitle: 'Image du site Aid 83',
 				coverAlt:'Aid 83',
 				client: 'AID83',
@@ -202,7 +202,7 @@ new Vue({
 			{
 				id: 2,
 				title: 'Sophromassage',
-				coverImage: './assets/img/works/placeholder-portrait.jpg',
+				coverImage: './assets/img/works/placeholder-portrait.webp',
 				coverTitle: 'Image du site Sophromassage',
 				client: 'Eléonore Hottou',
 				date: '2019',
@@ -215,7 +215,7 @@ new Vue({
 			{
 				id: 3,
 				title: 'Portfolio',
-				coverImage: 'assets/img/works/placeholder-portrait.jpg',
+				coverImage: 'assets/img/works/placeholder-portrait.webp',
 				coverTitle: 'Image du portfolio',
 				coverAlt:'Portfilio de Lionel Ensfelder',
 				alt:'aid83',
@@ -255,7 +255,7 @@ new Vue({
 				id: 1,
 				text: 'Adresse',
 				info: '612 Avenue Maréchal Foch',
-				icon: '<i class="align-middle border-0 font-onyx font-40 las la-globe"></i>',
+				icon: '<i class="align-middle border-0 font-onyx font-30 fas fa-globe-europe"></i>',
 				url: '#'
 
 			},
@@ -263,35 +263,35 @@ new Vue({
 				id: 2,
 				text: 'Téléphone',
 				info: '06 52 40 10 21',
-				icon: '<i class="align-middle border-0 font-onyx font-40 las la-mobile"></i>',
+				icon: '<i class="align-middle border-0 font-onyx font-30 fas fa-satellite"></i>',
 				url: 'tel:+33652401021'
 			},
 			{
 				id: 3,
 				text: 'Mail',
 				info: 'ensfelder.lionel@gmail.com',
-				icon: '<i class="align-middle border-0 font-onyx font-40 las la-at"></i>',
+				icon: '<i class="align-middle border-0 font-onyx font-30 fas fa-at"></i>',
 				url: 'mailto://ensfelder.lionel@gmail.com'
 			},
 			{
 				id: 4,
 				text: 'Github',
 				info: 'LionelENSFELDER',
-				icon: '<i class="align-middle border-0 font-onyx font-40 lab la-github"></i>',
+				icon: '<i class="align-middle border-0 font-onyx font-30 fab fa-github"></i>',
 				url: 'https://github.com/LionelENSFELDER'
 			},
 			{
 				id: 5,
 				text: 'LinkedIn',
 				info: 'lionel-ensfelder',
-				icon: '<i class="align-middle border-0 font-onyx font-40 lab la-linkedin-in"></i>',
+				icon: '<i class="align-middle border-0 font-onyx font-30 fab fa-linkedin-in"></i>',
 				url: 'https://www.linkedin.com/in/lionel-ensfelder/'
 			},
 			{
 				id: 6,
 				text: 'Medium',
 				info: '@ensfelder.lionel',
-				icon: '<i class="align-middle border-0 font-onyx font-40 lab la-medium"></i>',
+				icon: '<i class="align-middle border-0 font-onyx font-30 fab fa-medium"></i>',
 				url: 'https://medium.com/@ensfelder.lionel'
 			}
 		],
@@ -396,21 +396,21 @@ new Vue({
 		stacks:[
 			{
 				id: 1,
-				icon: '<i class="las la-brush display-4"></i>',
+				icon: '<i class="fas fa-paint-brush font-30"></i>',
 				title: 'Frontend',
 				content: 'Figma, Bootstrap, UI Kit, Foundation, SAAS, Vue.js, React.'
 
 			},
 			{
 				id: 2,
-				icon: '<i class="las la-brain display-4"></i>',
+				icon: '<i class="fas fa-server font-30"></i>',
 				title: 'Backend',
 				content: 'SQL, Redis, Symfony, Wordpress, Joomla, Node.js.'
 
 			},
 			{
 				id: 3,
-				icon: '<i class="las la-toolbox display-4"></i>',
+				icon: '<i class="fas fa-toolbox font-30"></i>',
 				title: 'Autre',
 				content: 'Jest, PHP Unit, Hyperledger Fabric, Git.'
 

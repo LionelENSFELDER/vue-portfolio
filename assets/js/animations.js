@@ -27,7 +27,7 @@ let callback = function(entries, observer) {
 			}
 
 		}else if(entry.isIntersecting === false){
-			console.log('isIntersecting of ' + entry + ' is false');
+			// console.log('isIntersecting of ' + entry + ' is false');
 
 			entry.target.style.visibility = "hidden";
 

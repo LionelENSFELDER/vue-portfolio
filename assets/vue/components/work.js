@@ -14,7 +14,7 @@ const work = {
 					</div>
 					<div class="toDisplay text-center font-white position-absolute">
 						<div>
-							<a :href="work.url" target="_blank" class=""><i class="font-20 p-2 mb-3 border border-light rounded-circle text-white las la-link"></i></a>
+							<a :href="work.url" target="_blank" class=""><i class="font-20 p-2 mb-3 border border-light rounded-circle text-white fas fa-link"></i></a>
 						</div>
 						<h5 class="font-weight-bold">{{work.title}}</h5>
 						<span class="custom-tags">{{work.tags}}</span>
