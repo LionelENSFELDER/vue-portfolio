@@ -21,20 +21,35 @@ var swiper = new Swiper('.swiper-container', {
     centeredSlides: true,
     slidesPerView: 3,
     initialSlide: 2,
+    spaceBetween: 20,
     keyboardControl: true,
     mousewheelControl: true,
     lazyLoading: true,
     preventClicks: false,
     preventClicksPropagation: false,
     lazyLoadingInPrevNext: true,
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
-
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
     coverflow: {
         rotate: 0,
         stretch: 0,
         depth: 250,
         modifier: 1,
         slideShadows : false,
+    },
+    breakpoints: {
+        0:{
+            slidesPerView: 1,
+        },
+        480:{
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        680:{
+            slidesPerView: 4,
+            spaceBetween: 10,
+        }
     }
 });

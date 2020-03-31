@@ -21,14 +21,13 @@ const feature = {
 							<br>
 							Je suis spécialisé dans la création d'interfaces et de solutions utilisant principalement Vue.js, React et Node.js.
 						</p>
-						<a href="./assets/docs/cv-ensfelder-lionel.pdf" target="_blank" type="button" class="btn btn-main my-4">MON CV</a>
-						<a id="github" href="#" target="_blank" type="button" class="btn btn-main-light my-4">GITHUB</a>
-						<!-- <a href="https://www.linkedin.com/in/lionel-ensfelder/" target="_blank" type="button" class="btn btn-outline-light my-4">LINKEDIN</a> -->
+						<a href="./assets/docs/cv-ensfelder-lionel.pdf" target="_blank" class="btn btn-main my-4">MON CV</a>
+						<a href="https://github.com/LionelENSFELDER" target="_blank" class="btn btn-main-light my-4">GITHUB</a>
 					</div>
 				</div>
 				<div class="card border-0 bg-transparent">
 					<div class="my-auto mx-sd-auto mx-md-auto animated-fadeInLeft">
-						<img src="assets/img/lionel-ensfelder.webp" class="rounded img-fluid" title="Lionel Ensfelder" alt="lionel Ensfelder" style="width: 250px;">
+						<img src="assets/img/lionel-ensfelder.jpg" class="rounded img-fluid" title="Lionel Ensfelder" alt="lionel Ensfelder" style="width: 250px;">
 					</div>
 				</div>
 			</div>

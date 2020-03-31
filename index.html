@@ -9,7 +9,7 @@
 		<!-- css -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="./assets/css/animate.min.css" />
-		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+		<link rel="stylesheet" href="./assets/css/swiper.min.css">
 		<link rel="stylesheet" href="./assets/css/custom.css" />
 		<!-- title -->
 		<title>Lionel E.</title>
@@ -84,12 +84,6 @@
 
       <!-- footer -->
       <vue-footer>
-        <vue-contact-item
-            v-for="contactitem in contactitems" 
-            v-bind:key="contactitem.id" 
-            v-bind:contactitem="contactitem"
-        ></vue-contact-item>
-        
         <vue-footer-item 
           v-for="footer in footeritems" 
           v-bind:key="footer.id" 
@@ -98,7 +92,7 @@
       </vue-footer>
     </div>
 
-    <canvas class="particles"></canvas>
+    <!-- <canvas class="particles"></canvas> -->
 
 		<!-- SCRIPTS -->
     <script src="https://kit.fontawesome.com/3d80db08d2.js" crossorigin="anonymous"></script>
@@ -107,7 +101,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="./assets/js/bootstrap.bundle.min.js"></script>
 		<!-- swiper carousel -->
-		<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+		<script src="./assets/js/swiper.min.js"></script>
 		<!-- animation (animate) -->
 		<script src="./assets/js/animations.js"></script>
 		<!-- particles -->

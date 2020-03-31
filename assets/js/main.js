@@ -185,10 +185,11 @@ new Vue({
 				url: 'https://www.defense.gouv.fr/marine'
 			}
 		],
-		works: [{
+		works: [
+			{
 				id: 1,
 				title: 'AID83',
-				coverImage: 'assets/img/works/placeholder-portrait.webp',
+				coverImage: 'assets/img/works/placeholder-portrait.jpg',
 				coverTitle: 'Image du site Aid 83',
 				coverAlt:'Aid 83',
 				client: 'AID83',
@@ -202,7 +203,7 @@ new Vue({
 			{
 				id: 2,
 				title: 'Sophromassage',
-				coverImage: './assets/img/works/placeholder-portrait.webp',
+				coverImage: './assets/img/works/placeholder-portrait.jpg',
 				coverTitle: 'Image du site Sophromassage',
 				client: 'Eléonore Hottou',
 				date: '2019',
@@ -215,7 +216,7 @@ new Vue({
 			{
 				id: 3,
 				title: 'Portfolio',
-				coverImage: 'assets/img/works/placeholder-portrait.webp',
+				coverImage: 'assets/img/works/placeholder-portrait.jpg',
 				coverTitle: 'Image du portfolio',
 				coverAlt:'Portfilio de Lionel Ensfelder',
 				alt:'aid83',

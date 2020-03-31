@@ -57,12 +57,12 @@ window.onload = function() {
 	})
 
 	//particles animation...
-	Particles.init({
-		selector: '.particles',
-		connectParticles: true,
-		sizeVariations: 1,
-		speed: 1,
-		color: ['#6FA198']
-	});
+	// Particles.init({
+	// 	selector: '.particles',
+	// 	connectParticles: true,
+	// 	sizeVariations: 1,
+	// 	speed: 1,
+	// 	color: ['#6FA198']
+	// });
   
 };

@@ -5,11 +5,11 @@ const footer = {
 		}
 	},
 	template: `
-	<footer class="py-4">
-		<div class="text-center">
-			<span class="d-block">© Lionel ENSFELDER. All Right Reserved.</span>
-		</div>
-	</footer>
+		<footer class="py-4">
+			<div class="text-center font-15">
+				<span class="d-block">© Lionel ENSFELDER. All Right Reserved.</span>
+			</div>
+		</footer>
 	`
 }
 export default footer;
