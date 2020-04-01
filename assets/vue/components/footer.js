@@ -7,7 +7,7 @@ const footer = {
 	template: `
 		<footer class="py-4">
 			<div class="text-center font-15">
-				<span class="d-block">© Lionel ENSFELDER. All Right Reserved.</span>
+				<span class="d-block">2020 Lionel ENSFELDER. Made with Vue.js & Bootstrap 4.</span>
 			</div>
 		</footer>
 	`

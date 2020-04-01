@@ -21,7 +21,7 @@ var swiper = new Swiper('.swiper-container', {
     centeredSlides: true,
     slidesPerView: 3,
     initialSlide: 2,
-    spaceBetween: 20,
+    spaceBetween: 10,
     keyboardControl: true,
     mousewheelControl: true,
     lazyLoading: true,

@@ -9,10 +9,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Press+Start+2P&display=swap');
 
 // COLORS VARIABLES THEME
-$white: #fff;
+$white: #FCFCE0;
 $dark: #202020;
 $grey: #2B2B2B;
-$main: #8AC89A;
+$main: #FC1B24;
 $accent: #FF5D89;
 /*TAGS*/
 html {
@@ -21,7 +21,8 @@ html {
 body{
     font-family: "Roboto Condensed";
     color: $white;
-    background-color: $dark;
+    background: url("../img/wallpapers/main.gif") no-repeat center fixed;
+    background-size: cover;
 }
 footer{
     font-family: "Libre Barcode 128 Text";
@@ -166,8 +167,13 @@ margin-left: -0px;
 .carousel-control-next {
 margin-right: -0px;
 }
+// S_W_I_P_E_R
 .swiper-container {
     height: 100%;
+    // max-height: 350px;
+}
+.swiper-slide{
+    //max-height: 350px;
 }
 /* contactitem */
 .contactitem-card{

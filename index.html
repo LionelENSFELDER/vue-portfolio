@@ -39,7 +39,7 @@
       </vue-section>
       
       <!-- stack and tools -->
-      <vue-section id="technologies" class="bg-grey" title="TECHNOLOGIES">
+      <vue-section id="technologies" class="" title="TECHNOLOGIES">
         <vue-stack>
           <vue-stack-category
             v-for="stack in stacks" 
@@ -52,7 +52,7 @@
       <!-- my works -->
       <vue-section id="realisations" class="" title="MES REALISATIONS">
         <vue-swiper-carousel>
-          <vue-work 
+          <vue-work  
             v-for="work in works" 
             v-bind:key="work.id" 
             v-bind:work="work"
@@ -61,7 +61,7 @@
       </vue-section>
 
       <!-- testimonials -->
-      <vue-section id="temoignages" class="testimonial" title="TEMOIGNAGES">
+      <vue-section id="temoignages" class="" title="TEMOIGNAGES">
         <vue-carousel-testimonial>
           <vue-carousel-testimonial-item 
             v-for="testimonial in testimonials" 

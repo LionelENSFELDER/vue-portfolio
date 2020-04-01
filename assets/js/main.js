@@ -189,9 +189,9 @@ new Vue({
 			{
 				id: 1,
 				title: 'AID83',
-				coverImage: 'assets/img/works/placeholder-portrait.jpg',
+				coverImage: './assets/img/works/placeholder-portrait.jpg',
 				coverTitle: 'Image du site Aid 83',
-				coverAlt:'Aid 83',
+				coverAlt:'AID83',
 				client: 'AID83',
 				date: '2018',
 				job: '',
@@ -205,12 +205,13 @@ new Vue({
 				title: 'Sophromassage',
 				coverImage: './assets/img/works/placeholder-portrait.jpg',
 				coverTitle: 'Image du site Sophromassage',
+				coverAlt:'Sophromassage',
 				client: 'Eléonore Hottou',
 				date: '2019',
 				job: '',
 				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
 				tags: "Wordpress | Bootstrap" ,
-				url: '#',
+				url: './assets/img/works/sophromassage.png',
 				github:'https://github.com/LionelENSFELDER/sophromassage'
 			},
 			{

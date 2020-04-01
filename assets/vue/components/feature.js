@@ -10,9 +10,9 @@ const feature = {
 			<div class="card-deck">
 				<div class="card border-0 bg-transparent">
 					<div>
-						<span class="text-white-50 d-block mb-2">Salut, je suis</span>
+						<span class="d-block mb-2">Salut, je suis</span>
 						<h1 class="glitch" data-text="LIONEL ENSFELDER">LIONEL ENSFELDER</h1>
-						<p class="text-white-50 animated-fadeInRight">
+						<p class="animated-fadeInRight">
 							
 							Après des années enrichissantes dans la Marine Nationale en tant que technicien réseau et télécoms, j'ai décidé de devenir développeur web.
 							<br>
