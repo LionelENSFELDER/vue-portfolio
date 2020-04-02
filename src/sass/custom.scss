@@ -1,0 +1,296 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Press+Start+2P&display=swap');
+
+// COLORS VARIABLES THEME
+$white: #FFF;
+$dark: #202020;
+$grey: #2B2B2B;
+$main: #FC1B24;
+$accent: #FF5D89;
+/*TAGS*/
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Roboto Condensed";
+    color: $white;
+    background: url("../../assets/img/wallpapers/main.gif") no-repeat center fixed;
+    background-size: cover;
+}
+footer{
+    font-family: "Libre Barcode 128 Text";
+}
+h1{
+    font-family: "Press Start 2P";
+    font-size: 2rem;
+}
+a{
+    color:inherit;
+}
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+/*BACKGRONDS*/
+.bg-dark{
+    background-color: $dark !important;
+} 
+.bg-grey{
+    background-color: $grey;
+}
+// BODER COLOR
+.border-main{
+    border-color: $main;
+}
+/* FONT COLOR */
+.font-main{
+    color: $main;
+}
+.font-white{
+    color: $white;
+}
+
+/* FONT WEIGHT */
+.custom-date, .custom-url, .custom-tags{
+    font-weight: 200;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+.font-08{
+    font-size: 0.8rem;
+}
+.font-12{
+    font-size: 1.2rem;
+}
+.font-15{
+    font-size: 1.5rem;
+}
+.font-20{
+    font-size: 2rem;
+}
+.font-30{
+    font-size: 3rem;
+}
+.font-40{
+    font-size: 4rem;
+}
+.font-100{
+    font-size: 10rem;
+}
+/* BUTTONS */
+.btn-main{
+    color: $main;
+    border: 1px solid $main;
+    background-color: transparent;
+}
+.btn-main:hover{
+    color: $dark;
+    background-color: $main;
+    border: 1px solid transparent;
+}
+.btn-main-light{
+    color: $main;
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+.btn-main-light:hover{
+    color: $main;
+}
+/*STACK CARD*/
+.stack-card{
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    color: white;
+}
+.stack-card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: $dark;
+}
+.stack-card:hover i{
+    color: $main;
+}
+/* HOVER IMAGE */
+.containerHovered{
+    position: relative;
+}
+.toHide {
+    opacity: 1;
+    transition: .5s ease;
+}
+.toDisplay {
+    transition: .5s ease;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.containerHovered:hover .toHide{
+    opacity: 0.5;
+
+}
+.containerHovered:hover .toDisplay {
+    opacity: 1;
+}
+.containerHovered:hover img{
+    filter: brightness(50%);
+}
+.containerHovered:hover .card{
+    background-color: rgba(0, 0, 0, 0.582);
+    border: 0;
+}
+// start
+.start{
+    height: 100vh;
+    background-image: url("../img/wallpapers/space.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* carousel */
+#myCarousel {
+margin-left: 50px;
+margin-right: 50px;
+}
+.carousel-control-prev {
+margin-left: -0px;
+}
+.carousel-control-next {
+margin-right: -0px;
+}
+// S_W_I_P_E_R
+.swiper-container {
+    height: 100%;
+    // max-height: 350px;
+}
+/* contactitem */
+.contactitem-card{
+    background-color: transparent;
+    color: $white;
+}
+.contactitem-card:hover{
+    background-color: $grey;
+}
+.contactitem-card i{
+    color: $white;
+}
+.contactitem-card:hover i{
+    color: $main;
+}
+//T_E_S_T_I_M_O_N_I_A_L
+.testimonial{
+    background-image: url("../img/wallpapers/wallpaper.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.testimonial a i:hover{
+    background-color: $white;
+    color: $main;
+}
+.testimonial img.rounded-circle{
+    border: 4px solid;
+}
+.testimonial-item-link{
+    color: $main;
+}
+// P_A_R_T_I_C_L_E_S
+.particles {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vh;
+    z-index: -999;
+}
+// S_W_I_P_E_R  C_A_R_O_U_S_E_L
+// S_W_I_P_E_R  C_A_R_O_U_S_E_L
+.swiper-button-next,
+.swiper-button-prev{
+    color: $main;
+}
+// G_L_I_T_C_H  A_N_I_M_A_T_I_O_N
+// G_L_I_T_C_H  A_N_I_M_A_T_I_O_N
+// Here's the meat and potatoes.
+/* Our mixin positions a copy of our text
+directly on our existing text, while
+also setting content to the appropriate
+text set in the data-text attribute. */
+@mixin glitchCopy { 
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.glitch {
+    position: relative;
+    // letter-spacing: .5em;
+    /* Animation provies a slight random skew. Check bottom of doc
+    for more information on how to random skew. */
+    animation: glitch-skew 1s infinite linear alternate-reverse;
+    // Creates a copy before our text. 
+    &::before{
+    // Duplicates our text with the mixin.
+    @include glitchCopy;
+    // Scoots text slightly to the left for the color offset.
+    left: 2px;
+    // Creates the color 'shadow' that happens on the glitch.
+    text-shadow: -2px 0 #ff00c1;
+    /* Creates an initial clip for our glitch. This works in
+    a typical top,right,bottom,left fashion and creates a mask
+    to only show a certain part of the glitch at a time. */
+    clip: rect(44px, 450px, 56px, 0);
+    /* Runs our glitch-anim defined below to run in a 5s loop, infinitely,
+    with an alternating animation to keep things fresh. */
+    animation: glitch-anim 5s infinite linear alternate-reverse;
+    }
+
+    // Creates a copy after our text. Note comments from ::before.
+    &::after {
+    @include glitchCopy;
+    left: -2px;
+    text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+    animation: glitch-anim2 1s infinite linear alternate-reverse;
+    }
+}
+/* Creates an animation with 20 steaps. For each step, it calculates 
+a percentage for the specific step. It then generates a random clip
+box to be used for the random glitch effect. Also adds a very subtle
+skew to change the 'thickness' of the glitch.*/
+@keyframes glitch-anim {
+    $steps: 20;
+    @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+        clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+        transform: skew((random(100) / 100) + deg);
+    }
+    }
+    }
+    // Same deal, just duplicated for ultra randomness.
+    @keyframes glitch-anim2 {
+    $steps: 20;
+    @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+        clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+        transform: skew((random(100) / 100) + deg);
+    }
+    }
+    }
+    // Does the same deal as before, but now only skews. Used for main text.
+    @keyframes glitch-skew {
+    $steps: 10;
+    @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+        transform: skew((random(10) - 5) + deg);
+    }
+    }
+}

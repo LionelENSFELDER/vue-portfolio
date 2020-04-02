@@ -18,17 +18,17 @@ function server() {
 };
 
 function sassCompile() {
-    return gulp.src('./assets/sass/custom.scss')
+    return gulp.src('./src/sass/custom.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./assets/css'));
+        .pipe(gulp.dest('./src/css'));
 };
 
 function watch() {
-    gulp.watch("./assets/sass/custom.scss").on('change', sassCompile, browserSync.reload);
+    gulp.watch("./src/sass/custom.scss").on('change', sassCompile, browserSync.reload);
     gulp.watch("./*.html").on('change', browserSync.reload);
-    gulp.watch("./assets/css/*.css").on('change', browserSync.reload);
-    gulp.watch("./assets/vue/components/*.js").on('change', browserSync.reload);
-    gulp.watch("./assets/js/*.js").on('change', browserSync.reload);
+    gulp.watch("./src/css/*.css").on('change', browserSync.reload);
+    gulp.watch("./src/js/components/*.vue").on('change', browserSync.reload);
+    gulp.watch("./src/js/*.js").on('change', browserSync.reload);
 };
 
 function log() {
