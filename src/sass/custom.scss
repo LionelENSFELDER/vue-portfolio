@@ -112,35 +112,19 @@ a:hover{
 .stack-card:hover i{
     color: $main;
 }
-/* HOVER IMAGE */
-.containerHovered{
-    position: relative;
+/* WORK */
+.workCard:hover{
+    transform: scale(1.1);
 }
-.toHide {
+.workCard h1{
+    opacity: 0.4;
+}
+.workCard:hover h1{
     opacity: 1;
-    transition: .5s ease;
+    color: $main;
 }
-.toDisplay {
-    transition: .5s ease;
-    opacity: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-.containerHovered:hover .toHide{
-    opacity: 0.5;
-
-}
-.containerHovered:hover .toDisplay {
-    opacity: 1;
-}
-.containerHovered:hover img{
-    filter: brightness(50%);
-}
-.containerHovered:hover .card{
-    background-color: rgba(0, 0, 0, 0.582);
-    border: 0;
+.workCard:hover img{
+    opacity: 0.2;
 }
 // start
 .start{

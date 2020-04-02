@@ -13,6 +13,7 @@ import CarouselTestimonialItem from './components/CarouselTestimonialItem.js'
 import contact from './components/contact.js'
 import contactItem from './components/contactItem.js'
 import footer from './components/footer.js'
+import projects from './components/projects.js'
 
 //COMPONENTS ---------------------
 Vue.component('vue-navbar', navbar);
@@ -29,6 +30,7 @@ Vue.component('vue-carousel-testimonial-item', CarouselTestimonialItem);
 Vue.component('vue-contact', contact);
 Vue.component('vue-contact-item', contactItem);
 Vue.component('vue-footer', footer);
+Vue.component('vue-projects', projects);
 
 
 //VUE ---------------------
@@ -188,8 +190,10 @@ new Vue({
 		works: [
 			{
 				id: 1,
+				target: 'aid83',
+				targetId: '#aid83',
 				title: 'AID83',
-				coverImage: './assets/img/works/placeholder-portrait.jpg',
+				coverImage: './assets/img/works/aid83.jpg',
 				coverTitle: 'Image du site Aid 83',
 				coverAlt:'AID83',
 				client: 'AID83',
@@ -202,8 +206,10 @@ new Vue({
 			},
 			{
 				id: 2,
+				target: 'sophromassage',
+				targetId: '#sophromassage',
 				title: 'Sophromassage',
-				coverImage: './assets/img/works/placeholder-portrait.jpg',
+				coverImage: 'https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
 				coverTitle: 'Image du site Sophromassage',
 				coverAlt:'Sophromassage',
 				client: 'Eléonore Hottou',
@@ -216,8 +222,10 @@ new Vue({
 			},
 			{
 				id: 3,
+				target: 'portfolio',
+				targetId: '#portfolio',
 				title: 'Portfolio',
-				coverImage: 'assets/img/works/placeholder-portrait.jpg',
+				coverImage: 'https://images.unsplash.com/photo-1566241440091-ec10de8db2e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1476&q=80',
 				coverTitle: 'Image du portfolio',
 				coverAlt:'Portfilio de Lionel Ensfelder',
 				alt:'aid83',
@@ -229,6 +237,40 @@ new Vue({
 				url: '#',
 				github:'https://github.com/LionelENSFELDER/about-me'
 			},
+			{
+				id: 4,
+				target: 'portfolio',
+				targetId: '#portfolio',
+				title: 'Portfolio',
+				coverImage: 'https://images.unsplash.com/photo-1552308995-2baac1ad5490?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
+				coverTitle: 'Image du portfolio',
+				coverAlt:'Portfilio de Lionel Ensfelder',
+				alt:'aid83',
+				client: 'Lionel Ensfelder',
+				date: '2020',
+				job: '',
+				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+				tags: "Bootstrap | Vue.js | Gulp" ,
+				url: '#',
+				github:'https://github.com/LionelENSFELDER/about-me'
+			},
+			{
+				id: 5,
+				target: 'portfolio',
+				targetId: '#portfolio',
+				title: 'Portfolio',
+				coverImage: 'https://images.unsplash.com/photo-1543966888-7c1dc482a810?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1381&q=80',
+				coverTitle: 'Image du portfolio',
+				coverAlt:'Portfilio de Lionel Ensfelder',
+				alt:'aid83',
+				client: 'Lionel Ensfelder',
+				date: '2020',
+				job: '',
+				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+				tags: "Bootstrap | Vue.js | Gulp" ,
+				url: '#',
+				github:'https://github.com/LionelENSFELDER/about-me'
+			}
 		],
 		testimonials: [
 			{
