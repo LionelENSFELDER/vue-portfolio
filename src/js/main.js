@@ -442,7 +442,7 @@ new Vue({
 				id: 1,
 				icon: '<i class="fas fa-paint-brush font-30"></i>',
 				title: 'Frontend',
-				content: 'Figma, Bootstrap, UI Kit, Foundation, SAAS, Vue.js, React.'
+				content: 'Figma, Bootstrap, UI Kit, Foundation, SASS, Vue.js, React.'
 
 			},
 			{
@@ -456,7 +456,7 @@ new Vue({
 				id: 3,
 				icon: '<i class="fas fa-toolbox font-30"></i>',
 				title: 'Autre',
-				content: 'Jest, PHP Unit, Hyperledger Fabric, Git.'
+				content: 'Gulp, Jest, PHP Unit, Docker, Hyperledger Fabric, Git.'
 
 			}
 		]

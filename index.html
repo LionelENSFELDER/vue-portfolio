@@ -1,118 +1,94 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-	<head>
-		<!-- meta -->
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<!-- css -->
-    <link rel="stylesheet" href="./src/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="./src/css/animate.min.css" />
-		<link rel="stylesheet" href="./src/css/swiper.min.css">
-		<link rel="stylesheet" href="./src/css/custom.css" />
-		<!-- title -->
-		<title>Lionel E.</title>
-		<!-- favico -->
-		<link rel="apple-touch-icon" sizes="180x180" href="assets/favico/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="assets/favico/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="assets/favico/favicon-16x16.png">
-		<link rel="manifest" href="assets/favico/site.webmanifest">
-	</head>
+<head>
+	<!-- META -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<!-- CSS -->
+	<link rel="stylesheet" href="./src/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./src/css/animate.min.css" />
+	<link rel="stylesheet" href="./src/css/swiper.min.css">
+	<link rel="stylesheet" href="./src/css/custom.css" />
+	<!-- TITLE -->
+	<title>Lionel E.</title>
+	<!-- ICO -->
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/favico/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favico/favicon-16x16.png">
+	<link rel="manifest" href="assets/favico/site.webmanifest">
+</head>
 
-	<body>
-		<!-- APP -->
-		<div id="app">
-      
-      <!-- navbar -->
-      <vue-navbar class="">
-        <vue-navbar-item 
-          v-for="navitem in navitems" 
-          v-bind:key="navitem.id" 
-          v-bind:navitem="navitem"
-        ></vue-navbar-item>
-      </vue-navbar>
+<body>
+	<!-- APP -->
+	<div id="app">
 
-      <!-- about me -->
-      <vue-section id="quisuisje" class="">
-        <vue-feature></vue-feature>
-      </vue-section>
-      
-      <!-- stack and tools -->
-      <vue-section id="technologies" class="" title="TECHNOLOGIES">
-        <vue-stack>
-          <vue-stack-category
-            v-for="stack in stacks" 
-            v-bind:key="stack.id"
-            v-bind:stack="stack"
-          ></vue-stack-category>
-        </vue-stack>
-      </vue-section>
+		<!-- NAVBAR -->
+		<vue-navbar class="">
+			<vue-navbar-item v-for="navitem in navitems" v-bind:key="navitem.id" v-bind:navitem="navitem">
+			</vue-navbar-item>
+		</vue-navbar>
 
-      <!-- my works -->
-      <vue-section id="realisations" class="" title="MES REALISATIONS">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-          <vue-projects
-            v-for="work in works" 
-            v-bind:key="work.id" 
-            v-bind:work="work"
-          ></vue-projects>
-        </div>
-      </vue-section>
+		<!-- ABOUT ME -->
+		<vue-section id="quisuisje" class="">
+			<vue-feature></vue-feature>
+		</vue-section>
 
-      <!-- testimonials -->
-      <vue-section id="temoignages" class="" title="TEMOIGNAGES">
-        <vue-carousel-testimonial>
-          <vue-carousel-testimonial-item 
-            v-for="testimonial in testimonials" 
-            v-bind:key="testimonial.id" 
-            v-bind:testimonial="testimonial"
-          ></vue-carousel-testimonial-item>
-        </vue-carousel-testimonial>
-      </vue-section>
+		<!-- STACK -->
+		<vue-section id="technologies" class="" title="TECHNOLOGIES">
+			<div class="card-deck">
+				<vue-stack-category v-for="stack in stacks" v-bind:key="stack.id" v-bind:stack="stack">
+				</vue-stack-category>
+			</div>
+		</vue-section>
 
-      <!-- contact -->
-      <vue-section id="contact" class="" title="CONTACTE-MOI">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-          <vue-contact-item
-            v-for="contactitem in contactitems" 
-            v-bind:key="contactitem.id" 
-            v-bind:contactitem="contactitem"
-          ></vue-contact-item>
-        </div>
-      </vue-section>
+		<!-- WORKS -->
+		<vue-section id="realisations" class="" title="MES REALISATIONS">
+			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+				<vue-projects v-for="work in works" v-bind:key="work.id" v-bind:work="work"></vue-projects>
+			</div>
+		</vue-section>
 
-      <!-- footer -->
-      <vue-footer>
-        <vue-footer-item 
-          v-for="footer in footeritems" 
-          v-bind:key="footer.id" 
-          v-bind:footer="footer"
-        ></vue-footer-item>
-      </vue-footer>
-    </div>
+		<!-- TESTIMONIALS -->
+		<vue-section id="temoignages" class="" title="TEMOIGNAGES">
+			<vue-carousel-testimonial>
+				<vue-carousel-testimonial-item v-for="testimonial in testimonials" v-bind:key="testimonial.id"
+					v-bind:testimonial="testimonial"></vue-carousel-testimonial-item>
+			</vue-carousel-testimonial>
+		</vue-section>
 
-		<!-- SCRIPTS -->
-    <script src="https://kit.fontawesome.com/3d80db08d2.js" crossorigin="anonymous"></script>
-		<!-- bootstrap parts-->
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-		<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
-		<script src="./src/js/bootstrap.bundle.min.js"></script>
-		<!-- animation (animate) -->
-		<script src="./src/js/animations.js"></script>
-		<!-- particles -->
-    <!-- <script src="./assets/js/particles.js"></script> -->
-		<!-- vue -->
-		<script src="./src/js/vue.js"></script>
-		<script type="module" src="./src/js/main.js"></script>
-		<!-- bootstrap carousel -->
-    <script type="module" src="./src/js/carousel.js"></script>
-    <script>
-      $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-      })
-    </script>
+		<!-- CONTACTS -->
+		<vue-section id="contact" class="" title="CONTACTE-MOI">
+			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+				<vue-contact-item v-for="contactitem in contactitems" v-bind:key="contactitem.id"
+					v-bind:contactitem="contactitem"></vue-contact-item>
+			</div>
+		</vue-section>
 
-	</body>
+		<!-- FOOTER -->
+		<vue-footer>
+			<vue-footer-item v-for="footer in footeritems" v-bind:key="footer.id" v-bind:footer="footer">
+			</vue-footer-item>
+		</vue-footer>
+	</div>
+
+	<!-- SCRIPTS -->
+	<script src="https://kit.fontawesome.com/3d80db08d2.js" crossorigin="anonymous"></script>
+	<!-- BOOTSTRAP-->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+	</script>
+	<script src="./src/js/bootstrap.bundle.min.js"></script>
+	<!-- ANIMATE -->
+	<script src="./src/js/animations.js"></script>
+	<!-- VUE -->
+	<script src="./src/js/vue.js"></script>
+	<!-- MAIN -->
+	<script type="module" src="./src/js/main.js"></script>
+	<!-- CAROUSEL -->
+	<script type="module" src="./src/js/carousel.js"></script>
+
+</body>
 
 </html>
