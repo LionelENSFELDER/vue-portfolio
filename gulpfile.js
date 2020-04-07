@@ -27,7 +27,7 @@ function watch() {
     gulp.watch("./src/sass/custom.scss").on('change', sassCompile, browserSync.reload);
     gulp.watch("./*.html").on('change', browserSync.reload);
     gulp.watch("./src/css/*.css").on('change', browserSync.reload);
-    gulp.watch("./src/js/components/*.vue").on('change', browserSync.reload);
+    gulp.watch("./src/js/components/*.js").on('change', browserSync.reload);
     gulp.watch("./src/js/*.js").on('change', browserSync.reload);
 };
 
