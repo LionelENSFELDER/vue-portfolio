@@ -191,7 +191,7 @@ new Vue({
 				target: 'aid83',
 				targetId: '#aid83',
 				title: 'AID83',
-				coverImage: './assets/img/works/aid83-preview.jpg',
+				coverImage: './assets/img-compressed/aid83-preview.jpg',
 				coverTitle: 'Image du site Aid 83',
 				coverAlt:'AID83',
 				client: 'AID83',
@@ -207,7 +207,7 @@ new Vue({
 				target: 'sophromassage',
 				targetId: '#sophromassage',
 				title: 'Sophromassage',
-				coverImage: './assets/img/works/sophromassage-preview.jpg',
+				coverImage: './assets/img-compressed/sophromassage-preview.jpg',
 				coverTitle: 'Image du site Sophromassage',
 				coverAlt:'Sophromassage',
 				client: 'Eléonore Hottou',
@@ -215,7 +215,7 @@ new Vue({
 				job: '',
 				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
 				tags: "Wordpress | Bootstrap" ,
-				url: './assets/img/works/sophromassage.png',
+				url: './assets/img-compressed/sophromassage.png',
 				github:'https://github.com/LionelENSFELDER/sophromassage'
 			},
 			{
@@ -223,7 +223,7 @@ new Vue({
 				target: 'portfolio',
 				targetId: '#portfolio',
 				title: 'Portfolio',
-				coverImage: './assets/img/works/portfolio-preview.jpg',
+				coverImage: './assets/img-compressed/portfolio-preview.jpg',
 				coverTitle: 'Image du portfolio',
 				coverAlt:'Portfilio de Lionel Ensfelder',
 				alt:'aid83',
@@ -240,7 +240,7 @@ new Vue({
 			{
 				id: 1,
 				name: 'Céline Tréhin',
-				photo: './assets/img/testimonials/celine-trehin.jpg',
+				photo: './assets/img-compressed/celine-trehin.jpg',
 				photoTitle:"Céline Tréhin",
 				photoAlt:"Céline Tréhin",
 				client: 'AID83',
@@ -250,7 +250,7 @@ new Vue({
 			{
 				id: 2,
 				name: 'Eléonore Hottou',
-				photo: './assets/img/testimonials/eleonore-hottou.jpg',
+				photo: './assets/img-compressed/eleonore-hottou.jpg',
 				photoTitle:"Eléonore Hottou",
 				photoAlt:"Eléonore Hottou",
 				client: 'Sophromassage',

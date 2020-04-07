@@ -27,7 +27,7 @@ const feature = {
 				</div>
 				<div class="card border-0 bg-transparent">
 					<div class="my-auto mx-sd-auto mx-md-auto animated-fadeInLeft">
-						<img src="assets/img/lionel-ensfelder.jpg" class="rounded img-fluid" title="Lionel Ensfelder" alt="lionel Ensfelder" style="width: 250px;">
+						<img src="assets/img-compressed/lionel-ensfelder.jpg" class="rounded img-fluid" title="Lionel Ensfelder" alt="lionel Ensfelder" style="width: 250px;">
 					</div>
 				</div>
 			</div>
