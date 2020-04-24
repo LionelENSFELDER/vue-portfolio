@@ -406,21 +406,21 @@ new Vue({
 				id: 1,
 				icon: '<i class="fas fa-paint-brush font-30"></i>',
 				title: 'Frontend',
-				content: 'Figma, Bootstrap, UI Kit, Foundation, SASS, Vue.js, React.'
+				content: 'Figma, Bootstrap, UI Kit, Foundation, SASS, Twig, jQuery, Vue.js, React.'
 
 			},
 			{
 				id: 2,
 				icon: '<i class="fas fa-server font-30"></i>',
 				title: 'Backend',
-				content: 'SQL, Redis, Symfony, Wordpress, Joomla, Node.js.'
+				content: 'Apache, SQL, Redis, Symfony, Wordpress, Joomla, Node.js.'
 
 			},
 			{
 				id: 3,
 				icon: '<i class="fas fa-toolbox font-30"></i>',
-				title: 'Autre',
-				content: 'Gulp, Jest, PHP Unit, Docker, Hyperledger Fabric, Git.'
+				title: 'Autres outils et technologies',
+				content: 'Gulp, Jest, PHP Unit, Docker, Hyperledger Fabric, Git, Firebase.'
 
 			}
 		]
