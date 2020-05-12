@@ -17,8 +17,8 @@ const feature = {
 							décidé de devenir développeur web. Je recherche un poste de développeur web frontend utilisant principalement
 							des technologies gravitant autour de Javascript tel que Vue.js, React et Node.js.
 						</p>
-						<a href="./assets/docs/cv-ensfelder-lionel.pdf" target="_blank" class="btn btn-main my-4">MON CV</a>
-						<a href="https://github.com/LionelENSFELDER" target="_blank" class="btn btn-main-light my-4">GITHUB</a>
+						<a href="./assets/docs/cv-ensfelder-lionel.pdf" target="_blank" class="btn btn-main my-4">VOIR MON CV</a>
+						<a href="https://github.com/LionelENSFELDER" target="_blank" class="btn btn-main-light my-4"> GITHUB</a>
 					</div>
 				</div>
 				<div class="card border-0 bg-transparent">
