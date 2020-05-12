@@ -1,13 +1,16 @@
 // I_M_P_O_R_T_S
+//@import "./colors.scss";
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Press+Start+2P&display=swap');
 
-// C_O_L_O_R_S
-$white: #FFF;
+
+$main: #6fffe9;
+$grey: #2B2B2B;
+$white: #FFFFFF;
 $dark: #202020;
-$darkTranslucent: #20202093;
-$main: #FC1B24;
+$darkTranslucent: #202020;
+$zizi: pink;
 
 // B_A_S_E
 html {
@@ -17,8 +20,9 @@ html {
 body {
     font-family: "Roboto Condensed";
     color: $white;
-    background: url("../../assets/img-compressed/main.gif") no-repeat center fixed;
-    background-size: cover;
+    background-color: $dark;
+    //background: url("../../assets/img-compressed/main.gif") no-repeat center fixed;
+    //background-size: cover;
 }
 
 footer {
@@ -37,6 +41,13 @@ a {
         text-decoration: none;
         color: inherit;
     }
+}
+// B_A_C_K_G_R_O_U_N_D_S
+.bg-grey{
+    background-color: $grey;
+}
+.bg-dark{
+    background-color: $dark !important;
 }
 
 // F_O_N_T  C_O_L_O_R
@@ -116,11 +127,17 @@ a {
 // W_O_R_K
 .workCard h1 {
     opacity: 0.4;
-    font-size: 1.3em;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: "Roboto Condensed";
+}
+
+.work-info{
+    opacity: 0;
 }
 
 .workCard:hover {
-    transform: scale(1.1);
+    transform: scale(1);
 
     &:hover h1 {
         opacity: 1;
@@ -129,6 +146,11 @@ a {
 
     &:hover img {
         opacity: 0.2;
+    }
+
+    .work-info{
+        opacity: 1;
+        background-color: rgba(43, 43, 43, 0.507);
     }
 }
 

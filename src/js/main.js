@@ -404,23 +404,23 @@ new Vue({
 		stacks:[
 			{
 				id: 1,
-				icon: '<i class="fas fa-paint-brush font-30"></i>',
+				icon: '<i class="las la-paint-roller font-30"></i>',
 				title: 'Frontend',
-				content: 'Figma, Bootstrap, UI Kit, Foundation, SASS, Twig, jQuery, Vue.js, React.'
+				content: 'Figma, HTML5, CSS3, Javascript, Bootstrap, Vue.js, React, Twig, SASS, jQuery'
 
 			},
 			{
 				id: 2,
-				icon: '<i class="fas fa-server font-30"></i>',
+				icon: '<i class="las la-server font-30"></i>',
 				title: 'Backend',
-				content: 'Apache, SQL, Redis, Symfony, Wordpress, Joomla, Node.js.'
+				content: 'PHP, MySQL, Symfony, Node.js, Wordpress, Joomla.'
 
 			},
 			{
 				id: 3,
-				icon: '<i class="fas fa-toolbox font-30"></i>',
-				title: 'Autres outils et technologies',
-				content: 'Gulp, Jest, PHP Unit, Docker, Hyperledger Fabric, Git, Firebase.'
+				icon: '<i class="las la-toolbox font-30"></i>',
+				title: 'Outils',
+				content: 'Docker, Webpack, Babel, Jest, NPM, ESLint, Gulp, Git, méthodologie Agile SCRUM'
 
 			}
 		]

@@ -10,7 +10,8 @@
 	<link rel="stylesheet" href="./src/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="./src/css/animate.min.css" />
 	<link rel="stylesheet" href="./src/css/swiper.min.css">
-	<link rel="stylesheet" href="./src/css/custom.css" />
+	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+	<link rel="stylesheet" href="./src/sass/custom.css" />
 	<!-- TITLE -->
 	<title>Lionel E.</title>
 	<!-- ICO -->
@@ -36,7 +37,7 @@
 		</vue-section>
 
 		<!-- STACK -->
-		<vue-section id="technologies" class="" title="TECHNOLOGIES">
+		<vue-section id="technologies" class="bg-grey" title="TECHNOLOGIES">
 			<div class="card-deck">
 				<vue-stack-category v-for="stack in stacks" v-bind:key="stack.id" v-bind:stack="stack">
 				</vue-stack-category>
@@ -45,13 +46,13 @@
 
 		<!-- WORKS -->
 		<vue-section id="realisations" class="" title="MES REALISATIONS">
-			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-2">
 				<vue-projects v-for="work in works" v-bind:key="work.id" v-bind:work="work"></vue-projects>
 			</div>
 		</vue-section>
 
 		<!-- TESTIMONIALS -->
-		<vue-section id="temoignages" class="" title="TEMOIGNAGES">
+		<vue-section id="temoignages" class="bg-grey" title="TEMOIGNAGES">
 			<vue-carousel-testimonial>
 				<vue-carousel-testimonial-item v-for="testimonial in testimonials" v-bind:key="testimonial.id"
 					v-bind:testimonial="testimonial"></vue-carousel-testimonial-item>
