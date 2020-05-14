@@ -248,10 +248,10 @@ new Vue({
 			},
 			{
 				id: 4,
-				target: 'portfolio',
-				targetId: '#portfolio',
+				target: 'miiniimaal-weather',
+				targetId: '#miiniimaal-weather',
 				title: 'Miiniimaal Weather',
-				coverImage: './assets/img-compressed/portfolio-preview.jpg',
+				coverImage: './assets/img-compressed/miiniimaal-weather-preview.jpg',
 				coverTitle: 'Image du projet Miiniimaal Weather',
 				coverAlt:'',
 				alt:'Miiniimaal Weather',
@@ -259,7 +259,7 @@ new Vue({
 				date: '2020',
 				job: '',
 				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
-				tags: "Vue",
+				tags: "Javascript",
 				url: '#',
 				github:'https://github.com/LionelENSFELDER/miiniimaal-weather'
 			}
