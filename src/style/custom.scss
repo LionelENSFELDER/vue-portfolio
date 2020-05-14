@@ -1,5 +1,4 @@
 // I_M_P_O_R_T_S
-//@import "./colors.scss";
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Press+Start+2P&display=swap');
@@ -22,8 +21,6 @@ body {
     font-family: "Roboto Condensed";
     color: $white;
     background-color: $dark;
-    //background: url("../../assets/img-compressed/main.gif") no-repeat center fixed;
-    //background-size: cover;
 }
 
 footer {
@@ -33,6 +30,7 @@ footer {
 h1 {
     font-family: "Press Start 2P";
     font-size: 2rem;
+    font-weight: bold;
 }
 
 a {
@@ -64,9 +62,7 @@ a {
 }
 
 // F_O_N_T  W_E_I_G_H_T
-.custom-date,
-.custom-url,
-.custom-tags {
+.custom-date, .custom-url, .custom-tags {
     font-weight: 200;
     font-size: 0.8rem;
     font-style: italic;
@@ -89,6 +85,11 @@ a {
 }
 
 // B_U_T_T_O_N_S
+*:focus {
+    outline:0 !important;
+    box-shadow: none !important;
+}
+
 .btn-main {
     color: $main;
     border: 1px solid $main;
@@ -120,79 +121,80 @@ a {
     border: none;
     text-align: center;
     color: white;
-
+    transition: background-color 1s, box-shadow 2s;
     &:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         background-color: $darkTranslucent;
     }
-
     &:hover i {
         color: $main;
     }
 }
 
 // W_O_R_K
-.workCard h1 {
-    opacity: 0.4;
-    font-size: 2em;
-    font-weight: bold;
-    font-family: "Roboto Condensed";
-}
-
-.work-info{
-    opacity: 0;
-    position: static;
-}
-
-.workCard:hover {
-    transform: scale(1);
-
-    &:hover h1 {
-        opacity: 1;
-        color: $white;
+.workCard{
+    h1 {
+        opacity: 0;
+        font-size: 2em;
+        font-weight: bold;
+        font-family: "Roboto Condensed";
+        transition: opacity 2s;
     }
-
-    &:hover img {
-        opacity: 0.2;
+    p{
+        opacity: 0;
+        transition: opacity 2s;
     }
-
     .work-info{
-        opacity: 1;
-        background-color: $main-translucent;
+        opacity: 0;
+        position: static;
+        transition: background-color 2s;
     }
-}
-
-.bottom-triangle{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 0 100px 100px;
-    border-color: transparent transparent $main transparent;
-
-    &:after {
-        content: '';
+    .work-info i{
+        opacity: 0;
+        color: $second;
         position: absolute;
+        bottom: 20px;
+        right: 10px;
+        font-size: 2rem;
+        transition: transform 1s, opacity 3s;
+        &:hover{
+            transform: scale(1.3);
+        }
     }
-}
-
-.work-info i{
-    position: absolute;
-    bottom: 20px;
-    right: 10px;
-    font-size: 2rem;
-}
-
-// start
-.start {
-    height: 100vh;
-    background-image: url("../img/wallpapers/space.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    .bottom-triangle{
+        opacity: 0;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 100px 100px;
+        border-color: transparent transparent $main transparent;
+        transition: opacity 1s;
+        &:after {
+            content: '';
+            position: absolute;
+        }
+    }
+    &:hover {
+        transform: scale(1.1);
+        h1, p, .work-info, .bottom-triangle, .work-info i{
+            opacity: 1;
+        }
+        h1 {
+            color: $main;
+        }
+        p{
+            color: $white;
+        }
+        img {
+            opacity: 0.2;
+        }
+        .work-info{
+            background-color: $main-translucent;
+        }
+    }
 }
 
 // C_A_R_O_U_S_E_L
@@ -201,30 +203,26 @@ a {
     margin-right: 50px;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
+.carousel-control-prev, .carousel-control-next {
     margin-left: -0px;
 }
 
 //T_E_S_T_I_M_O_N_I_A_L
 .testimonial {
-    background-image: url("../img/wallpapers/wallpaper.jpg");
+    background-image: url("../../assets/img/main.gif");
     height: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    a i:hover {
+        background-color: $white;
+        color: $main;
+    }
+    img.rounded-circle {
+        border: 4px solid;
+    }
 }
-
-.testimonial a i:hover {
-    background-color: $white;
-    color: $main;
-}
-
-.testimonial img.rounded-circle {
-    border: 4px solid;
-}
-
 .testimonial-item-link {
     color: $main;
 }
@@ -232,11 +230,13 @@ a {
 /* C_O_N_T_A_C_T  I_T_E_M */
 .contactitem-card {
     background-color: transparent;
-
+    transition: color 2s;
     &:hover {
         background-color: $darkTranslucent;
     }
-
+    i{
+        transition: color 1s;
+    }
     &:hover i {
         color: $main;
     }

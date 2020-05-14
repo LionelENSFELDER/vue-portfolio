@@ -1,3 +1,15 @@
+// SCRIPTS LOADING ---------------------
+function dynamicallyLoadScript(url) {
+    var script = document.createElement("script");
+    script.src = url;  
+    document.body.appendChild(script); 
+}
+// jquery must be include before bootstrap
+dynamicallyLoadScript('./src/js/utils/bootstrap.bundle.min.js');
+dynamicallyLoadScript('./src/js/utils/carousel.js');
+dynamicallyLoadScript('./src/js/utils/animations.js');
+dynamicallyLoadScript('./src/js/utils/work.filter.js');
+
 // IMPORTS ---------------------
 import navbar from './components/navbar.js'
 import navitem from './components/navitem.js'
@@ -29,7 +41,6 @@ Vue.component('vue-contact', contact);
 Vue.component('vue-contact-item', contactItem);
 Vue.component('vue-footer', footer);
 Vue.component('vue-projects', projects);
-
 
 //VUE ---------------------
 new Vue({
@@ -198,7 +209,7 @@ new Vue({
 				date: '2018',
 				job: '',
 				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
-				tags: "UI Kit | PHPMailer" ,
+				tags: "PHP" ,
 				url: 'https://www.aid83.org/',
 				github:'https://github.com/LionelENSFELDER/aid83-v2'
 			},
@@ -214,7 +225,7 @@ new Vue({
 				date: '2019',
 				job: '',
 				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
-				tags: "Wordpress | Bootstrap" ,
+				tags: "Wordpress" ,
 				url: './assets/img-compressed/sophromassage.png',
 				github:'https://github.com/LionelENSFELDER/sophromassage'
 			},
@@ -231,9 +242,26 @@ new Vue({
 				date: '2020',
 				job: '',
 				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
-				tags: "Bootstrap | Vue.js | Gulp" ,
+				tags: "Vue",
 				url: '#',
 				github:'https://github.com/LionelENSFELDER/about-me'
+			},
+			{
+				id: 4,
+				target: 'portfolio',
+				targetId: '#portfolio',
+				title: 'Miiniimaal Weather',
+				coverImage: './assets/img-compressed/portfolio-preview.jpg',
+				coverTitle: 'Image du projet Miiniimaal Weather',
+				coverAlt:'',
+				alt:'Miiniimaal Weather',
+				client: 'Lionel Ensfelder',
+				date: '2020',
+				job: '',
+				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+				tags: "Vue",
+				url: '#',
+				github:'https://github.com/LionelENSFELDER/miiniimaal-weather'
 			}
 		],
 		testimonials: [
@@ -263,7 +291,7 @@ new Vue({
 				id: 1,
 				text: 'Adresse',
 				info: '612 Avenue Maréchal Foch',
-				icon: '<i class="align-middle border-0 font-onyx font-30 fas fa-globe-europe"></i>',
+				icon: '<i class="align-middle border-0 font-onyx font-30 las la-map-pin"></i>',
 				url: '#'
 
 			},
@@ -271,35 +299,35 @@ new Vue({
 				id: 2,
 				text: 'Téléphone',
 				info: '06 52 40 10 21',
-				icon: '<i class="align-middle border-0 font-onyx font-30 fas fa-satellite"></i>',
+				icon: '<i class="align-middle border-0 font-onyx font-30 las la-mobile-alt"></i>',
 				url: 'tel:+33652401021'
 			},
 			{
 				id: 3,
 				text: 'Mail',
 				info: 'ensfelder.lionel@gmail.com',
-				icon: '<i class="align-middle border-0 font-onyx font-30 fas fa-at"></i>',
+				icon: '<i class="align-middle border-0 font-onyx font-30 las la-at"></i>',
 				url: 'mailto://ensfelder.lionel@gmail.com'
 			},
 			{
 				id: 4,
 				text: 'Github',
 				info: 'LionelENSFELDER',
-				icon: '<i class="align-middle border-0 font-onyx font-30 fab fa-github"></i>',
+				icon: '<i class="align-middle border-0 font-onyx font-30 lab la-github"></i>',
 				url: 'https://github.com/LionelENSFELDER'
 			},
 			{
 				id: 5,
 				text: 'LinkedIn',
 				info: 'lionel-ensfelder',
-				icon: '<i class="align-middle border-0 font-onyx font-30 fab fa-linkedin-in"></i>',
+				icon: '<i class="align-middle border-0 font-onyx font-30 lab la-linkedin-in"></i>',
 				url: 'https://www.linkedin.com/in/lionel-ensfelder/'
 			},
 			{
 				id: 6,
 				text: 'Medium',
 				info: '@ensfelder.lionel',
-				icon: '<i class="align-middle border-0 font-onyx font-30 fab fa-medium"></i>',
+				icon: '<i class="align-middle border-0 font-onyx font-30 lab la-medium"></i>',
 				url: 'https://medium.com/@ensfelder.lionel'
 			}
 		],

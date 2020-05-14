@@ -8,7 +8,7 @@ const navbar = {
 		<header class="fixed-top bg-dark">
 			<div class="container">
 				<nav class="navbar navbar-dark navbar-expand-lg">
-					<a class="navbar-brand" href="#"><i class="fas fa-user-astronaut font-30"></i></a>
+					<a class="navbar-brand" href="#"><i class="las la-robot font-30"></i></a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
