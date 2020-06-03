@@ -260,7 +260,7 @@ new Vue({
 				job: '',
 				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
 				tags: "Javascript",
-				url: '#',
+				url: 'https://lionelensfelder.github.io/miiniimaal-weather/',
 				github:'https://github.com/LionelENSFELDER/miiniimaal-weather'
 			}
 		],

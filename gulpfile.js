@@ -7,7 +7,6 @@ const imagemin = require('gulp-imagemin');
 function imgCompressor() {
     return gulp .src("./assets/img/*")
     .pipe(imagemin([
-        //imagemin.gifsicle({interlaced: true}),
         imagemin.mozjpeg({quality: 75, progressive: true}),
         imagemin.optipng({optimizationLevel: 3})
     ]))
@@ -31,21 +30,17 @@ function server() {
 function sassCompile() {
     return gulp.src('./src/sass/custom.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./src/css'));
+        .pipe(gulp.dest('./src/css/'));
 };
 
 function watch() {
-    gulp.watch("./src/sass/custom.scss").on('change', sassCompile, browserSync.reload);
+    //gulp.watch("./src/sass/custom.scss").on('change', sassCompile);
     gulp.watch("./*.html").on('change', browserSync.reload);
-    gulp.watch("./src/css/*.css").on('change', browserSync.reload);
+    gulp.watch("./src/sass/*.css").on('change', browserSync.reload);
     gulp.watch("./src/js/components/*.js").on('change', browserSync.reload);
     gulp.watch("./src/js/*.js").on('change', browserSync.reload);
 };
 
-function log() {
-    console.log("--Watch function is ready. Gang !");
-};
-
 module.exports = {
-    default: gulp.parallel(server, watch, imgCompressor, log)
+    default: gulp.parallel(server, watch)
 };
