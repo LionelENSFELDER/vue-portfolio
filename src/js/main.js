@@ -209,6 +209,8 @@ new Vue({
 				date: '2018',
 				job: '',
 				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+				moreInfos: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf. aluh rethem fathum rictum ipsum lodum casum faluh ipsum lodum casum faluh ipsum lodum casum faluh ipsum lodum casum faluh',
+				stack: 'Wordpress, Bootstrap, Docker',
 				tags: "PHP" ,
 				url: 'https://www.aid83.org/',
 				github:'https://github.com/LionelENSFELDER/aid83-v2'
@@ -225,6 +227,8 @@ new Vue({
 				date: '2019',
 				job: '',
 				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+				moreInfos: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf. aluh rethem fathum rictum ipsum lodum casum faluh ipsum lodum casum faluh ipsum lodum casum faluh ipsum lodum casum faluh',
+				stack: 'Wordpress, Bootstrap, Docker',
 				tags: "Wordpress" ,
 				url: './assets/img-compressed/sophromassage.png',
 				github:'https://github.com/LionelENSFELDER/sophromassage'
@@ -242,6 +246,8 @@ new Vue({
 				date: '2020',
 				job: '',
 				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+				moreInfos: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf. aluh rethem fathum rictum ipsum lodum casum faluh ipsum lodum casum faluh ipsum lodum casum faluh ipsum lodum casum faluh',
+				stack: 'Wordpress, Bootstrap, Docker',
 				tags: "Vue",
 				url: '#',
 				github:'https://github.com/LionelENSFELDER/about-me'
@@ -259,6 +265,8 @@ new Vue({
 				date: '2020',
 				job: '',
 				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
+				moreInfos: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf. aluh rethem fathum rictum ipsum lodum casum faluh ipsum lodum casum faluh ipsum lodum casum faluh ipsum lodum casum faluh',
+				stack: 'Wordpress, Bootstrap, Docker',
 				tags: "Javascript",
 				url: 'https://lionelensfelder.github.io/miiniimaal-weather/',
 				github:'https://github.com/LionelENSFELDER/miiniimaal-weather'
@@ -434,21 +442,21 @@ new Vue({
 				id: 1,
 				icon: '<i class="las la-paint-roller font-30"></i>',
 				title: 'Frontend',
-				content: 'Figma, HTML5, CSS3, Javascript, Bootstrap, Vue.js, React, Twig, SASS, jQuery'
+				content: 'HTML5 & CSS3, SASS, Bootstrap, Javascript, Vue.js, React.'
 
 			},
 			{
 				id: 2,
 				icon: '<i class="las la-server font-30"></i>',
 				title: 'Backend',
-				content: 'PHP, MySQL, Symfony, Node.js, Wordpress, Joomla.'
+				content: 'PHP & MySQL, Symfony, Node.js, Wordpress.'
 
 			},
 			{
 				id: 3,
 				icon: '<i class="las la-toolbox font-30"></i>',
 				title: 'Outils',
-				content: 'Docker, Webpack, Babel, Jest, NPM, ESLint, Gulp, Git, méthodologie Agile SCRUM'
+				content: 'Docker, Webpack, Jest, Gulp, Git.'
 
 			}
 		]

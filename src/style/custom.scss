@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Press+Start+2P&display=swap');
 
-
 $main: #6fffe9;
 $main-translucent: #6fffe941;
 $second: #70c3c2;
@@ -134,66 +133,13 @@ a {
 // W_O_R_K
 .workCard{
     h1 {
-        opacity: 0;
         font-size: 2em;
         font-weight: bold;
         font-family: "Roboto Condensed";
         transition: opacity 2s;
     }
-    p{
-        opacity: 0;
-        transition: opacity 2s;
-    }
-    .work-info{
-        opacity: 0;
-        position: static;
-        transition: background-color 2s;
-    }
-    .work-info i{
-        opacity: 0;
-        color: $second;
-        position: absolute;
-        bottom: 20px;
-        right: 10px;
-        font-size: 2rem;
-        transition: transform 1s, opacity 3s;
-        &:hover{
-            transform: scale(1.3);
-        }
-    }
-    .bottom-triangle{
-        opacity: 0;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 0 100px 100px;
-        border-color: transparent transparent $main transparent;
-        transition: opacity 1s;
-        &:after {
-            content: '';
-            position: absolute;
-        }
-    }
-    &:hover {
-        transform: scale(1.1);
-        h1, p, .work-info, .bottom-triangle, .work-info i{
-            opacity: 1;
-        }
-        h1 {
-            color: $main;
-        }
-        p{
-            color: $white;
-        }
-        img {
-            opacity: 0.2;
-        }
-        .work-info{
-            background-color: $main-translucent;
-        }
+    a {
+        color: $main;
     }
 }
 
