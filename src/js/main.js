@@ -210,10 +210,15 @@ new Vue({
 				job: '',
 				description: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf.',
 				moreInfos: 'Lorem ipsum lodum casum faluh rethem fathum rictum, zephir ecofn, gdhf. aluh rethem fathum rictum ipsum lodum casum faluh ipsum lodum casum faluh ipsum lodum casum faluh ipsum lodum casum faluh',
-				stack: 'Wordpress, Bootstrap, Docker',
+				stack: '#Wordpress #Bootstrap #Docker',
 				tags: "PHP" ,
 				url: 'https://www.aid83.org/',
-				github:'https://github.com/LionelENSFELDER/aid83-v2'
+				github:'https://github.com/LionelENSFELDER/aid83-v2',
+				carouselID:'carousel-aid83',
+				carouselControlLink:'#carousel-aid83',
+				capture1:'./assets/img-compressed/aid83-preview.jpg',
+				capture2:'./assets/img-compressed/aid83-preview.jpg',
+				capture3:'./assets/img-compressed/aid83-preview.jpg'
 			},
 			{
 				id: 2,
@@ -231,7 +236,12 @@ new Vue({
 				stack: 'Wordpress, Bootstrap, Docker',
 				tags: "Wordpress" ,
 				url: './assets/img-compressed/sophromassage.png',
-				github:'https://github.com/LionelENSFELDER/sophromassage'
+				github:'https://github.com/LionelENSFELDER/sophromassage',
+				carouselID:'carousel-sophromassage',
+				carouselControlLink:'#carousel-sophromassage',
+				capture1:'./assets/img-compressed/sophromassage-preview.jpg',
+				capture2:'./assets/img-compressed/sophromassage-preview.jpg',
+				capture3:'./assets/img-compressed/sophromassage-preview.jpg'
 			},
 			{
 				id: 3,
@@ -250,7 +260,12 @@ new Vue({
 				stack: 'Wordpress, Bootstrap, Docker',
 				tags: "Vue",
 				url: '#',
-				github:'https://github.com/LionelENSFELDER/about-me'
+				github:'https://github.com/LionelENSFELDER/about-me',
+				carouselID:'carousel-portfolio',
+				carouselControlLink:'#carousel-portfolio',
+				capture1:'./assets/img-compressed/portfolio-preview.jpg',
+				capture2:'./assets/img-compressed/portfolio-preview.jpg',
+				capture3:'./assets/img-compressed/portfolio-preview.jpg'
 			},
 			{
 				id: 4,
@@ -269,7 +284,12 @@ new Vue({
 				stack: 'Wordpress, Bootstrap, Docker',
 				tags: "Javascript",
 				url: 'https://lionelensfelder.github.io/miiniimaal-weather/',
-				github:'https://github.com/LionelENSFELDER/miiniimaal-weather'
+				github:'https://github.com/LionelENSFELDER/miiniimaal-weather',
+				carouselID:'carousel-miiniimaal-weather',
+				carouselControlLink:'#carousel-miiniimaal-weather',
+				capture1:'./assets/img-compressed/miiniimaal-weather-preview.jpg',
+				capture2:'./assets/img-compressed/miiniimaal-weather-preview.jpg',
+				capture3:'./assets/img-compressed/miiniimaal-weather-preview.jpg'
 			}
 		],
 		testimonials: [

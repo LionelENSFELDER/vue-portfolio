@@ -17,26 +17,58 @@ const projects = {
                     <p class="card-text">{{work.description}}</p>
 
                     <!-- Button trigger modal -->
-                    <a class="btn btn-main my-2" data-toggle="modal" :data-target="work.targetId">Voir le projet</a>
+                    <a class="btn btn-main my-2 stretched-link" data-toggle="modal" :data-target="work.targetId">Voir le projet</a>
                 </div>
             </div>
 
             <!-- Modal -->
             <div class="modal fade" :id="work.target" tabindex="-1" role="dialog" :aria-labelledby="work.target" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content bg-dark">
-                        <div class="modal-header border-0">
-                            <h2 class="modal-title font-weight-bold" :id="work.target">{{work.title}}</h2>
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content p-3 bg-dark">
+                        <div class="modal-header p-0 border-0">
+                            <h2 class="modal-title mb-3 font-weight-bold" :id="work.target">{{work.title}}</h2>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+                            <span aria-hidden="true"><i class="las la-times  font-20 font-white"></i></span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body"
                             <p class="card-text">Présentation du projet: {{work.moreInfos}}</p>
-                            <p class="card-text">Technologies utilisées: {{work.stack}}</p>
-                            <a :href="work.github" target="_blank" class="badge badge-light">Code</a>
-                            <a :href="work.url" target="_blank" class="badge badge-light mb-2">Démo</a>
-                            <img :src="work.coverImage" class="img-fluid" alt="Responsive image">
+                            
+
+                            <div :id="work.carouselID" class="carousel slide mb-5" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                    <img class="d-block w-100" :src="work.capture1" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img class="d-block w-100" :src="work.capture2" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img class="d-block w-100" :src="work.capture3" alt="Third slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" :href="work.carouselControlLink" role="button" data-slide="prev">
+                                    <i class="las la-chevron-left font-30 font-main" aria-hidden="true"></i>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" :href="work.carouselControlLink" role="button" data-slide="next">
+                                    <i class="las la-chevron-right font-30 font-main" aria-hidden="true"></i>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+
+
+                            <div>
+                                <a :href="work.github" target="_blank" class="btn btn-main-light mb-2">VOIR LE CODE <i class="lab la-github"></i></a>
+                                <a :href="work.url" target="_blank" class="btn btn-main-light mb-2">VOIR LE PROJET <i class="las la-external-link-alt"></i></a>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
