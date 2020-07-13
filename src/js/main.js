@@ -341,46 +341,24 @@ new Vue({
 		contactitems: [
 			{
 				id: 1,
-				text: 'Adresse',
-				info: '612 Avenue Maréchal Foch',
-				icon: '<i class="align-middle border-0 font-onyx font-30 las la-map-pin"></i>',
-				url: '#'
-
-			},
-			{
-				id: 2,
-				text: 'Téléphone',
-				info: '06 52 40 10 21',
-				icon: '<i class="align-middle border-0 font-onyx font-30 las la-mobile-alt"></i>',
-				url: 'tel:+33652401021'
-			},
-			{
-				id: 3,
 				text: 'Mail',
 				info: 'ensfelder.lionel@gmail.com',
 				icon: '<i class="align-middle border-0 font-onyx font-30 las la-at"></i>',
 				url: 'mailto://ensfelder.lionel@gmail.com'
 			},
 			{
-				id: 4,
+				id: 2,
 				text: 'Github',
 				info: 'LionelENSFELDER',
 				icon: '<i class="align-middle border-0 font-onyx font-30 lab la-github"></i>',
 				url: 'https://github.com/LionelENSFELDER'
 			},
 			{
-				id: 5,
+				id: 3,
 				text: 'LinkedIn',
 				info: 'lionel-ensfelder',
 				icon: '<i class="align-middle border-0 font-onyx font-30 lab la-linkedin-in"></i>',
 				url: 'https://www.linkedin.com/in/lionel-ensfelder/'
-			},
-			{
-				id: 6,
-				text: 'Medium',
-				info: '@ensfelder.lionel',
-				icon: '<i class="align-middle border-0 font-onyx font-30 lab la-medium"></i>',
-				url: 'https://medium.com/@ensfelder.lionel'
 			}
 		],
 		techs:[
