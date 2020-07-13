@@ -17,14 +17,14 @@ const projects = {
                     <p class="card-text">{{work.description}}</p>
 
                     <!-- Button trigger modal -->
-                    <a class="btn btn-main my-2 stretched-link" data-toggle="modal" :data-target="work.targetId">Voir le projet</a>
+                    <a class="btn btn-main my-2 stretched-link" data-toggle="modal" :data-target="work.targetId">En savoir plus</a>
                 </div>
             </div>
 
             <!-- Modal -->
             <div class="modal fade" :id="work.target" tabindex="-1" role="dialog" :aria-labelledby="work.target" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content p-3 bg-dark">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content p-5 bg-dark">
                         <div class="modal-header p-0 border-0">
                             <h2 class="modal-title mb-3 font-weight-bold" :id="work.target">{{work.title}}</h2>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -32,7 +32,7 @@ const projects = {
                             </button>
                         </div>
                         <div class="modal-body"
-                            <p class="card-text">Présentation du projet: {{work.moreInfos}}</p>
+                            <p class="card-text mb-5">{{work.moreInfos}}</p>
                             
 
                             <div :id="work.carouselID" class="carousel slide mb-5" data-ride="carousel">

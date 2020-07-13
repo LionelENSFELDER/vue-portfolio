@@ -8,16 +8,37 @@ I try to keep this project simple and minimal as possible with no dépendencies 
 
 ## I use in this project:
 
-- HTML5 and CSS3
+- HTML5 and CSS3 (SASS)
 - Javascript
-- Vue.js
-- Bootstrap
+- Bootstrap (+ jQuery & Popper)
+- Animate css
+- Vue.js (standalone file)
+- Line awesome
+- Gulp (Browser sync, sass compiler,images minifier)
 
 ## Roadmap
 
 - [x] Make a very minimal version
-- [ ] Improve design (eg. add some parallax and hover effects)
-- [ ] Add Vue CLI
-- [ ] Integrate node.js with auto reload
-- [ ] Separate design (.vue?) from data (.json?)
-- [ ] Improve Directives (eg. display link only if a link available)
+- [x] Improve design
+- [-] Add Vue CLI
+- [x] Integrate node.js with auto reload
+- [x] Separate design (components) from data
+- [-] Improve Directives (eg. display link only if a link available)
+
+## Get started
+
+0 - You need to have Node.js and NPM to load dependencies and start Gulp webserver.
+
+1 - Clone project
+
+```git clone https://github.com/LionelENSFELDER/about-me.git```
+
+2 - Init
+
+```npm install```
+
+3 - Start Gulp local server and watcher
+
+```gulp```
+
+Go to localhost:8001
