@@ -10,9 +10,9 @@ const feature = {
 			<div class="card-deck py-5">
 				<div class="card border-0 bg-transparent">
 					<div>
-						<span class="d-block mb-2">Salut, je suis</span>
-						<h1 class="glitch" data-text="LIONEL ENSFELDER">LIONEL ENSFELDER</h1>
-						<p class="animated-fadeInRight">
+						<span class="d-block mb-3">Salut, je suis</span>
+						<h1 class="mb-5 glitch" data-text="LIONEL ENSFELDER">LIONEL ENSFELDER</h1>
+						<p class="mb-3 animated-fadeInRight">
 							Après des années enrichissantes dans la Marine Nationale en tant que technicien informatique et télécoms, j'ai
 							décidé de devenir <span class="font-weight-bold">développeur web frontend</span>. Je recherche un poste de développeur web frontend utilisant principalement
 							des technologies gravitant autour de Javascript tel que Vue.js, React et Node.js.

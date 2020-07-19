@@ -1,15 +1,3 @@
-// SCRIPTS LOADING ---------------------
-function dynamicallyLoadScript(url) {
-    var script = document.createElement("script");
-    script.src = url;  
-    document.body.appendChild(script); 
-}
-// jquery must be include before bootstrap
-dynamicallyLoadScript('./src/js/utils/bootstrap.bundle.min.js');
-dynamicallyLoadScript('./src/js/utils/carousel.js');
-dynamicallyLoadScript('./src/js/utils/animations.js');
-dynamicallyLoadScript('./src/js/utils/work.filter.js');
-
 // IMPORTS ---------------------
 import navbar from './components/navbar.js'
 import navitem from './components/navitem.js'
@@ -17,15 +5,12 @@ import section from './components/section.js'
 import container from './components/container.js'
 import feature from './components/feature.js'
 import stack from './components/stack.js'
-import stackCategory from './components/stackCategory.js'
-import swiperCarousel from './components/swiperCarousel.js'
 import CarouselTestimonial from './components/CarouselTestimonial.js'
 import CarouselTestimonialItem from './components/CarouselTestimonialItem.js'
 import contact from './components/contact.js'
 import contactItem from './components/contactItem.js'
-import footer from './components/footer.js'
 import projects from './components/projects.js'
-
+import footer from './components/footer.js'
 //COMPONENTS ---------------------
 Vue.component('vue-navbar', navbar);
 Vue.component('vue-navbar-item', navitem);
@@ -33,15 +18,12 @@ Vue.component('vue-section', section);
 Vue.component('vue-container', container);
 Vue.component('vue-feature', feature);
 Vue.component('vue-stack', stack);
-Vue.component('vue-stack-category', stackCategory);
-Vue.component('vue-swiper-carousel', swiperCarousel);
 Vue.component('vue-carousel-testimonial', CarouselTestimonial);
 Vue.component('vue-carousel-testimonial-item', CarouselTestimonialItem);
 Vue.component('vue-contact', contact);
 Vue.component('vue-contact-item', contactItem);
 Vue.component('vue-footer', footer);
 Vue.component('vue-projects', projects);
-
 //VUE ---------------------
 new Vue({
 	el: '#app',
@@ -462,23 +444,62 @@ new Vue({
 		stacks:[
 			{
 				id: 1,
-				icon: '<i class="las la-paint-roller font-30"></i>',
-				title: 'Frontend',
-				content: 'HTML5 & CSS3, SASS, Bootstrap, Javascript ES6, Vue.js, React.'
+				icon: '<i class="devicon-html5-plain colored font-30"></i>',
+				title: 'HTML5 & CSS3'
 
 			},
 			{
 				id: 2,
-				icon: '<i class="las la-server font-30"></i>',
-				title: 'Backend',
-				content: 'PHP & MySQL, Symfony, Node.js, Wordpress.'
+				icon: '<i class="devicon-sass-original  colored font-30"></i>',
+				title: 'Sass'
 
 			},
 			{
 				id: 3,
-				icon: '<i class="las la-toolbox font-30"></i>',
-				title: 'Outils',
-				content: 'Docker, Webpack, Jest, Gulp, Git.'
+				icon: '<i class="devicon-bootstrap-plain colored font-30"></i>',
+				title: 'Bootstrap'
+
+			},
+			{
+				id: 4,
+				icon: '<i class="devicon-javascript-plain colored font-30"></i>',
+				title: 'JS'
+
+			},
+			{
+				id: 5,
+				icon: '<i class="devicon-react-original colored font-30"></i>',
+				title: 'React'
+
+			},
+			{
+				id: 6,
+				icon: '<i class="devicon-vuejs-plain colored font-30"></i>',
+				title: 'Vue'
+
+			},
+			{
+				id: 7,
+				icon: '<i class="devicon-php-plain colored font-30"></i>',
+				title: 'PHP & SQL'
+
+			},
+			{
+				id: 8,
+				icon: '<i class="devicon-wordpress-plain colored font-30"></i>',
+				title: 'Wordpress'
+
+			},
+			{
+				id: 9,
+				icon: '<i class="devicon-github-plain colored font-30"></i>',
+				title: 'Git'
+
+			},
+			{
+				id: 10,
+				icon: '<i class="devicon-docker-plain colored font-30"></i>',
+				title: 'Docker'
 
 			}
 		]
