@@ -11,7 +11,6 @@ function filter(value){
         }
     })
 };
-
 function getButtonsValues(){
     document.querySelectorAll('.filter-button').forEach(item => {
         let value = item.dataset.filter;
@@ -19,10 +18,4 @@ function getButtonsValues(){
             filter(value);
         });
     });
-};
-
-document.onreadystatechange = function () {
-	if(document.readyState === "complete"){
-        getButtonsValues();
-    };
 };

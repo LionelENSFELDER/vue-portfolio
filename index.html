@@ -51,12 +51,11 @@
 			<!-- W_O_R_K_S -->
 			<vue-section id="realisations" class="" title="MES REALISATIONS">
 				<div class="d-flex flex-row justify-content-center">
-					<div class="btn-group mb-5" role="group" aria-label="Basic example">
+					<div class="btn-group mb-5" role="group" aria-label="projectsFilter">
 						<button type="button" class="btn btn-main-light filter-button" data-filter="All">Tout</button>
 						<button type="button" class="btn btn-main-light filter-button" data-filter="Javascript">Javascript</button>
 						<button type="button" class="btn btn-main-light filter-button" data-filter="Vue">Vue</button>
 						<button type="button" class="btn btn-main-light filter-button" data-filter="PHP">PHP</button>
-						<!-- <button type="button" class="btn btn-main-light filter-button" data-filter="Symfony">Symfony</button> -->
 						<button type="button" class="btn btn-main-light filter-button" data-filter="Wordpress">Wordpress</button>
 					</div>
 				</div>
@@ -91,14 +90,21 @@
 			</vue-footer>
 		</div>
 		
-
 		<!-- S_C_R_I_P_T_S -->
 		<script src="./src/js/vue.js"></script>
 		<script type="module" src="./src/js/main.js"></script>
 		<script src="./src/js/utils/jquery-3.4.1.slim.min.js"></script>
 		<script src="./src/js/utils/bootstrap.bundle.min.js"></script>
-		<script src="./src/js/utils/animations.js"></script>
-		<script src="./src/js/utils/work.filter.js"></script>
+		<script src="./src/js/utils/projectsFilter.js"></script>
 		<script src="./src/js/utils/carousel.js"></script>
+		<script src="./src/js/utils/animations.js"></script>
+		<script>
+			document.onreadystatechange = function () {
+				if(document.readyState === "complete"){
+					carousel();
+					getButtonsValues();
+				}
+			};
+		</script>
 	</body>
 </html>
