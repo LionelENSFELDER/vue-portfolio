@@ -4,9 +4,9 @@ import navitem from './components/navitem.js'
 import section from './components/section.js'
 import container from './components/container.js'
 import feature from './components/feature.js'
-import stack from './components/stack.js'
-import CarouselTestimonial from './components/CarouselTestimonial.js'
-import CarouselTestimonialItem from './components/CarouselTestimonialItem.js'
+import mystack from './components/mystack.js'
+// import CarouselTestimonial from './components/CarouselTestimonial.js'
+// import CarouselTestimonialItem from './components/CarouselTestimonialItem.js'
 import contact from './components/contact.js'
 import contactItem from './components/contactItem.js'
 import projects from './components/projects.js'
@@ -17,9 +17,9 @@ Vue.component('vue-navbar-item', navitem);
 Vue.component('vue-section', section);
 Vue.component('vue-container', container);
 Vue.component('vue-feature', feature);
-Vue.component('vue-stack', stack);
-Vue.component('vue-carousel-testimonial', CarouselTestimonial);
-Vue.component('vue-carousel-testimonial-item', CarouselTestimonialItem);
+Vue.component('vue-mystack', mystack);
+// Vue.component('vue-carousel-testimonial', CarouselTestimonial);
+// Vue.component('vue-carousel-testimonial-item', CarouselTestimonialItem);
 Vue.component('vue-contact', contact);
 Vue.component('vue-contact-item', contactItem);
 Vue.component('vue-footer', footer);
@@ -289,13 +289,37 @@ new Vue({
 				moreInfos: 'App météo Javascript utilisant l\API openweathermap.org via des fonctions asynchrones. L\'app dispose d\'un systeme basique de notifications en cas d\'erreur réseau ou d\'identification de la localisation.' ,
 				stack: '',
 				tags: "Javascript",
-				url: 'https://lionelensfelder.github.io/miiniimaal-weather/',
+				url: 'https://github.com/LionelENSFELDER/miiniimaal-weather',
 				github:'https://github.com/LionelENSFELDER/miiniimaal-weather',
 				carouselID:'carousel-miiniimaal-weather',
 				carouselControlLink:'#carousel-miiniimaal-weather',
-				capture1:'./assets/img-compressed/miiniimaal-weather/miiniimaal-weather-preview.jpg',
-				capture2:'./assets/img-compressed/miiniimaal-weather/miiniimaal-weather-preview.jpg',
-				capture3:'./assets/img-compressed/miiniimaal-weather/miiniimaal-weather-preview.jpg'
+				capture1:'./assets/img-compressed/miiniimaal-weather/miiniimaal-weather-capture1.jpg',
+				capture2:'./assets/img-compressed/miiniimaal-weather/miiniimaal-weather-capture2.jpg',
+				capture3:'./assets/img-compressed/miiniimaal-weather/miiniimaal-weather-capture1.jpg'
+			},
+			{
+				id: 6,
+				target: 'vue-todolist',
+				targetId: '#vue-todolist',
+				title: 'Vue Todolist',
+				coverImage: './assets/img-compressed/vue-todolist/vue-todolist-preview.png',
+				coverTitle: 'Image du projet Vue todolist',
+				coverAlt:'',
+				alt:'Vue todolist',
+				client: 'Lionel Ensfelder',
+				date: '2020',
+				job: '',
+				description: 'Une liste de tâches en Vue.js permetant de trier les tâches. Elle permet également de trier les tâches...',
+				moreInfos: 'Une liste de tâche éphémère "full web" permettant de trier les tâches par "tout", "fait", "à faire".' ,
+				stack: '',
+				tags: "Vue",
+				url: 'https://github.com/LionelENSFELDER/vue-todo',
+				github:'https://github.com/LionelENSFELDER/vue-todo',
+				carouselID:'carousel-vue-todo',
+				carouselControlLink:'#carousel-vue-todo',
+				capture1:'./assets/img-compressed/vue-todolist/vue-todolist-capture1.png',
+				capture2:'./assets/img-compressed/vue-todolist/vue-todolist-capture2.png',
+				capture3:'./assets/img-compressed/vue-todolist/vue-todolist-capture3.png'
 			}
 		],
 		testimonials: [

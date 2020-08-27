@@ -12,12 +12,11 @@ const projects = {
                 <div class="card-header bg-transparent border-0">
                     <img :src="work.coverImage" class="card-img-top img-fluid" alt="...">
                 </div>
-                <div class="card-body">
-                    <h1 class="card-title font-weight-bold">{{work.title}}</h1>
-                    <p class="card-text">{{work.description}}</p>
+                <div class="card-body py-2">
+                    <h5 class="font-weight-bold">{{work.title}}</h5>
 
                     <!-- Button trigger modal -->
-                    <a class="btn btn-main my-2 stretched-link" data-toggle="modal" :data-target="work.targetId">En savoir plus</a>
+                    <a class="stretched-link" data-toggle="modal" :data-target="work.targetId"></a>
                 </div>
             </div>
 

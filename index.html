@@ -36,16 +36,7 @@
 
 			<!-- S_T_A_C_K -->
 			<vue-section id="technologies" class="bg-grey" title="TECHNOLOGIES">
-				<div class="">
-					<p class="text-center">
-						Durant mon parcours personnel et professionnel, j'ai acquis une solide compréhension des concepts de l'informatique et du développement Web.
-                        J'ai consacré une grande partie de mon temps libre à appliquer ces concepts à des scénarios et applications du fictifs ou du monde réel.
-					</p>
-				</div>
-				<div class="row row-cols-1 row-cols-md-3 row-cols-lg-4">
-					<vue-stack v-for="stack in stacks" v-bind:key="stack.id" v-bind:stack="stack">
-					</vue-stack>
-				</div>
+				<vue-mystack></vue-mystack>
 			</vue-section>
 
 			<!-- W_O_R_K_S -->
@@ -59,21 +50,21 @@
 						<button type="button" class="btn btn-main-light filter-button" data-filter="Wordpress">Wordpress</button>
 					</div>
 				</div>
-				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-2">
+				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
 					<vue-projects v-for="work in works" v-bind:key="work.id" v-bind:work="work"></vue-projects>
 				</div>
 			</vue-section>
 
 			<!-- T_E_S_T_I_M_O_N_I_A_L_S -->
-			<vue-section id="temoignages" class="bg-grey" title="TEMOIGNAGES">
+			<!-- <vue-section id="temoignages" class="bg-grey" title="TEMOIGNAGES">
 				<vue-carousel-testimonial>
 					<vue-carousel-testimonial-item v-for="testimonial in testimonials" v-bind:key="testimonial.id"
 						v-bind:testimonial="testimonial"></vue-carousel-testimonial-item>
 				</vue-carousel-testimonial>
-			</vue-section>
+			</vue-section> -->
 
 			<!-- C_O_N_T_A_C_T -->
-			<vue-section id="contact" class="" title="CONTACTE-MOI">
+			<vue-section id="contact" class="bg-grey" title="CONTACTE-MOI">
 				<blockquote class="blockquote">
 					<h4 class="mb-0">Vous recherchez un développeur front-end avec une bonne capacité d'adaptation et un grand esprit d'équipe ?</h4>
 				</blockquote>
