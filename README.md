@@ -14,31 +14,6 @@ I try to keep this project simple and minimal as possible with no dépendencies 
 - Animate css
 - Vue.js (standalone file)
 - Line awesome
-- Gulp (Browser sync, sass compiler,images minifier)
+- Gulp (Browser sync, sass compiler,images minifier, etc)
 
-## Roadmap
-
-- [x] Make a very minimal version
-- [x] Improve design
-- [-] Add Vue CLI
-- [x] Integrate node.js with auto reload
-- [x] Separate design (components) from data
-- [-] Improve Directives (eg. display link only if a link available)
-
-## Get started
-
-0 - You need to have Node.js and NPM to load dependencies and start Gulp webserver.
-
-1 - Clone project
-
-```git clone https://github.com/LionelENSFELDER/about-me.git```
-
-2 - Init
-
-```npm install```
-
-3 - Start Gulp local server and watcher
-
-```gulp```
-
-Go to localhost:8001
+![alt text](./assets/img/portfolio/portfolio.jpg)
