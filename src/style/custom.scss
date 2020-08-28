@@ -13,6 +13,13 @@ $darkTranslucent: #202020;
 // B_A_S_E
 html {
     scroll-behavior: smooth;
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 body {
@@ -23,7 +30,7 @@ body {
 
 h1 {
     font-family: "Roboto Condensed";
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 

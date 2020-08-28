@@ -48,11 +48,11 @@ new Vue({
 				text: 'REALISATIONS',
 				url: '#realisations'
 			},
-			{
-				id: 5,
-				text: 'TEMOIGNAGES',
-				url: '#temoignages'
-			},
+			// {
+			// 	id: 5,
+			// 	text: 'TEMOIGNAGES',
+			// 	url: '#temoignages'
+			// },
 			{
 				id: 6,
 				text: 'CONTACT',
@@ -184,149 +184,205 @@ new Vue({
 				target: 'aid83',
 				targetId: '#aid83',
 				title: 'AID83',
-				coverImage: './assets/img-compressed/aid83/aid83-preview.jpg',
+				coverImage: './assets/img/aid83/aid83-preview.jpg',
 				coverTitle: 'Image du site Aid 83',
 				coverAlt:'AID83',
 				client: 'AID83',
 				date: '2018',
-				job: '',
 				description: 'Le site vitrine de l\'assiciation d\'aide à domicile AID83 utilisant HTML5, CSS3, UI Kit, et PHP.',
 				moreInfos: 'La création de se site vitrine à débuter en 2009 en partant du cahier des charges de l\'association. Il y a eu plusieurs versions au fil du temps notamment sous Joomla puis Wordpress pour finir par une version "light" plus rapide et complètement responsive. Le site dispose d\'un formulaire de demande de devis et de candidature en ligne.',
-				stack: '',
+				stack: 'HTML5, CSS3, UI Kit, PHP',
 				tags: "PHP" ,
 				url: 'https://www.aid83.org/',
 				github:'https://github.com/LionelENSFELDER/aid83-v2',
 				carouselID:'carousel-aid83',
 				carouselControlLink:'#carousel-aid83',
-				capture1:'./assets/img-compressed/aid83/aid83-capture1.png',
-				capture2:'./assets/img-compressed/aid83/aid83-capture2.png',
-				capture3:'./assets/img-compressed/aid83/aid83-capture3.png'
+				captures: [
+					{
+						id: 1,
+						capture: './assets/img/aid83/aid83-capture1.png'
+					},
+					{
+						id: 2,
+						capture: './assets/img/aid83/aid83-capture2.png'
+					},
+					{
+						id: 2,
+						capture: './assets/img/aid83/aid83-capture3.png'
+					}
+				]
 			},
 			{
 				id: 2,
 				target: 'sophromassage',
 				targetId: '#sophromassage',
 				title: 'Sophromassage',
-				coverImage: './assets/img-compressed/sophromassage/sophromassage-preview.jpg',
+				coverImage: './assets/img/sophromassage/sophromassage-preview.jpg',
 				coverTitle: 'Image du site Sophromassage',
 				coverAlt:'Sophromassage',
 				client: 'Eléonore Hottou',
 				date: '2019',
-				job: '',
 				description: 'Site générique de présentation de l\'activité de sophrologie et de massages sportifs utilisant le combo Wordpress + Bootstrap.',
 				moreInfos: 'Site vitrine Wordpress fait à partir d\'un thème enfant lui même basé sur un thème Bootstrap v4 (WP Bootstrap Starter). Ce site à été réaliser en mode "nomade" en utilisant Docker, Apache et MySQL pour créer un environement de développement sur clé usb. Le maquettage à été réaliser avec Figma. Ce site est entièrement responsive.',
-				stack: '',
+				stack: 'HTML5, CSS3, Bootstrap, Wordpress, Apache, SQL',
 				tags: "Wordpress" ,
-				url: './assets/img-compressed/sophromassage/sophromassage.png',
+				url: './assets/img/sophromassage/sophromassage.png',
 				github:'https://github.com/LionelENSFELDER/sophromassage',
 				carouselID:'carousel-sophromassage',
 				carouselControlLink:'#carousel-sophromassage',
-				capture1:'./assets/img-compressed/sophromassage/sophromassage-capture1.png',
-				capture2:'./assets/img-compressed/sophromassage/sophromassage-capture2.png',
-				capture3:'./assets/img-compressed/sophromassage/sophromassage-capture3.png'
+				captures: [
+					{
+						id: 1,
+						capture: './assets/img/sophromassage/sophromassage-capture1.png'
+					},
+					{
+						id: 2,
+						capture: './assets/img/sophromassage/sophromassage-capture2.png'
+					},
+					{
+						id: 3,
+						capture: './assets/img/sophromassage/sophromassage-capture3.png'
+					},
+				]
 			},
 			{
 				id: 3,
 				target: 'movies-manager',
 				targetId: '#movies-manager',
 				title: 'Movies Manager',
-				coverImage: './assets/img-compressed/movies-manager/movies-manager-preview.png',
+				coverImage: './assets/img/movies-manager/movies-manager-preview.png',
 				coverTitle: 'Image du projet Movies Manager',
 				coverAlt:'',
 				alt:'Movies Manager',
 				client: 'Lionel Ensfelder',
 				date: '2019',
-				job: '',
 				description: 'App de gestion d\'une bibliothèque de films stoquée localement dans une base de données SQL.',
 				moreInfos: 'Ce projet a été développé dans le cadre du passage de la certification développeur web et web mobile. Il utilise un serveur Apache et une base de donnée SQL pour stoquer des informations sur des films. La partie front est basée sur Bootstrap et est entièrement adaptable aux terminaux mobiles.' ,
-				stack: '',
+				stack: 'HTML5, CSS3, Bootstrap, PHP, Apache, SQL',
 				tags: "PHP",
 				url: '',
 				github:'https://github.com/LionelENSFELDER/movies-manager',
 				carouselID:'carousel-movies-manager',
 				carouselControlLink:'#carousel-movies-manager',
-				capture1:'./assets/img-compressed/movies-manager/movies-manager-capture1.png',
-				capture2:'./assets/img-compressed/movies-manager/movies-manager-capture2.png',
-				capture3:'./assets/img-compressed/movies-manager/movies-manager-capture3.png'
+				captures: [
+					{
+						id: 1,
+						capture: './assets/img/movies-manager/movies-manager-capture1.png'
+					},
+					{
+						id: 2,
+						capture: './assets/img/movies-manager/movies-manager-capture2.png'
+					},
+					{
+						id: 3,
+						capture: './assets/img/movies-manager/movies-manager-capture3.png'
+					}
+				]
 			},
 			{
 				id: 4,
 				target: 'portfolio',
 				targetId: '#portfolio',
 				title: 'Portfolio',
-				coverImage: './assets/img-compressed/portfolio/portfolio-preview.jpg',
+				coverImage: './assets/img/portfolio/portfolio-preview.png',
 				coverTitle: 'Image du portfolio',
 				coverAlt:'Portfilio de Lionel Ensfelder',
 				alt:'aid83',
 				client: 'Lionel Ensfelder',
 				date: '2020',
-				job: '',
 				description: 'Site statique et portfolio présentant mon parcours et mes réalisations. Il utilise principalement Vue.js ainsi que Bootstrap.',
 				moreInfos: 'Mon site personnel présentant mon parcours et mes meilleurs projets. Sa réalisation m\'a permise de mettre en pratique la notion de composants de Vue.js. Grâce à une conception statique mais utilisant des composants d\'interface réutilisables j\'ai développé un site facilement maintenanble, simple et sans base de données.',
-				stack: '',
+				stack: 'HTML5, CSS3, Bootstrap, Javascript, Vue, Gulp',
 				tags: "Vue",
-				url: '#',
+				url: './assets/img/portfolio/portfolio-capture-full.png',
 				github:'https://github.com/LionelENSFELDER/about-me',
 				carouselID:'carousel-portfolio',
 				carouselControlLink:'#carousel-portfolio',
-				capture1:'./assets/img-compressed/portfolio/portfolio-preview.jpg',
-				capture2:'./assets/img-compressed/portfolio/portfolio-preview.jpg',
-				capture3:'./assets/img-compressed/portfolio/portfolio-preview.jpg'
+				captures: [
+					{
+						id: 1,
+						capture: './assets/img/portfolio/portfolio-capture1.png'
+					},
+					{
+						id: 2,
+						capture: './assets/img/portfolio/portfolio-capture2.png'
+					},
+					{
+						id: 3,
+						capture: './assets/img/portfolio/portfolio-capture3.png'
+					}
+				]
 			},
 			{
 				id: 5,
 				target: 'miiniimaal-weather',
 				targetId: '#miiniimaal-weather',
 				title: 'Miiniimaal Weather',
-				coverImage: './assets/img-compressed/miiniimaal-weather/miiniimaal-weather-preview.jpg',
+				coverImage: './assets/img/miiniimaal-weather/miiniimaal-weather-preview.png',
 				coverTitle: 'Image du projet Miiniimaal Weather',
 				coverAlt:'',
 				alt:'Miiniimaal Weather',
 				client: 'Lionel Ensfelder',
 				date: '2020',
-				job: '',
 				description: 'Site permettant d\'avoir des informations météo via l\'API openweathermap.org. Il est en Javascript "vanilla" pour rester rapide, simple et maintenable.',
 				moreInfos: 'App météo Javascript utilisant l\API openweathermap.org via des fonctions asynchrones. L\'app dispose d\'un systeme basique de notifications en cas d\'erreur réseau ou d\'identification de la localisation.' ,
-				stack: '',
+				stack: 'HTML5, CSS3, Bootstrap, Javascript, Gulp',
 				tags: "Javascript",
 				url: 'https://github.com/LionelENSFELDER/miiniimaal-weather',
 				github:'https://github.com/LionelENSFELDER/miiniimaal-weather',
 				carouselID:'carousel-miiniimaal-weather',
 				carouselControlLink:'#carousel-miiniimaal-weather',
-				capture1:'./assets/img-compressed/miiniimaal-weather/miiniimaal-weather-capture1.jpg',
-				capture2:'./assets/img-compressed/miiniimaal-weather/miiniimaal-weather-capture2.jpg',
-				capture3:'./assets/img-compressed/miiniimaal-weather/miiniimaal-weather-capture1.jpg'
+				captures: [
+					{
+						id: 1,
+						capture: './assets/img/miiniimaal-weather/miiniimaal-weather-preview.png'
+					},
+					{
+						id: 2,
+						capture: './assets/img/miiniimaal-weather/miiniimaal-weather-capture2.png'
+					}
+				]
 			},
 			{
 				id: 6,
 				target: 'vue-todolist',
 				targetId: '#vue-todolist',
 				title: 'Vue Todolist',
-				coverImage: './assets/img-compressed/vue-todolist/vue-todolist-preview.png',
+				coverImage: './assets/img/vue-todolist/vue-todolist-preview.png',
 				coverTitle: 'Image du projet Vue todolist',
 				coverAlt:'',
 				alt:'Vue todolist',
 				client: 'Lionel Ensfelder',
 				date: '2020',
-				job: '',
 				description: 'Une liste de tâches en Vue.js permetant de trier les tâches. Elle permet également de trier les tâches...',
 				moreInfos: 'Une liste de tâche éphémère "full web" permettant de trier les tâches par "tout", "fait", "à faire".' ,
-				stack: '',
+				stack: 'HTML5, CSS3, Bootstrap, Javascript, Vue, Gulp',
 				tags: "Vue",
 				url: 'https://github.com/LionelENSFELDER/vue-todo',
 				github:'https://github.com/LionelENSFELDER/vue-todo',
 				carouselID:'carousel-vue-todo',
 				carouselControlLink:'#carousel-vue-todo',
-				capture1:'./assets/img-compressed/vue-todolist/vue-todolist-capture1.png',
-				capture2:'./assets/img-compressed/vue-todolist/vue-todolist-capture2.png',
-				capture3:'./assets/img-compressed/vue-todolist/vue-todolist-capture3.png'
+				captures: [
+					{
+						id: 1,
+						capture: './assets/img/vue-todolist/vue-todolist-capture1.png'
+					},
+					{
+						id: 2,
+						capture: './assets/img/vue-todolist/vue-todolist-capture2.png'
+					},
+					{
+						id: 3,
+						capture: './assets/img/vue-todolist/vue-todolist-capture3.png'
+					}
+				]
 			}
 		],
 		testimonials: [
 			{
 				id: 1,
 				name: 'Céline Tréhin',
-				photo: './assets/img-compressed/testimonials/celine-trehin.jpg',
+				photo: './assets/img/testimonials/celine-trehin.jpg',
 				photoTitle:"Céline Tréhin",
 				photoAlt:"Céline Tréhin",
 				client: 'AID83',
@@ -336,7 +392,7 @@ new Vue({
 			{
 				id: 2,
 				name: 'Eléonore Hottou',
-				photo: './assets/img-compressed/testimonials/eleonore-hottou.jpg',
+				photo: './assets/img/testimonials/eleonore-hottou.jpg',
 				photoTitle:"Eléonore Hottou",
 				photoAlt:"Eléonore Hottou",
 				client: 'Sophromassage',

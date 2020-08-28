@@ -14,9 +14,8 @@ const feature = {
 						<h1 class="font-30" data-text="LIONEL ENSFELDER">LIONEL ENSFELDER,</h1>
 						<h2 class="mb-5 font-20" data-text="Développeur web frontend">Développeur web frontend</h2>
 						<p class="mb-2 animated-fadeInRight">
-							Après des années enrichissantes dans la Marine Nationale en tant que technicien informatique et télécoms, j'ai
-							décidé de devenir <span class="font-weight-bold">développeur web frontend</span>. Je recherche un poste de développeur web frontend utilisant principalement
-							des technologies gravitant autour de Javascript tel que Vue.js, React et Node.js.
+							Après des années enrichissantes dans la Marine Nationale en tant que technicien informatique et télécoms, j'ai décidé de devenir <span class="font-weight-bold">développeur web frontend</span>. 
+							Je me spécialise dans le développement web frontend utilisant des technologies Javascript telles que React, Vue ou encore Node.js.
 						</p>
 						<a href="https://drive.google.com/file/d/1mWW-3lnAoUBYQ6O5nQoydXutG3lPMloJ/view?usp=sharing" target="_blank" class="btn btn-main my-4">VOIR MON CV <i class="las la-file"></i></a>
 						<a href="https://github.com/LionelENSFELDER" target="_blank" class="btn btn-main-light my-4"> GITHUB <i class="lab la-github"></i></a>
@@ -24,7 +23,7 @@ const feature = {
 				</div>
 				<div class="card border-0 bg-transparent">
 					<div class="my-auto mx-sd-auto mx-md-auto animated-fadeInLeft">
-						<img src="assets/img-compressed/lionel-ensfelder.jpg" class="rounded img-fluid" title="Lionel Ensfelder" alt="lionel Ensfelder" style="width: 80%;">
+						<img src="assets/img/lionel-ensfelder.png" class="rounded img-fluid" title="Lionel Ensfelder" alt="lionel Ensfelder" style="width: 80%;">
 					</div>
 				</div>
 			</div>

@@ -6,10 +6,13 @@ function carousel(){
     })
     //add class "active" to fist item
     let addActive = function(inner){
-        let carouselInner = document.getElementById(inner);
-        let firstCarouselItem = carouselInner.firstChild;
-        firstCarouselItem.classList.add('active');
+        let carouselInner = document.querySelectorAll(inner);
+        console.log(carouselInner);
+
+        carouselInner.forEach(function(item) {
+            let firstCarouselItem = item.firstChild;
+            firstCarouselItem.classList.add('active');
+        });
     }
-    //addActive("carousel-tech-inner");
-    addActive("carousel-testimonial-inner");
+    addActive(".carousel-inner");
 }
