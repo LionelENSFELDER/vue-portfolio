@@ -10,7 +10,7 @@ const mystack = {
             <div class="row row-cols-1 row-cols-lg-2 py-5">
                 <div class="card border-0 bg-transparent">
                     <div class="my-auto mx-sd-auto mx-md-auto animated-fadeInLeft">
-                        <img src="assets/img/stack.png" class="rounded img-fluid" title="Lionel Ensfelder" alt="lionel Ensfelder" style="width: 100%;">
+                        <img src="assets/img/stack.jpg" class="rounded img-fluid" title="Lionel Ensfelder" alt="lionel Ensfelder" style="width: 100%;">
                     </div>
                 </div>
 				<div class="card border-0 bg-transparent">

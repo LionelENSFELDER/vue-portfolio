@@ -184,7 +184,7 @@ new Vue({
 				target: 'aid83',
 				targetId: '#aid83',
 				title: 'AID83',
-				coverImage: './assets/img/aid83/aid83-preview.jpg',
+				coverImage: './assets/img/aid83/aid831.jpg',
 				coverTitle: 'Image du site Aid 83',
 				coverAlt:'AID83',
 				client: 'AID83',
@@ -200,15 +200,15 @@ new Vue({
 				captures: [
 					{
 						id: 1,
-						capture: './assets/img/aid83/aid83-capture1.png'
+						capture: './assets/img/aid83/aid831.jpg'
 					},
 					{
 						id: 2,
-						capture: './assets/img/aid83/aid83-capture2.png'
+						capture: './assets/img/aid83/aid832.jpg'
 					},
 					{
 						id: 2,
-						capture: './assets/img/aid83/aid83-capture3.png'
+						capture: './assets/img/aid83/aid833.jpg'
 					}
 				]
 			},
@@ -217,7 +217,7 @@ new Vue({
 				target: 'sophromassage',
 				targetId: '#sophromassage',
 				title: 'Sophromassage',
-				coverImage: './assets/img/sophromassage/sophromassage-preview.jpg',
+				coverImage: './assets/img/sophromassage/sophromassage1.jpg',
 				coverTitle: 'Image du site Sophromassage',
 				coverAlt:'Sophromassage',
 				client: 'Eléonore Hottou',
@@ -226,22 +226,22 @@ new Vue({
 				moreInfos: 'Site vitrine Wordpress fait à partir d\'un thème enfant lui même basé sur un thème Bootstrap v4 (WP Bootstrap Starter). Ce site à été réaliser en mode "nomade" en utilisant Docker, Apache et MySQL pour créer un environement de développement sur clé usb. Le maquettage à été réaliser avec Figma. Ce site est entièrement responsive.',
 				stack: 'HTML5, CSS3, Bootstrap, Wordpress, Apache, SQL',
 				tags: "Wordpress" ,
-				url: './assets/img/sophromassage/sophromassage.png',
+				url: './assets/img/sophromassage/sophromassage.jpg',
 				github:'https://github.com/LionelENSFELDER/sophromassage',
 				carouselID:'carousel-sophromassage',
 				carouselControlLink:'#carousel-sophromassage',
 				captures: [
 					{
 						id: 1,
-						capture: './assets/img/sophromassage/sophromassage-capture1.png'
+						capture: './assets/img/sophromassage/sophromassage1.jpg'
 					},
 					{
 						id: 2,
-						capture: './assets/img/sophromassage/sophromassage-capture2.png'
+						capture: './assets/img/sophromassage/sophromassage2.jpg'
 					},
 					{
 						id: 3,
-						capture: './assets/img/sophromassage/sophromassage-capture3.png'
+						capture: './assets/img/sophromassage/sophromassage3.jpg'
 					},
 				]
 			},
@@ -250,7 +250,7 @@ new Vue({
 				target: 'movies-manager',
 				targetId: '#movies-manager',
 				title: 'Movies Manager',
-				coverImage: './assets/img/movies-manager/movies-manager-preview.png',
+				coverImage: './assets/img/moviesmanager/moviesmanager1.jpg',
 				coverTitle: 'Image du projet Movies Manager',
 				coverAlt:'',
 				alt:'Movies Manager',
@@ -260,22 +260,30 @@ new Vue({
 				moreInfos: 'Ce projet a été développé dans le cadre du passage de la certification développeur web et web mobile. Il utilise un serveur Apache et une base de donnée SQL pour stoquer des informations sur des films. La partie front est basée sur Bootstrap et est entièrement adaptable aux terminaux mobiles.' ,
 				stack: 'HTML5, CSS3, Bootstrap, PHP, Apache, SQL',
 				tags: "PHP",
-				url: '',
+				url: './assets/img/moviesmanager/moviesmanager1.jpg',
 				github:'https://github.com/LionelENSFELDER/movies-manager',
 				carouselID:'carousel-movies-manager',
 				carouselControlLink:'#carousel-movies-manager',
 				captures: [
 					{
 						id: 1,
-						capture: './assets/img/movies-manager/movies-manager-capture1.png'
+						capture: './assets/img/moviesmanager/moviesmanager1.jpg'
 					},
 					{
 						id: 2,
-						capture: './assets/img/movies-manager/movies-manager-capture2.png'
+						capture: './assets/img/moviesmanager/moviesmanager2.jpg'
 					},
 					{
 						id: 3,
-						capture: './assets/img/movies-manager/movies-manager-capture3.png'
+						capture: './assets/img/moviesmanager/moviesmanager3.jpg'
+					},
+					{
+						id: 4,
+						capture: './assets/img/moviesmanager/moviesmanager4.jpg'
+					},
+					{
+						id: 5,
+						capture: './assets/img/moviesmanager/moviesmanager5.jpg'
 					}
 				]
 			},
@@ -284,7 +292,7 @@ new Vue({
 				target: 'portfolio',
 				targetId: '#portfolio',
 				title: 'Portfolio',
-				coverImage: './assets/img/portfolio/portfolio-preview.png',
+				coverImage: './assets/img/portfolio/portfolio1.jpg',
 				coverTitle: 'Image du portfolio',
 				coverAlt:'Portfilio de Lionel Ensfelder',
 				alt:'aid83',
@@ -294,22 +302,26 @@ new Vue({
 				moreInfos: 'Mon site personnel présentant mon parcours et mes meilleurs projets. Sa réalisation m\'a permise de mettre en pratique la notion de composants de Vue.js. Grâce à une conception statique mais utilisant des composants d\'interface réutilisables j\'ai développé un site facilement maintenanble, simple et sans base de données.',
 				stack: 'HTML5, CSS3, Bootstrap, Javascript, Vue, Gulp',
 				tags: "Vue",
-				url: './assets/img/portfolio/portfolio-capture-full.png',
+				url: './assets/img/portfolio/portfolio.jpg',
 				github:'https://github.com/LionelENSFELDER/about-me',
 				carouselID:'carousel-portfolio',
 				carouselControlLink:'#carousel-portfolio',
 				captures: [
 					{
 						id: 1,
-						capture: './assets/img/portfolio/portfolio-capture1.png'
+						capture: './assets/img/portfolio/portfolio1.jpg'
 					},
 					{
 						id: 2,
-						capture: './assets/img/portfolio/portfolio-capture2.png'
+						capture: './assets/img/portfolio/portfolio2.jpg'
 					},
 					{
 						id: 3,
-						capture: './assets/img/portfolio/portfolio-capture3.png'
+						capture: './assets/img/portfolio/portfolio3.jpg'
+					},
+					{
+						id: 4,
+						capture: './assets/img/portfolio/portfolio4.jpg'
 					}
 				]
 			},
@@ -318,7 +330,7 @@ new Vue({
 				target: 'miiniimaal-weather',
 				targetId: '#miiniimaal-weather',
 				title: 'Miiniimaal Weather',
-				coverImage: './assets/img/miiniimaal-weather/miiniimaal-weather-preview.png',
+				coverImage: './assets/img/miiniimaal-weather/miiniimaalweather1.jpg',
 				coverTitle: 'Image du projet Miiniimaal Weather',
 				coverAlt:'',
 				alt:'Miiniimaal Weather',
@@ -328,18 +340,18 @@ new Vue({
 				moreInfos: 'App météo Javascript utilisant l\API openweathermap.org via des fonctions asynchrones. L\'app dispose d\'un systeme basique de notifications en cas d\'erreur réseau ou d\'identification de la localisation.' ,
 				stack: 'HTML5, CSS3, Bootstrap, Javascript, Gulp',
 				tags: "Javascript",
-				url: 'https://github.com/LionelENSFELDER/miiniimaal-weather',
+				url: './assets/img/miiniimaal-weather/miiniimaalweather1.jpg',
 				github:'https://github.com/LionelENSFELDER/miiniimaal-weather',
 				carouselID:'carousel-miiniimaal-weather',
 				carouselControlLink:'#carousel-miiniimaal-weather',
 				captures: [
 					{
 						id: 1,
-						capture: './assets/img/miiniimaal-weather/miiniimaal-weather-preview.png'
+						capture: './assets/img/miiniimaal-weather/miiniimaalweather1.jpg'
 					},
 					{
 						id: 2,
-						capture: './assets/img/miiniimaal-weather/miiniimaal-weather-capture2.png'
+						capture: './assets/img/miiniimaal-weather/miiniimaalweather2.jpg'
 					}
 				]
 			},
@@ -348,7 +360,7 @@ new Vue({
 				target: 'vue-todolist',
 				targetId: '#vue-todolist',
 				title: 'Vue Todolist',
-				coverImage: './assets/img/vue-todolist/vue-todolist-preview.png',
+				coverImage: './assets/img/vuetodolist/vuetodolist1.jpg',
 				coverTitle: 'Image du projet Vue todolist',
 				coverAlt:'',
 				alt:'Vue todolist',
@@ -365,15 +377,15 @@ new Vue({
 				captures: [
 					{
 						id: 1,
-						capture: './assets/img/vue-todolist/vue-todolist-capture1.png'
+						capture: './assets/img/vuetodolist/vuetodolist1.jpg'
 					},
 					{
 						id: 2,
-						capture: './assets/img/vue-todolist/vue-todolist-capture2.png'
+						capture: './assets/img/vuetodolist/vuetodolist2.jpg'
 					},
 					{
 						id: 3,
-						capture: './assets/img/vue-todolist/vue-todolist-capture3.png'
+						capture: './assets/img/vuetodolist/vuetodolist3.jpg'
 					}
 				]
 			}
