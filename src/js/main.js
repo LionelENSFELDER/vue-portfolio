@@ -370,7 +370,7 @@ new Vue({
 				moreInfos: 'Une liste de tâche éphémère "full web" permettant de trier les tâches par "tout", "fait", "à faire".' ,
 				stack: 'HTML5, CSS3, Bootstrap, Javascript, Vue, Gulp',
 				tags: "Vue",
-				url: 'https://github.com/LionelENSFELDER/vue-todo',
+				url: 'https://vue-todolist-pi.vercel.app/',
 				github:'https://github.com/LionelENSFELDER/vue-todo',
 				carouselID:'carousel-vue-todo',
 				carouselControlLink:'#carousel-vue-todo',
@@ -386,6 +386,40 @@ new Vue({
 					{
 						id: 3,
 						capture: './assets/img/vuetodolist/vuetodolist3.jpg'
+					}
+				]
+			},
+			{
+				id: 7,
+				target: 'react-movies-seeker',
+				targetId: '#react-movies-seeker',
+				title: 'React movies seeker',
+				coverImage: './assets/img/react-movies-seeker/1.jpg',
+				coverTitle: 'Image du projet React movies seeker',
+				coverAlt:'',
+				alt:'React movies seeker',
+				client: 'Lionel Ensfelder',
+				date: '2020',
+				description: 'Une interface simple permettant de rechercher des films et de visualiser les informations associées.',
+				moreInfos: 'Une interface web simple et adaptable permettant de rechercher des films, de visualiser les informations associées et de les trier par catégogie. Elle utilise la v3 de l\'API themoviedb.org. ' ,
+				stack: 'HTML5, CSS3, Bootstrap, Javascript, React, API',
+				tags: "React",
+				url: 'https://react-movies-seeker.vercel.app/',
+				github:'https://github.com/LionelENSFELDER/react-movies-seeker',
+				carouselID:'carousel-react-movies-seeker',
+				carouselControlLink:'#carousel-react-movies-seeker',
+				captures: [
+					{
+						id: 1,
+						capture: './assets/img/react-movies-seeker/1.jpg'
+					},
+					{
+						id: 2,
+						capture: './assets/img/react-movies-seeker/2.jpg'
+					},
+					{
+						id: 3,
+						capture: './assets/img/react-movies-seeker/3.jpg'
 					}
 				]
 			}
