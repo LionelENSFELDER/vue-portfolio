@@ -9,31 +9,20 @@ const mystack = {
 		
             <div class="row row-cols-1 row-cols-lg-2 py-5">
                 <div class="card border-0 bg-transparent">
-                    <div class="my-auto mx-sd-auto mx-md-auto animated-fadeInLeft">
+                    <div class="mx-sd-auto mx-md-auto animated-fadeInLeft">
                         <img src="assets/img/stack.jpg" class="rounded img-fluid" title="Lionel Ensfelder" alt="lionel Ensfelder" style="width: 100%;">
                     </div>
                 </div>
 				<div class="card border-0 bg-transparent">
-					<div class="p-4">
-						<p class="mb-3 animated-fadeInRight">
-						Durant mon parcours personnel et professionnel, 
-						j'ai acquis une solide compréhension des concepts de l'informatique et du développement Web. 
-						Je consacre une grande partie de mon temps libre à appliquer ces concepts à des scénarios 
-						et applications fictifs ou du monde réel.
-                        <ul class="list-unstyled mt-5">
-							<li class="mb-2">
-								<i class="las la-caret-right font-main"></i>Langages: HTML 5, CSS 3, SASS, Javascript ES6, PHP
-							</li>
-							<li class="mb-2">
-								<i class="las la-caret-right font-main"></i>Frameworks & librairies: jQuery, Bootstrap, React, Symfony
-							</li>
-							<li>
-								<i class="las la-caret-right font-main"></i>Serveur: Node.js (Express)
-							</li>
-                        </ul>
-
-                        
+					<div class="px-4">
+						<p class="mb-2 animated-fadeInRight">
+							Grâce à mon expérience personnel et professionnel, 
+							j'ai acquis une solide compréhension de l'informatique 
+							et des concepts du développement Web. 
+							J'ai consacré une grande partie de mon temps libre à 
+							appliquer ces concepts à des scénarios et des applications du monde réel.
 						</p>
+						<a href="https://github.com/LionelENSFELDER" target="_blank" class="btn btn-main my-4"> GITHUB <i class="lab la-github"></i></a>
 					</div>
 				</div>
 			</div>

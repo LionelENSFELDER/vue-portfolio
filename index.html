@@ -36,13 +36,23 @@
 
 			<!-- S_T_A_C_K -->
 			<vue-section id="technologies" class="bg-grey" title="TECHNOLOGIES">
-				<vue-mystack></vue-mystack>
+				<vue-mystack>
+					<!-- <div class="row row-cols-4">
+						<vue-tech v-for="i in tech" v-bind:key="i.id" v-bind:i="i"></vue-tech>
+					</div> -->
+				</vue-mystack>
 			</vue-section>
+
+			<!-- <vue-section id="" class="bg-grey" title="Test">
+				<div class="row row-cols-1 row-cols-md-6">
+					<vue-stack v-for="stack in stacks" v-bind:key="stack.id" v-bind:stack="stack"></vue-stack>
+				</div>
+			</vue-section> -->
 
 			<!-- W_O_R_K_S -->
 			<vue-section id="realisations" class="" title="MES REALISATIONS">
 				<div class="d-flex flex-row justify-content-center">
-					<div class="btn-group mb-5" role="group" aria-label="projectsFilter">
+					<div class="mb-5" role="group" aria-label="projectsFilter">
 						<button type="button" class="btn btn-main-light filter-button" data-filter="All">Tout</button>
 						<button type="button" class="btn btn-main-light filter-button" data-filter="Javascript">Javascript</button>
 						<button type="button" class="btn btn-main-light filter-button" data-filter="React">React</button>
@@ -51,9 +61,12 @@
 						<button type="button" class="btn btn-main-light filter-button" data-filter="Wordpress">Wordpress</button>
 					</div>
 				</div>
-				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+				<div class="row row-cols-1 row-cols-md-3">
 					<vue-projects v-for="work in works" v-bind:key="work.id" v-bind:work="work"></vue-projects>
 				</div>
+				<!-- <div class="">
+					<a href="" target="_blank" class="btn btn-main">VOIR TOUS LES PROJETS SUR GITHUB<i class="lab la-github"></i></a>
+				</div> -->
 			</vue-section>
 
 			<!-- T_E_S_T_I_M_O_N_I_A_L_S -->

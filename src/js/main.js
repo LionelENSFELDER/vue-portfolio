@@ -5,6 +5,7 @@ import section from './components/section.js'
 import container from './components/container.js'
 import feature from './components/feature.js'
 import mystack from './components/mystack.js'
+import tech from './components/tech.js' //---------------------------------
 // import CarouselTestimonial from './components/CarouselTestimonial.js'
 // import CarouselTestimonialItem from './components/CarouselTestimonialItem.js'
 import contact from './components/contact.js'
@@ -18,6 +19,7 @@ Vue.component('vue-section', section);
 Vue.component('vue-container', container);
 Vue.component('vue-feature', feature);
 Vue.component('vue-mystack', mystack);
+Vue.component('vue-tech', tech); //-----------------------------------
 // Vue.component('vue-carousel-testimonial', CarouselTestimonial);
 // Vue.component('vue-carousel-testimonial-item', CarouselTestimonialItem);
 Vue.component('vue-contact', contact);
@@ -184,7 +186,7 @@ new Vue({
 				target: 'aid83',
 				targetId: '#aid83',
 				title: 'AID83',
-				coverImage: './assets/img/aid83/aid831.jpg',
+				coverImage: './assets/img/aid83/preview.png',
 				coverTitle: 'Image du site Aid 83',
 				coverAlt:'AID83',
 				client: 'AID83',
@@ -200,16 +202,20 @@ new Vue({
 				captures: [
 					{
 						id: 1,
-						capture: './assets/img/aid83/aid831.jpg'
+						capture: './assets/img/aid83/full.png'
 					},
-					{
-						id: 2,
-						capture: './assets/img/aid83/aid832.jpg'
-					},
-					{
-						id: 2,
-						capture: './assets/img/aid83/aid833.jpg'
-					}
+					// {
+					// 	id: 1,
+					// 	capture: './assets/img/aid83/aid831.jpg'
+					// },
+					// {
+					// 	id: 2,
+					// 	capture: './assets/img/aid83/aid832.jpg'
+					// },
+					// {
+					// 	id: 2,
+					// 	capture: './assets/img/aid83/aid833.jpg'
+					// }
 				]
 			},
 			{
@@ -217,7 +223,7 @@ new Vue({
 				target: 'sophromassage',
 				targetId: '#sophromassage',
 				title: 'Sophromassage',
-				coverImage: './assets/img/sophromassage/sophromassage1.jpg',
+				coverImage: './assets/img/sophromassage/preview2.png',
 				coverTitle: 'Image du site Sophromassage',
 				coverAlt:'Sophromassage',
 				client: 'Eléonore Hottou',
@@ -250,7 +256,7 @@ new Vue({
 				target: 'movies-manager',
 				targetId: '#movies-manager',
 				title: 'Movies Manager',
-				coverImage: './assets/img/moviesmanager/moviesmanager1.jpg',
+				coverImage: './assets/img/moviesmanager/preview.png',
 				coverTitle: 'Image du projet Movies Manager',
 				coverAlt:'',
 				alt:'Movies Manager',
@@ -289,48 +295,10 @@ new Vue({
 			},
 			{
 				id: 4,
-				target: 'portfolio',
-				targetId: '#portfolio',
-				title: 'Portfolio',
-				coverImage: './assets/img/portfolio/portfolio1.jpg',
-				coverTitle: 'Image du portfolio',
-				coverAlt:'Portfilio de Lionel Ensfelder',
-				alt:'aid83',
-				client: 'Lionel Ensfelder',
-				date: '2020',
-				description: 'Site statique et portfolio présentant mon parcours et mes réalisations. Il utilise principalement Vue.js (v2) ainsi que Bootstrap (v4).',
-				moreInfos: 'Mon site personnel présentant mon parcours et mes meilleurs projets. Sa réalisation m\'a permise de mettre en pratique la notion de composants de Vue.js (v2). Grâce à une conception statique mais utilisant des composants d\'interface réutilisables j\'ai développé un site facilement maintenanble, simple et sans base de données.',
-				stack: 'HTML5, CSS3, Bootstrap, Javascript, Vue, Gulp',
-				tags: "Vue",
-				url: './assets/img/portfolio/portfolio.jpg',
-				github:'https://github.com/LionelENSFELDER/about-me',
-				carouselID:'carousel-portfolio',
-				carouselControlLink:'#carousel-portfolio',
-				captures: [
-					{
-						id: 1,
-						capture: './assets/img/portfolio/portfolio1.jpg'
-					},
-					{
-						id: 2,
-						capture: './assets/img/portfolio/portfolio2.jpg'
-					},
-					{
-						id: 3,
-						capture: './assets/img/portfolio/portfolio3.jpg'
-					},
-					{
-						id: 4,
-						capture: './assets/img/portfolio/portfolio4.jpg'
-					}
-				]
-			},
-			{
-				id: 5,
 				target: 'miiniimaal-weather',
 				targetId: '#miiniimaal-weather',
 				title: 'Miiniimaal Weather',
-				coverImage: './assets/img/miiniimaal-weather/miiniimaalweather1.jpg',
+				coverImage: './assets/img/miiniimaal-weather/preview.png',
 				coverTitle: 'Image du projet Miiniimaal Weather',
 				coverAlt:'',
 				alt:'Miiniimaal Weather',
@@ -356,11 +324,11 @@ new Vue({
 				]
 			},
 			{
-				id: 6,
+				id: 5,
 				target: 'vue-todolist',
 				targetId: '#vue-todolist',
 				title: 'Vue Todolist',
-				coverImage: './assets/img/vuetodolist/vuetodolist1.jpg',
+				coverImage: './assets/img/vuetodolist/preview.png',
 				coverTitle: 'Image du projet Vue todolist',
 				coverAlt:'',
 				alt:'Vue todolist',
@@ -394,7 +362,7 @@ new Vue({
 				target: 'react-movies-seeker',
 				targetId: '#react-movies-seeker',
 				title: 'React movies seeker',
-				coverImage: './assets/img/react-movies-seeker/1.jpg',
+				coverImage: './assets/img/react-movies-seeker/preview.png',
 				coverTitle: 'Image du projet React movies seeker',
 				coverAlt:'',
 				alt:'React movies seeker',
@@ -469,163 +437,47 @@ new Vue({
 				url: 'https://www.linkedin.com/in/lionel-ensfelder/'
 			}
 		],
-		techs:[
-			{
-				id:1,
-				title: 'Vue.js',
-				icon: '<i class="lab la-vuejs display-2"></i>',
-				url: 'wwww.google.com'
-			},
-			{
-				id:2,
-				title: 'Bootstrap',
-				icon: '<i class="lab la-bootstrap display-2"></i>',
-				url: 'wwww.google.com'
-			},
-			{
-				id:3,
-				title: 'Git',
-				icon: '<i class="lab la-git display-2"></i>',
-				url: 'wwww.google.com'
-			},
-			{
-				id:4,
-				title: 'UI Kit',
-				icon: '<i class="lab la-uikit display-2"></i>',
-				url: 'wwww.google.com'
-			},
-			{
-				id:5,
-				title: 'Scrum',
-				icon: '<i class="lab la-buffer display-2"></i>',
-				url: 'wwww.google.com'
-			},
-			{
-				id:6,
-				title: 'Wordpress',
-				icon: '<i class="lab la-wordpress display-2"></i>',
-				url: 'wwww.google.com'
-			},
-			{
-				id:7,
-				title: 'SASS',
-				icon: '<i class="lab la-sass display-2"></i>',
-				url: 'wwww.google.com'
-			},
-			{
-				id:8,
-				title: 'Symfony',
-				icon: '<i class="lab la-symfony display-2"></i>',
-				url: 'wwww.google.com'
-			},
-			{
-				id:9,
-				title: 'Apache, SQL',
-				icon: '<i class="las la-server display-2"></i>',
-				url: 'https://apache.org/'
-			},
-			{
-				id:10,
-				title: 'Figma',
-				icon: '<i class="lab la-figma display-2"></i>',
-				url: 'https://www.figma.com/'
-			},
-			{
-				id:11,
-				title: 'Windows Server',
-				icon: '<i class="lab la-windows display-2"></i>',
-				url: 'https://www.microsoft.com/fr-fr/cloud-platform/windows-server'
-			},
-			{
-				id:12,
-				title: 'Hyperledger Fabric',
-				icon: '<i class="lab la-connectdevelop display-2"></i>',
-				url: 'https://www.hyperledger.org/projects/fabric'
-			},
-			{
-				id:13,
-				title: 'PHP Unit',
-				icon: '<i class="las la-file-code display-2"></i>',
-				url: 'https://phpunit.de/'
-			},
-			{
-				id:14,
-				title: 'Jest',
-				icon: '<i class="las la-file-code display-2"></i>',
-				url: 'https://jestjs.io/'
-			},
-			{
-				id:15,
-				title: 'Foundation',
-				icon: '<i class="las la-file-code display-2"></i>',
-				url: 'https://foundation.zurb.com/'
-			},
-			{
-				id:16,
-				title: 'Ubuntu',
-				icon: '<i class="lab la-ubuntu display-2"></i>',
-				url: 'https://www.ubuntu-fr.org/'
-			}
-		],
-		stacks:[
+		tech:[
 			{
 				id: 1,
-				icon: '<i class="devicon-html5-plain colored font-30"></i>',
-				title: 'HTML5 & CSS3'
-
-			},
-			{
-				id: 2,
-				icon: '<i class="devicon-sass-original  colored font-30"></i>',
+				icon: '<i class="devicon-sass-original colored font-20"></i>',
 				title: 'Sass'
 
 			},
 			{
-				id: 3,
-				icon: '<i class="devicon-bootstrap-plain colored font-30"></i>',
+				id: 2,
+				icon: '<i class="devicon-bootstrap-plain colored font-20"></i>',
 				title: 'Bootstrap'
 
 			},
 			{
+				id: 3,
+				icon: '<i class="devicon-javascript-plain colored font-20"></i>',
+				title: 'Javascript'
+
+			},
+			{
 				id: 4,
-				icon: '<i class="devicon-javascript-plain colored font-30"></i>',
-				title: 'JS'
+				icon: '<i class="devicon-angularjs-plain colored font-20"></i>',
+				title: 'Angular'
 
 			},
 			{
 				id: 5,
-				icon: '<i class="devicon-react-original colored font-30"></i>',
+				icon: '<i class="devicon-react-original colored font-20"></i>',
 				title: 'React'
 
 			},
 			{
 				id: 6,
-				icon: '<i class="devicon-vuejs-plain colored font-30"></i>',
-				title: 'Vue'
+				icon: '<i class="devicon-nodejs-plain colored font-20"></i>',
+				title: 'Node'
 
 			},
 			{
 				id: 7,
-				icon: '<i class="devicon-php-plain colored font-30"></i>',
-				title: 'PHP & SQL'
-
-			},
-			{
-				id: 8,
-				icon: '<i class="devicon-wordpress-plain colored font-30"></i>',
-				title: 'Wordpress'
-
-			},
-			{
-				id: 9,
-				icon: '<i class="devicon-github-plain colored font-30"></i>',
+				icon: '<i class="devicon-git-plain colored font-20"></i>',
 				title: 'Git'
-
-			},
-			{
-				id: 10,
-				icon: '<i class="devicon-docker-plain colored font-30"></i>',
-				title: 'Docker'
 
 			}
 		]
