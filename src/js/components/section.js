@@ -8,7 +8,7 @@ const section = {
 	template: `
 		<section id="" class="py-5 text-white">
 			<div class="container py-5">
-			<h1 class="text-center mb-5" :data-text="title">{{ title }}</h1>
+			<h2 class="text-left mb-5" :data-text="title">{{ title }}</h2>
 				<slot></slot>
 			</div>
 		</section>

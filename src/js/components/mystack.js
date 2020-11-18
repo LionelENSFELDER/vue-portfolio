@@ -7,25 +7,35 @@ const mystack = {
 	props: ['mystack'],
 	template: `
 		
-            <div class="row row-cols-1 row-cols-lg-2 py-5">
-                <div class="card border-0 bg-transparent">
-                    <div class="mx-sd-auto mx-md-auto animated-fadeInLeft">
-                        <img src="assets/img/stack.jpg" class="rounded img-fluid" title="Lionel Ensfelder" alt="lionel Ensfelder" style="width: 100%;">
-                    </div>
-                </div>
-				<div class="card border-0 bg-transparent">
-					<div class="px-4">
-						<p class="mb-2 animated-fadeInRight">
-							Grâce à mon expérience personnel et professionnel, 
-							j'ai acquis une solide compréhension de l'informatique 
-							et des concepts du développement Web. 
-							J'ai consacré une grande partie de mon temps libre à 
-							appliquer ces concepts à des scénarios et des applications du monde réel.
-						</p>
-						<a href="https://github.com/LionelENSFELDER" target="_blank" class="btn btn-main my-4"> GITHUB <i class="lab la-github"></i></a>
+		<div class="row">
+			<div class="col-md mb-5">
+				<div class="card bg-transparent border-0 h-100 mb-5">
+					<div class="card-body p-0">
+						<img src="assets/img/coding.png" class="img-fluid" alt="Responsive image" style="width:55px">
+						<h5 class="card-title">Langages</h5>
+						<p class="card-text">Need help with designing your website? HTML 5, CSS 3, SASS, Javascript ES6, PHP.</p>
 					</div>
 				</div>
 			</div>
+			<div class="col-md mb-5">
+				<div class="card bg-transparent border-0 h-100 mb-5">
+					<div class="card-body p-0">
+						<img src="assets/img/frameworks.png" class="img-fluid" alt="Responsive image" style="width:55px">
+						<h5 class="card-title">Frameworks & lib.</h5>
+						<p class="card-text">Angular, jQuery, Bootstrap, React, Vue, Node.js, Express.js</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md mb-5">
+				<div class="card bg-transparent border-0 h-100 mb-5">
+					<div class="card-body p-0">
+						<img src="assets/img/tools.png" class="img-fluid" alt="Responsive image" style="width:55px">
+						<h5 class="card-title">Outils</h5>
+						<p class="card-text">Spotify, Docker, Git, Agile (Scrum).</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	`
 }
 export default mystack;

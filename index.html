@@ -24,75 +24,25 @@
 		<div id="app">
 
 			<!-- N_A_V_B_A_R -->
-			<vue-navbar class="">
-				<vue-navbar-item v-for="navitem in navitems" v-bind:key="navitem.id" v-bind:navitem="navitem">
-				</vue-navbar-item>
-			</vue-navbar>
+			<vue-navbar class="bg-white"></vue-navbar>
 
 			<!-- A_B_O_U_T_M_E -->
-			<vue-section id="quisuisje" class="">
+			<vue-section id="quisuisje">
 				<vue-feature></vue-feature>
 			</vue-section>
 
 			<!-- S_T_A_C_K -->
-			<vue-section id="technologies" class="bg-grey" title="TECHNOLOGIES">
-				<vue-mystack>
-					<!-- <div class="row row-cols-4">
-						<vue-tech v-for="i in tech" v-bind:key="i.id" v-bind:i="i"></vue-tech>
-					</div> -->
-				</vue-mystack>
+			<vue-section id="competences" title="Compétences">
+				<vue-mystack></vue-mystack>
 			</vue-section>
-
-			<!-- <vue-section id="" class="bg-grey" title="Test">
-				<div class="row row-cols-1 row-cols-md-6">
-					<vue-stack v-for="stack in stacks" v-bind:key="stack.id" v-bind:stack="stack"></vue-stack>
-				</div>
-			</vue-section> -->
 
 			<!-- W_O_R_K_S -->
-			<vue-section id="realisations" class="" title="MES REALISATIONS">
-				<div class="d-flex flex-row justify-content-center">
-					<div class="mb-5" role="group" aria-label="projectsFilter">
-						<button type="button" class="btn btn-main-light filter-button" data-filter="All">Tout</button>
-						<button type="button" class="btn btn-main-light filter-button" data-filter="Javascript">Javascript</button>
-						<button type="button" class="btn btn-main-light filter-button" data-filter="React">React</button>
-						<button type="button" class="btn btn-main-light filter-button" data-filter="Vue">Vue</button>
-						<button type="button" class="btn btn-main-light filter-button" data-filter="PHP">PHP</button>
-						<button type="button" class="btn btn-main-light filter-button" data-filter="Wordpress">Wordpress</button>
-					</div>
-				</div>
-				<div class="row row-cols-1 row-cols-md-3">
-					<vue-projects v-for="work in works" v-bind:key="work.id" v-bind:work="work"></vue-projects>
-				</div>
-				<!-- <div class="">
-					<a href="" target="_blank" class="btn btn-main">VOIR TOUS LES PROJETS SUR GITHUB<i class="lab la-github"></i></a>
-				</div> -->
-			</vue-section>
-
-			<!-- T_E_S_T_I_M_O_N_I_A_L_S -->
-			<!-- <vue-section id="temoignages" class="bg-grey" title="TEMOIGNAGES">
-				<vue-carousel-testimonial>
-					<vue-carousel-testimonial-item v-for="testimonial in testimonials" v-bind:key="testimonial.id"
-						v-bind:testimonial="testimonial"></vue-carousel-testimonial-item>
-				</vue-carousel-testimonial>
-			</vue-section> -->
-
-			<!-- C_O_N_T_A_C_T -->
-			<vue-section id="contact" class="bg-grey" title="CONTACTE-MOI">
-				<blockquote class="blockquote">
-					<h4 class="mb-0">Vous recherchez un développeur front-end avec une bonne capacité d'adaptation et un grand esprit d'équipe ?</h4>
-				</blockquote>
-				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-					<vue-contact-item v-for="contactitem in contactitems" v-bind:key="contactitem.id"
-						v-bind:contactitem="contactitem"></vue-contact-item>
-				</div>
+			<vue-section id="realisations" class="" title="Mes réalisations notables">
+				<vue-projects v-for="work in works" v-bind:key="work.id" v-bind:work="work"></vue-projects>
 			</vue-section>
 
 			<!-- F_O_O_T_E_R -->
-			<vue-footer>
-				<vue-footer-item v-for="footer in footeritems" v-bind:key="footer.id" v-bind:footer="footer">
-				</vue-footer-item>
-			</vue-footer>
+			<vue-footer class="bg-grey"></vue-footer>
 		</div>
 		
 		<!-- S_C_R_I_P_T_S -->
@@ -100,16 +50,6 @@
 		<script type="module" src="./src/js/main.js"></script>
 		<script src="./src/js/utils/jquery-3.4.1.slim.min.js"></script>
 		<script src="./src/js/utils/bootstrap.bundle.min.js"></script>
-		<script src="./src/js/utils/projectsFilter.js"></script>
-		<script src="./src/js/utils/carousel.js"></script>
 		<script src="./src/js/utils/animations.js"></script>
-		<script>
-			document.onreadystatechange = function () {
-				if(document.readyState === "complete"){
-					carousel();
-					getButtonsValues();
-				}
-			};
-		</script>
 	</body>
 </html>
