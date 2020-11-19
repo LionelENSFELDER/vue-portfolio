@@ -20,7 +20,7 @@ new Vue({
 			{
 				id: 1,
 				title: 'Le site de l\'association d\'aide à domicile AID83',
-				coverImage: './assets/img/aid83/preview.png',
+				coverImage: './assets/img/aid83/preview.jpg',
 				coverTitle: 'Image du site Aid 83',
 				coverAlt:'AID83',
 				moreInfos: 'La création de ce site vitrine a débuté en 2009 en partant du cahier des charges de l\'association. Il y a eu plusieurs versions au fil du temps notamment sous Joomla puis Wordpress pour finir par une version "light" plus rapide et complètement responsive. Le site dispose d\'un formulaire de demande de devis et de candidature en ligne.',
@@ -31,7 +31,7 @@ new Vue({
 			{
 				id: 2,
 				title: 'Site  vitrine massages sportifs et sophrologie',
-				coverImage: './assets/img/sophromassage/preview2.png',
+				coverImage: './assets/img/sophromassage/preview.jpg',
 				coverTitle: 'Image du site Sophromassage',
 				coverAlt:'Sophromassage',
 				moreInfos: 'Site vitrine Wordpress fait à partir d\'un thème enfant lui même basé sur un thème Bootstrap v4 (WP Bootstrap Starter). Ce site à été réaliser en mode "nomade" en utilisant Docker, Apache et MySQL pour créer un environement de développement sur clé usb. Le maquettage à été réaliser avec Figma. Ce site est entièrement responsive.',
@@ -42,7 +42,7 @@ new Vue({
 			{
 				id: 3,
 				title: 'Gestion des informations d\'une base de données dédié aux films',
-				coverImage: './assets/img/moviesmanager/preview.png',
+				coverImage: './assets/img/moviesmanager/preview.jpg',
 				coverTitle: 'Image du projet Movies Manager',
 				coverAlt:'',
 				alt:'Movies Manager',
@@ -54,7 +54,7 @@ new Vue({
 			{
 				id: 5,
 				title: 'Liste de tâches "full web" en Vue.js',
-				coverImage: './assets/img/vuetodolist/preview.png',
+				coverImage: './assets/img/vuetodolist/preview.jpg',
 				coverTitle: 'Image du projet Vue todolist',
 				coverAlt:'',
 				alt:'Vue todolist',
@@ -66,7 +66,7 @@ new Vue({
 			{
 				id: 7,
 				title: 'Recherche de films et affichage des informations via API',
-				coverImage: './assets/img/react-movies-seeker/preview.png',
+				coverImage: './assets/img/react-movies-seeker/preview.jpg',
 				coverTitle: 'Image du projet React movies seeker',
 				coverAlt:'',
 				alt:'React movies seeker',

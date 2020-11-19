@@ -11,7 +11,7 @@ const mystack = {
 			<div class="col-md mb-5">
 				<div class="card bg-transparent border-0 h-100 mb-5">
 					<div class="card-body p-0">
-						<img src="assets/img/coding.png" class="img-fluid" alt="Responsive image" style="width:55px">
+						<img src="assets/img/coding.png" class="img-fluid" alt="Responsive image" style="width:65px">
 						<h5 class="card-title mt-4">Langages</h5>
 						<p class="card-text">
 							Je reste fidèle aux classiques pour l'instant avec <span class="font-weight-bold">HTML 5 + CSS3</span> pour la base.
@@ -23,7 +23,7 @@ const mystack = {
 			<div class="col-md mb-5">
 				<div class="card bg-transparent border-0 h-100 mb-5">
 					<div class="card-body p-0">
-						<img src="assets/img/frameworks.png" class="img-fluid" alt="Responsive image" style="width:55px">
+						<img src="assets/img/frameworks.png" class="img-fluid" alt="Responsive image" style="width:65px">
 						<h5 class="card-title mt-4">Frameworks & lib.</h5>
 						<p class="card-text">
 							Pour l'UI de mes projets j'utilise principalement <span class="font-weight-bold">Bootstrap</span>.
@@ -36,7 +36,7 @@ const mystack = {
 			<div class="col-md mb-5">
 				<div class="card bg-transparent border-0 h-100 mb-5">
 					<div class="card-body p-0">
-						<img src="assets/img/tools.png" class="img-fluid" alt="Responsive image" style="width:55px">
+						<img src="assets/img/tools.png" class="img-fluid" alt="Responsive image" style="width:65px">
 						<h5 class="card-title mt-4">Outils</h5>
 						<p class="card-text">
 							J'utilise la méthodologie Agile <span class="font-weight-bold">Scrum</span> pour suivre mes projets. 
