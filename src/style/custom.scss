@@ -8,14 +8,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 
+// R_A_D_I_U_S
+.radius1{
+    border-radius: 73% 27% 23% 77% / 47% 25% 75% 53%;
+}
+.radius2{
+    border-radius: 41px 176px 41px 176px;
+-moz-border-radius: 41px 176px 41px 176px;
+-webkit-border-radius: 41px 176px 41px 176px;
+border: 15px solid #F9F9F9;
+}
+
 
 // $main: #577590;
 $main: #ee4266;
 $main-translucent: #6fffe941;
 $second: #70c3c2;
 //$grey: #2B2B2B;
-$grey: #6e6d7a;
+$grey: #5C5B66;
 $grey-light: #a4a4a4;
+$grey-ultra-light: #F9F9F9;
 $white: #FFFFFF;
 $dark: #202020;
 $darkTranslucent: #202020;
@@ -58,8 +70,11 @@ h1{
 h2{
     font-size: 2rem;
 }
-
-
+h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 34px;
+}
 a {
 
     &:hover {
@@ -68,6 +83,10 @@ a {
     // &:not([href]):hover {
     //     color: $dark;
     // }
+}
+// C_A_R_D
+.card-subtitle{
+    font-size: 0.8rem;
 }
 // N_A_V_B_A_R
 .navbar-dark .navbar-nav .nav-link {
@@ -247,6 +266,14 @@ a {
     &:hover i {
         color: $main;
     }
+}
+// F_O_O_T_E_R
+footer{
+    background-color: $grey-ultra-light;
+}
+.img-fliped{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 // G_L_I_T_C_H  A_N_I_M_A_T_I_O_N

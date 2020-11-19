@@ -7,7 +7,7 @@ const navbar = {
 	template: `
 		<header class="fixed-top py-3">
 			<div class="container">
-				<nav class="navbar navbar-dark navbar-expand-lg">
+				<nav class="navbar navbar-light navbar-expand-lg">
 					<img src="assets/img/logo.png" class="img-fluid" title="" alt="lionel Ensfelder" style="width: 55px;">
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>

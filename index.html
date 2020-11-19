@@ -37,12 +37,25 @@
 			</vue-section>
 
 			<!-- W_O_R_K_S -->
-			<vue-section id="realisations" class="" title="Mes réalisations notables">
+			<vue-section id="realisations" title="Mes réalisations notables">
 				<vue-projects v-for="work in works" v-bind:key="work.id" v-bind:work="work"></vue-projects>
 			</vue-section>
 
 			<!-- F_O_O_T_E_R -->
-			<vue-footer class="bg-grey"></vue-footer>
+			<footer class="py-5">
+
+				<div class="container">
+					<div class="row">
+						<div class="col-sm text-center">
+							<!-- <div class=""> -->
+								<img src="assets/img/logo.png" class="img-fluid" title="" alt="lionel Ensfelder" style="width: 25px;">
+								<span class=""><i class="las la-copyright"></i>2020 Lionel ENSFELDER. Made with Vue.js & Bootstrap 4.</span>
+								<img src="assets/img/logo.png" class="img-fluid img-fliped" title="" alt="lionel Ensfelder" style="width: 25px;">
+							<!-- </div> -->
+						</div>
+					</div>
+				</div>
+			</footer>
 		</div>
 		
 		<!-- S_C_R_I_P_T_S -->
