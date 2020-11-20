@@ -9,32 +9,32 @@ const mystack = {
 		
 		<div class="row">
 			<div class="col-md mb-5">
-				<div class="card bg-transparent border-0 h-100 mb-5">
+				<div class="card bg-transparent border-0 h-100 mb-5 animated-fadeInRight">
 					<div class="card-body p-0">
 						<img src="assets/img/coding.png" class="img-fluid" alt="Responsive image" style="width:65px">
 						<h5 class="card-title mt-4">Langages</h5>
 						<p class="card-text">
 							Je reste fidèle aux classiques pour l'instant avec <span class="font-weight-bold">HTML 5 + CSS3</span> pour la base.
-							Parfois <span class="font-weight-bold">Javascript</span> ou <span class="font-weight-bold">PHP</span> vanilla sont plus efficients qu'une grosse librairie et permet de rester "libre".
+							Parfois <span class="font-weight-bold">Javascript</span> ou <span class="font-weight-bold">PHP</span> vanilla sont plus efficients qu'une grosse librairie et permettent de rester "libre".
 						</p>
 					</div>
 				</div>
 			</div>
 			<div class="col-md mb-5">
-				<div class="card bg-transparent border-0 h-100 mb-5">
+				<div class="card bg-transparent border-0 h-100 mb-5 animated-fadeInDown">
 					<div class="card-body p-0">
 						<img src="assets/img/frameworks.png" class="img-fluid" alt="Responsive image" style="width:65px">
 						<h5 class="card-title mt-4">Frameworks & lib.</h5>
 						<p class="card-text">
 							Pour l'UI de mes projets j'utilise principalement <span class="font-weight-bold">Bootstrap</span>.
 							Le reste se fait avec <span class="font-weight-bold">Angular</span>, <span class="font-weight-bold">React</span> ou encore <span class="font-weight-bold">Wordpress</span> selon le besoin et la complexité.
-							Pour la partie serveur et tests le couple <span class="font-weight-bold">Node.js</span> et <span class="font-weight-bold">Jest</span>.
+							Pour la partie serveur et tests, le couple <span class="font-weight-bold">Node.js</span> et <span class="font-weight-bold">Jest</span>.
 						</p>
 					</div>
 				</div>
 			</div>
 			<div class="col-md mb-5">
-				<div class="card bg-transparent border-0 h-100 mb-5">
+				<div class="card bg-transparent border-0 h-100 mb-5 animated-fadeInLeft">
 					<div class="card-body p-0">
 						<img src="assets/img/tools.png" class="img-fluid" alt="Responsive image" style="width:65px">
 						<h5 class="card-title mt-4">Outils</h5>
