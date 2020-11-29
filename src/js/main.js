@@ -74,6 +74,18 @@ new Vue({
 				stack: 'HTML5, CSS3, Bootstrap, Javascript, React, API',
 				url: 'https://react-movies-seeker.vercel.app/',
 				github:'https://github.com/LionelENSFELDER/react-movies-seeker'
+			},
+			{
+				id: 8,
+				title: 'Site consacré aux claviers mécaniques',
+				coverImage: './assets/img/mechanical-switches/preview.jpg',
+				coverTitle: 'Image du projet Mechanical switches',
+				coverAlt:'Mechanical switches',
+				alt:'Mechanical switches',
+				moreInfos: 'Je me suis pris de passion pour les claviers mécanique et leurs construction. J\'ai donc décidé de crée un site vitrine destiné à aider dans la compréhension et le choix d\'un clavier mécanique' ,
+				stack: 'HTML5, CSS3, Bootstrap, Javascript',
+				url: 'https://mechanical-switches.vercel.app/',
+				github:'https://github.com/LionelENSFELDER/mechanical-switches'
 			}
 		]
 	}
