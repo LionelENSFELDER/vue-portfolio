@@ -13,19 +13,19 @@ const navbar = {
 						<span class="navbar-toggler-icon"></span>
 					</button>
 
-					<div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+					<div id="navbarMenu" class="collapse navbar-collapse justify-content-end">
 						<ul class="navbar-nav font-12">
-							<li class="nav-item mr-4">
+							<li class="nav-item mr-4" data-toggle="collapse" data-target=".navbar-collapse.show">
 								<a class="nav-link" href="#quisuisje">Qui suis-je ?
 									<span class="sr-only">Qui suis-je ?</span>
 								</a>
 							</li>
-							<li class="nav-item mr-4">
+							<li class="nav-item mr-4" data-toggle="collapse" data-target=".navbar-collapse.show">
 								<a class="nav-link" href="#competences">Compétences
 									<span class="sr-only">Compétences</span>
 								</a>
 							</li>
-							<li class="nav-item">
+							<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
 								<a class="nav-link" href="#realisations">Réalisations
 									<span class="sr-only">Réalisations</span>
 								</a>
