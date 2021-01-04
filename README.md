@@ -1,6 +1,8 @@
 # About "about-me"
 
-My personal website made with Vue.js. For now it is an experiment of very simple and minimal portfolio to get hired. The essential before all.
+My personal website made with Vue.js.
+
+For now it is an experiment of very simple and minimal portfolio to get hired. The essential before all.
 
 ## Phylosophy
 
@@ -14,6 +16,28 @@ I try to keep this project simple and minimal as possible with no dépendencies 
 - Animate css
 - Vue.js (standalone file)
 - Line awesome
-- Gulp (Browser sync, sass compiler,images minifier, etc)
+- Gulp (Browser sync, sass compiler,images minifier)
 
-![alt text](./assets/img/portfolio/portfolio.jpg)
+## Development setup
+
+If you want to fork and custom this project you need Node.js and npm.
+
+1. Clone repo (new CLI):
+
+```sh
+gh repo clone LionelENSFELDER/about-me
+```
+
+2. Install node_modules:
+
+```sh
+npm i
+```
+
+3. Start local server :
+
+```sh
+npm run serve
+```
+
+![alt text](./header.jpg)
