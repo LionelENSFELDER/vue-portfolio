@@ -86,6 +86,18 @@ new Vue({
 				stack: 'HTML5, CSS3, Bootstrap, Javascript',
 				url: 'https://mechanical-switches.vercel.app/',
 				github:'https://github.com/LionelENSFELDER/mechanical-switches'
+			},
+			{
+				id: 9,
+				title: 'Clone de Netflix',
+				coverImage: './assets/img/nerdflix/preview.jpg',
+				coverTitle: 'Image du projet Nerdflix',
+				coverAlt:'Nerdflix',
+				alt:'Nerdflix',
+				moreInfos: 'Clone frontend de la page principale de Netflix. Les informations sont récupérées depuis une API avant hydratation des composants.' ,
+				stack: 'HTML5, CSS3, UI Kit, Typescript, Angular, SwiperJS',
+				url: 'https://netflix-clone-six-sepia.vercel.app/',
+				github:'https://github.com/LionelENSFELDER/netflix-clone'
 			}
 		]
 	}
