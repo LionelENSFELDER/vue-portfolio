@@ -59,7 +59,7 @@ new Vue({
 				coverAlt:'Vue todolist',
 				alt:'Vue todolist',
 				moreInfos: 'Une liste de tâche éphémère en Vue.js (v2) permettant de trier les tâches.' ,
-				stack: 'HTML5, CSS3, Bootstrap, Javascript, Vue, Gulp',
+				stack: 'HTML5, CSS3, Bootstrap, Vue.js, Gulp',
 				url: 'https://vue-todolist-pi.vercel.app/',
 				github:'https://github.com/LionelENSFELDER/vue-todo'
 			},
@@ -71,7 +71,7 @@ new Vue({
 				coverAlt:'React movies seeker',
 				alt:'React movies seeker',
 				moreInfos: 'Une interface web simple et adaptable permettant de rechercher des films, de visualiser les informations associées et de les trier par catégogie. Elle utilise la v3 de l\'API themoviedb.org. ' ,
-				stack: 'HTML5, CSS3, Bootstrap, Javascript, React, API',
+				stack: 'HTML5, CSS3, Bootstrap, React, themoviedb API',
 				url: 'https://react-movies-seeker.vercel.app/',
 				github:'https://github.com/LionelENSFELDER/react-movies-seeker'
 			},
@@ -95,7 +95,7 @@ new Vue({
 				coverAlt:'Nerdflix',
 				alt:'Nerdflix',
 				moreInfos: 'Clone frontend de la page principale de Netflix. Les informations sont récupérées depuis une API avant hydratation des composants.' ,
-				stack: 'HTML5, CSS3, UI Kit, Typescript, Angular, SwiperJS',
+				stack: 'HTML5, CSS3, UI Kit, Typescript, Angular, Swiper',
 				url: 'https://netflix-clone-six-sepia.vercel.app/',
 				github:'https://github.com/LionelENSFELDER/netflix-clone'
 			}
