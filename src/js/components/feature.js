@@ -12,8 +12,9 @@ const feature = {
 					<div class="py-5">
 						<span class="d-block mb-4 font-main font-15">Salut, je suis Lionel Ensfelder</span>
 						<h1 class="">Ancien technicien informatique de la Marine Nationale, je suis maintenant développeur frontend Javascript.</h1>
-						<a href="assets/documents/CV-LIONEL-ENSFELDER.pdf" target="_blank" class="btn btn-lg btn-main font-main mr-3">Mon CV<i class="las la-file-alt ml-2"></i></a>
-						<a href="https://github.com/LionelENSFELDER?tab=repositories" target="_blank" class="btn btn-lg btn-main-light my-4">Mes repo Github<i class="lab la-github ml-2"></i></a>
+						<a href="assets/documents/CV-LIONEL-ENSFELDER.pdf" target="_blank" class="btn btn-lg btn-main font-main mr-3">CV<i class="las la-file-pdf ml-2"></i></a>
+						<a href="https://github.com/LionelENSFELDER?tab=repositories" target="_blank" class="btn btn-lg btn-main-light my-4 mr-3">Github<i class="lab la-github ml-2"></i></a>
+            <a href="https://www.linkedin.com/in/lionel-ensfelder/" target="_blank" class="btn btn-lg btn-main-light">Linkedin<i class="lab la-linkedin ml-2"></i></a>
 					</div>
 				</div>
 				<div class="col-12 col-md-4 card border-0 bg-transparent animated-fadeInLeft">
