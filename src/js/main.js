@@ -70,7 +70,7 @@ new Vue({
 				coverTitle: 'Image du projet React movies seeker',
 				coverAlt:'React movies seeker',
 				alt:'React movies seeker',
-				moreInfos: 'Une interface web simple et adaptable permettant de rechercher des films, de visualiser les informations associées et de les trier par catégogie. Elle utilise la v3 de l\'API themoviedb.org. ' ,
+				moreInfos: 'Une interface web simple et adaptable permettant de rechercher des films, de visualiser les informations associées et de les trier par catégories. Elle utilise la v3 de l\'API themoviedb.org. ' ,
 				stack: 'HTML5, CSS3, Bootstrap, React, themoviedb API',
 				url: 'https://react-movies-seeker.vercel.app/',
 				github:'https://github.com/LionelENSFELDER/react-movies-seeker'
