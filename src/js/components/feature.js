@@ -11,7 +11,7 @@ const feature = {
 				<div class="col-12 col-md-8 card border-0 bg-transparent animated-fadeInRight">
 					<div class="py-5">
 						<span class="d-block mb-4 font-main font-15">Salut, je suis Lionel Ensfelder</span>
-            <h1>Je préfère la qualité à la quantité...<br />Je prends le temps qu'il faut pour faire de l'exercice. Je bichonne mon sommeil.</h1>
+            <h1 class="feature-title"></h1>
             <blockquote class="blockquote">
               <p class="mb-0">La simplicité est la sophistication suprême.</p>
               <footer class="blockquote-footer bg-transparent">Léonard de Vinci</footer>

@@ -5,6 +5,8 @@ import navbar from './components/navbar.js'
 import feature from './components/feature.js'
 import mystack from './components/mystack.js'
 import projects from './components/projects.js'
+import './utils/type-animation.js'
+
 //COMPONENTS ---------------------
 Vue.component('vue-section', section);
 Vue.component('vue-container', container);
