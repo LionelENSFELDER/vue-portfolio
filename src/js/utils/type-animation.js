@@ -10,16 +10,21 @@ window.onload = function() {
       'Je prends le temps qu\'il faut pour cuisiner.',
       'Je bichonne mon sommeil.',
       'Je bichonne mon ordinateur.',
-      'Je traine souvent sur Reddit.',
+      'Je suis accro à Reddit.',
+      'Je suis accro au café.',
       'Je change tout le temps de navigateur.',
+      'Je fais la différence entre 60hz et 144hz.',
       'Je suis papa d\'un petit gars adorable.',
-      'Je bois trop de café.',
-      'Je ne tweet pas...'
+      'Je ne tweet pas...',
+      '#TeamCherryMxBrown.',
+      '#TeamVSCode.',
+      '#JeSuisPasséChezSosh',
     ],
     typeSpeed: 70,
     backSpeed: 40,
     smartBackspace: true,
-    loop: true
+    loop: true,
+    showCursor: false
   };
   
   const typed = new Typed('.feature-title', options);
