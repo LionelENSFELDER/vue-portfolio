@@ -112,12 +112,12 @@ new Vue({
     workInProgress: [
       {
         id: 1,
-        title: 'Zalando revisited (projet en cours de développement)',
+        title: 'Zalando revisité (projet en cours de développement)',
         coverImage: './assets/img/work-in-progress.jpg',
         coverTitle: 'Image du projet Zalando revisited',
         coverAlt:'Zalando revisited',
         alt:'Zalando revisited',
-        moreInfos: 'Site e-commerce inspiré du célèbre Zalando.fr en version épurée. J\'utilise le Framework Next.js basé sur React ainsi que Mongodb.' ,
+        moreInfos: 'Site e-commerce inspiré du célèbre Zalando.fr en version épurée. J\'utilise le Framework Next.js basé sur React ainsi que Mongodb. La gestion de l\état est effectuée à l\'aide des Hooks React.' ,
         stack: 'HTML5, CSS3, UI Kit, Next.js, React, Mongodb',
         url: '#',
         github:'https://github.com/LionelENSFELDER/nextjs-mongodb-ecommerce',
