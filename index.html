@@ -38,6 +38,7 @@
 
 			<!-- W_O_R_K_S -->
 			<vue-section id="realisations" title="Mes réalisations">
+        <vue-projects class="" v-for="item in workInProgress" v-bind:key="item.id" v-bind:work="item"></vue-projects>
 				<vue-projects v-for="work in works" v-bind:key="work.id" v-bind:work="work"></vue-projects>
 			</vue-section>
 

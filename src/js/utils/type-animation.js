@@ -7,13 +7,14 @@ window.onload = function() {
       'Je préfère la qualité à la quantité...',
       'Je préfère le Seigneur des anneaux à Star Wars.',
       'Je prends le temps qu\'il faut pour faire de l\'exercice.',
+      'Je prends le temps qu\'il faut pour cuisiner.',
       'Je bichonne mon sommeil.',
       'Je bichonne mon ordinateur.',
       'Je traine souvent sur Reddit.',
       'Je change tout le temps de navigateur.',
       'Je suis papa d\'un petit gars adorable.',
       'Je bois trop de café.',
-      'Je suis chauve.'
+      'Je ne tweet pas...'
     ],
     typeSpeed: 70,
     backSpeed: 40,

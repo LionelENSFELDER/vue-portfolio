@@ -108,6 +108,21 @@ new Vue({
         github:'https://github.com/LionelENSFELDER/aid83-v2',
         year: '2009'
       }
-		]
+		],
+    workInProgress: [
+      {
+        id: 1,
+        title: 'Zalando revisited (projet en cours de développement)',
+        coverImage: './assets/img/work-in-progress.jpg',
+        coverTitle: 'Image du projet Zalando revisited',
+        coverAlt:'Zalando revisited',
+        alt:'Zalando revisited',
+        moreInfos: 'Site e-commerce inspiré du célèbre Zalando.fr en version épurée. J\'utilise le Framework Next.js basé sur React ainsi que Mongodb.' ,
+        stack: 'HTML5, CSS3, UI Kit, Next.js, React, Mongodb',
+        url: '#',
+        github:'https://github.com/LionelENSFELDER/nextjs-mongodb-ecommerce',
+        year: '2021'
+      }
+    ]
 	}
 })
