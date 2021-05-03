@@ -34,7 +34,7 @@ new Vue({
       },
       {
         id: 2,
-        title: 'Site consacré aux claviers mécaniques',
+        title: 'Site consacré aux claviers mécaniques (template)',
         coverImage: './assets/img/mechanical-switches/preview.jpg',
         coverTitle: 'Image du projet Mechanical switches',
         coverAlt:'Mechanical switches',
@@ -112,15 +112,15 @@ new Vue({
     workInProgress: [
       {
         id: 1,
-        title: 'Zalando revisité (projet en cours de développement)',
-        coverImage: './assets/img/work-in-progress.jpg',
+        title: 'E-boutique (en cours de développement)',
+        coverImage: './assets/img/nextjs-eshop/preview.jpg',
         coverTitle: 'Image du projet Zalando revisited',
         coverAlt:'Zalando revisited',
         alt:'Zalando revisited',
-        moreInfos: 'Site e-commerce inspiré du célèbre Zalando.fr en version épurée. J\'utilise le Framework Next.js basé sur React ainsi que Mongodb. La gestion de l\état est effectuée à l\'aide des Hooks React.' ,
+        moreInfos: 'Site épuré de vente de vêtements. J\'utilise le Framework Next.js basé sur React ainsi que Mongodb pour la base de données. La gestion de l\'état locale est effectuée à l\'aide des Hooks de React.' ,
         stack: 'HTML5, CSS3, UI Kit, Next.js, React, Mongodb',
-        url: '#',
-        github:'https://github.com/LionelENSFELDER/nextjs-mongodb-ecommerce',
+        url: 'https://nextjs-eshop-agicpf727-lionelensfelder.vercel.app',
+        github:'https://github.com/LionelENSFELDER/nextjs-eshop',
         year: '2021'
       }
     ]
