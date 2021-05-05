@@ -6,7 +6,7 @@ const section = {
 	},
 	props: ['title'],
 	template: `
-		<section id="" class="py-5 text-white">
+		<section id="" class="py-5">
 			<div class="container py-5">
 			<h2 class="text-left mb-5" :data-text="title">{{ title }}</h2>
 				<slot></slot>

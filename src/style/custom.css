@@ -4,13 +4,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 .radius1 {
   border-radius: 73% 27% 23% 77% / 47% 25% 75% 53%;
+  -moz-border-radius: 73% 27% 23% 77% / 47% 25% 75% 53%;
+  -webkit-border-radius: 73% 27% 23% 77% / 47% 25% 75% 53%;
+  border: 15px solid #f0f0f0;
 }
 
 .radius2 {
   border-radius: 41px 176px 41px 176px;
   -moz-border-radius: 41px 176px 41px 176px;
   -webkit-border-radius: 41px 176px 41px 176px;
-  border: 15px solid #F9F9F9;
+  border: 15px solid #f0f0f0;
 }
 
 html {
