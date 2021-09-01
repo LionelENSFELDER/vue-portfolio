@@ -17,13 +17,12 @@ const mystack = {
         <div class="col-12 col-md-8">
           <div class="">
             <p>
-              Je n'aime pas me définir par le travail que j'ai réalisé. 
-              Je me définis par ce que je veux accomplir dans le futur. 
-              Les compétences peuvent s'acquérir, mais la personnalité et l'état d'esprit font toute la différence. 
-              Je suis passionné par le développement web et en particulier par l'écosystème Javascript. 
-              </br></br>
-              Je suis tombé amoureux de Next.js et j'envisage un mariage en CDI ;-). 
-              Je suis adepte de la philosophie "less is more" donc je préfère me concentrer sur un petit nombre de choses et y mettre toute mon énergie. 
+	    	Je n'aime pas me définir par le travail que j'ai réalisé. Je me définis par ce que je veux accomplir dans le futur.
+		Les compétences peuvent s'acquérir, mais la personnalité et l'état d'esprit font toute la différence.
+ 		Je suis passionné par le développement web et en particulier par l'écosystème Javascript.
+		Pendant mon temps libre je passe du temps avec ma famille, je fais de l'exercice, je lis (un peu) et je contribue à des projets opens-source.
+		</br></br>
+		Je suis adepte de la philosophie "less is more" donc je préfère me concentrer sur un petit nombre de choses et y mettre toute mon énergie. 
             </p>
             <p>
               <i class="las la-palette mr-2 mb-3 font-main"></i>Frontend : HTML, CSS, SASS, Javascript, Typescript, jQuery, Bootstrap, React. </br>
