@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/LionelENSFELDER/about-me#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "gulp": "^4.0.2",
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^4.1.0",
